@@ -10,7 +10,7 @@ pipeline
                 echo "Start Pipeline for a Fix"
                 sh('''
                     git remote get-url origin
-                    git branch -a
+                    git branch -vv
                 ''')
             }
         }
