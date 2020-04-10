@@ -1,0 +1,65 @@
+pipeline
+{
+    agent any
+    stages
+    {
+        stage('Start')
+        {
+            steps
+            {
+                echo "Start Pipeline for a fix"
+            }
+        }
+        stage('Build')
+        {
+            steps
+            {
+                echo "Build Project"
+            }
+        }
+        stage('Test & Analysis')
+        {
+            parallel
+            {
+                stage('Static Analysis')
+                {
+                    steps
+                    {
+                        echo "Static Analysis"
+                    }
+                }
+                stage('Unit Test (off target)')
+                {
+                    steps
+                    {
+                        echo "Unit Test"
+                    }
+                }
+            }
+        }
+        stage('Merge to Feature Branch')
+        {
+            steps
+            {
+                echo "Merge to Feature Branch" 
+            }
+        }
+
+    }
+    post
+    {
+        always {
+            echo 'One way or another, I have finished'
+            deleteDir() /* clean up our workspace */
+        }
+        success {
+            echo 'The pipe was successful'
+        }
+        unstable {
+            echo 'The pipe is unstable'
+        }
+        failure {
+            echo 'the pipe failed'
+        }
+    }
+}
