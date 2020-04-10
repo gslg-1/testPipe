@@ -86,13 +86,13 @@ pipeline
             deleteDir()
         }
         success {
-            
+            echo 'The pipe succeeded'
         }
         unstable {
             echo 'The pipe is unstable'
         }
         failure {
-            echo 'the pipe failed'
+            echo 'The pipe failed'
         }
     }
 }
