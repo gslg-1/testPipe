@@ -8,10 +8,9 @@ pipeline
             steps
             {
                 echo "Start Pipeline for a Fix"
-                sh('''
-                    
-                    git branch | grep feature
-                ''')
+                sh'''echo $(GIT_BRANCH)'''
+                sh'''echo $(GIT_LOCAL_BRANCH)'''
+                
             }
         }
         stage('Clean-Up old Build')
