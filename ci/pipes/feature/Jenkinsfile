@@ -10,7 +10,6 @@ pipeline
                 echo "Start Pipeline for a Fix"
                 echo GIT_BRANCH
                 echo GIT_LOCAL_BRANCH
-                printenv
                 sh('''printenv''')
                 
             }
