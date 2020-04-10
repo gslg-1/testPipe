@@ -1,0 +1,11 @@
+{
+    "feature": {
+        "ID": "TES-32",
+        "modules": 
+        [
+            "mod1",
+            "mod2",
+            "mod3"
+        ]
+    }
+}

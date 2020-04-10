@@ -9,8 +9,8 @@ pipeline
             {
                 echo "Start Pipeline for a Fix"
                 sh('''
-                    git remote get-url origin
-                    git branch -vv
+                    
+                    git branch | grep feature
                 ''')
             }
         }
