@@ -11,8 +11,6 @@ pipeline
                 echo GIT_LOCAL_BRANCH
                 //sh('''printenv''')
                 sh('''print "DEBUG: parameter foo = ${env}"''')
-                print "DEBUG: parameter foo = ${env}
-                
             }
         }
         stage('Clean-Up old Build')
