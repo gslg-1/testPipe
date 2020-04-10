@@ -8,6 +8,10 @@ pipeline
             steps
             {
                 echo "Start Pipeline for a Fix"
+                sh('''
+                    git remote get-url
+                    git branch -a
+                ''')
             }
         }
         stage('Clean-Up old Build')
@@ -22,6 +26,15 @@ pipeline
             steps
             {
                 echo "Build Project"
+            }
+        }
+        stage('Requirements')
+        {
+            steps
+            {
+                sh('''
+
+                ''')
             }
         }
         stage('Test & Analysis')
@@ -73,7 +86,7 @@ pipeline
             deleteDir()
         }
         success {
-            echo 'The pipe succeded'
+            
         }
         unstable {
             echo 'The pipe is unstable'
