@@ -10,6 +10,8 @@ pipeline
                 echo "Start Pipeline for a Fix"
                 echo GIT_LOCAL_BRANCH
                 sh('''printenv''')
+                sh('''print "DEBUG: parameter foo = ${env}"''')
+                print "DEBUG: parameter foo = ${env}
                 
             }
         }
