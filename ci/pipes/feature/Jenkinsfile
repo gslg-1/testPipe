@@ -28,13 +28,22 @@ node {
 
 stage ('p1')
 {
-    echo "p1"
+    steps
+    {
+        echo "p1"
+    }
 }
 stage ('p2')
 {
-    echo "p2"
+    steps
+    {
+        echo "p1"
+    }
 }
 stage ('p3')
 {
-    echo "p3"
+    steps
+    {
+        echo "p1"
+    }
 }
