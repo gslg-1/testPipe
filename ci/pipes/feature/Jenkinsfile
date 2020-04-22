@@ -24,13 +24,19 @@ node {
         {
             stage ('test 1')
             {
-                echo 'test 1'
+                steps
+                {
+                    echo 'test 1'
+                }
             }
             stage ('test 2')
             {
-                for (int x = 0; x < 10 ;x++)
-                {}
-                echo 'test x 'x
+                steps{
+                    for (int x = 0; x < 10 ;x++)
+                    {}
+                    echo 'test x '
+                }
+                
             }
         }
     }
