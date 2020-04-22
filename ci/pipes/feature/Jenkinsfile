@@ -21,26 +21,26 @@ node {
             echo 'true ex 4'
         }
         parallel 
-        {
+        (
             stage ('p1')
             {
                 echo 'p1'
             }
-        }
+        )
         parallel 
-        {
+        (
             stage ('p2')
             {
                 echo 'p2'
             }
-        }
+        )
         parallel 
-        {
+        (
             stage ('p3')
             {
                 echo 'p3'
             }
-        }
+        )
     }
 }
 
