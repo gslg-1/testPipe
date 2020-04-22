@@ -1,5 +1,5 @@
 node { 
-    if (2)
+    if (0)
     {
         stage ('example 1')
         {
