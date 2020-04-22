@@ -20,24 +20,27 @@ node {
         {
             echo 'true ex 4'
         }
-        parallel
+        parallel 
         {
-            stage ('test 1')
+            stage ('p1')
             {
-                steps
-                {
-                    echo 'test 1'
-                }
+                echo 'p1'
             }
-            stage ('test 2')
+        }
+        parallel 
+        {
+            stage ('p2')
             {
-                steps{
-                    for (int x = 0; x < 10 ;x++)
-                    {}
-                    echo 'test x '
-                }
-                
+                echo 'p2'
+            }
+        }
+        parallel 
+        {
+            stage ('p3')
+            {
+                echo 'p3'
             }
         }
     }
 }
+
