@@ -20,5 +20,19 @@ node {
         {
             echo 'true ex 4'
         }
+        parallel
+        {
+            stage ('test 1')
+            {
+                echo 'test 1'
+            }
+            stage ('test 2')
+            {
+                for (int x = 0; x < 10 ;x++)
+                {
+                    echo x
+                }
+            }
+        }
     }
 }
