@@ -20,27 +20,27 @@ node {
         {
             echo 'true ex 4'
         }
-        parallel (stage ('p1'))
-        parallel (stage ('p2'))
-        parallel (stage ('p3'))
+        parallel (p1)
+        parallel (p2)
+        parallel (p3)
     }
 }
 
-stage ('p1')
+def p1 = stage ('p1')
 {
     steps
     {
         echo "p1"
     }
 }
-stage ('p2')
+def p2 = stage ('p2')
 {
     steps
     {
         echo "p1"
     }
 }
-stage ('p3')
+def p3 = stage ('p3')
 {
     steps
     {
