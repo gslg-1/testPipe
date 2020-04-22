@@ -1,97 +1,17 @@
-pipeline
-{
-    agent any
-    stages
-    {
-        stage('Start')
-        {
-            steps
-            {
-                echo "Start Pipeline for a Fix"
-                echo GIT_LOCAL_BRANCH
-                //sh('''printenv''')
-                sh('''print "DEBUG: parameter foo = ${env}"''')
-            }
-        }
-        stage('Clean-Up old Build')
-        {
-            steps
-            {
-                echo "Clean-Up old Build"
-            }
-        }
-        stage('Build')
-        {
-            steps
-            {
-                echo "Build Project"
-            }
-        }
-        stage('Requirements')
-        {
-            steps
-            {
-                sh('''
-
-                ''')
-            }
-        }
-        stage('Test & Analysis')
-        {
-            parallel
-            {
-                stage('Static Analysis')
-                {
-                    steps
-                    {
-                        echo "Static Analysis"
-                    }
-                }
-                stage('Unit Test (off target)')
-                {
-                    steps
-                    {
-                        echo "Unit Test"
-                    }
-                }
-            }
-        }
-        stage('Add & Commit Changes')
-        {
-            steps
-            {
-                echo "Add & Commit Changes" 
-            }
-        }
-        stage('Local Merge with Feature Branch')
-        {
-            steps
-            {
-                echo "Local Merge with Feature Branch" 
-            }
-        }
-        stage('Push new Result to Remot Repository')
-        {
-            steps
-            {
-                echo "Push to the feature branch"
-            }
+node { 
+    stage('Example 1') {
+        if (env.BRANCH_NAME == 'master') {
+            echo 'I only execute on the master branch'
+        } else {
+            echo 'I execute elsewhere'
         }
     }
-    post
+    stage('Example 2')
     {
-        always {
-            echo 'Clean Up the workspace'
-            deleteDir()
-        }
-        success {
-            echo 'The pipe succeeded'
-        }
-        unstable {
-            echo 'The pipe is unstable'
-        }
-        failure {
-            echo 'The pipe failed'
+        if (env.BRANCH_NAME == 'testBranch') {
+            echo 'I only execute on the master branch'
+        } else {
+            echo 'I execute elsewhere'
         }
     }
 }
