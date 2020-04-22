@@ -33,7 +33,6 @@ pipeline {
     stage('Deploy') {
       steps {
         echo 'deploing'
-        input(message: 'Where to put it', id: 'this is the id', ok: 'this is ok', submitter: 'gabriel', submitterParameter: 'value')
       }
     }
 
