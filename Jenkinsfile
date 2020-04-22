@@ -21,7 +21,7 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
             echo 'Integration Test'
           }
@@ -37,7 +37,6 @@ pipeline {
       }
         steps {
         echo 'deploing to master'
-      
       }
     }
 
