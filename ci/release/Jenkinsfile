@@ -10,13 +10,6 @@ pipeline
                 echo "Start Pipeline for a Fix"
             }
         }
-        stage('Clean-Up old Build')
-        {
-            steps
-            {
-                echo "Clean-Up old Build"
-            }
-        }
         stage('Build')
         {
             steps

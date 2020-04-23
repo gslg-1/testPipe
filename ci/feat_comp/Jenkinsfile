@@ -10,11 +10,11 @@ pipeline
                 echo "Start Pipeline for a Fix"
             }
         }
-        stage('Clean-Up old Build')
+        stage('Availability Check')
         {
             steps
             {
-                echo "Clean-Up old Build"
+                echo "Check if all required Tests, Modules, Reviews  and Designs of the feature are available "
             }
         }
         stage('Build')
