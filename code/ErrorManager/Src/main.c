@@ -60,6 +60,9 @@ UART_HandleTypeDef huart1;
 SDRAM_HandleTypeDef hsdram1;
 
 osThreadId defaultTaskHandle;
+osThreadId blinkLEDTaskHandle;
+uint32_t blinkLEDTaskBuffer[ 128 ];
+osStaticThreadDef_t blinkLEDTaskControlBlock;
 /* USER CODE BEGIN PV */
 osThreadId blinkLEDTaskHandle;
 /* USER CODE END PV */
@@ -76,6 +79,7 @@ static void MX_SPI5_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_USART1_UART_Init(void);
 void StartDefaultTask(void const * argument);
+void StartblinkLEDTask(void const * argument);
 
 /* USER CODE BEGIN PFP */
 void StartBlinkLEDTask(void const * argument);
@@ -147,6 +151,10 @@ int main(void)
   /* definition and creation of defaultTask */
   osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 4096);
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+
+  /* definition and creation of blinkLEDTask */
+  osThreadStaticDef(blinkLEDTask, StartblinkLEDTask, osPriorityNormal, 0, 128, blinkLEDTaskBuffer, &blinkLEDTaskControlBlock);
+  blinkLEDTaskHandle = osThreadCreate(osThread(blinkLEDTask), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -673,6 +681,24 @@ void StartDefaultTask(void const * argument)
     osDelay(1);
   }
   /* USER CODE END 5 */ 
+}
+
+/* USER CODE BEGIN Header_StartblinkLEDTask */
+/**
+* @brief Function implementing the blinkLEDTask thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartblinkLEDTask */
+void StartblinkLEDTask(void const * argument)
+{
+  /* USER CODE BEGIN StartblinkLEDTask */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END StartblinkLEDTask */
 }
 
 /**

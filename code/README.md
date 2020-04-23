@@ -1,2 +1,0 @@
-# tmpPipeline/code
-It's expected, that all the implemented and code and required libs ,... are stored here.
