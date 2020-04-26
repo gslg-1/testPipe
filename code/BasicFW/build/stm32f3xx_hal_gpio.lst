@@ -1,4 +1,4 @@
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
   27:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****     (+) All GPIO pins have weak internal pull-up and pull-down resistors, which can be
   28:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****         activated or not.
   29:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c **** 
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 2
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 2
 
 
   30:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****     (+) In Output or Alternate mode, each IO can be configured on open-drain or push-pull
@@ -118,7 +118,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
   84:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****         priority over the GPIO function.
   85:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c **** 
   86:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****     (#) The HSE oscillator pins OSC_IN/OSC_OUT can be used as
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 3
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 3
 
 
   87:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****         general purpose PF0 and PF1, respectively, when the HSE oscillator is off.
@@ -178,7 +178,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
  141:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   * @}
  142:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   */
  143:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 4
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 4
 
 
  144:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c **** /* Private macros ------------------------------------------------------------*/
@@ -238,7 +238,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
  181:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   uint32_t position = 0x00u;
   47              		.loc 1 181 0
   48 0004 0023     		movs	r3, #0
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 5
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 5
 
 
  182:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   uint32_t iocurrent;
@@ -298,7 +298,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
   75 0024 03F00705 		and	r5, r3, #7
   76 0028 AF00     		lsls	r7, r5, #2
   77 002a 0F25     		movs	r5, #15
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 6
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 6
 
 
   78 002c BD40     		lsls	r5, r5, r7
@@ -358,7 +358,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
  119 006c 10D1     		bne	.L7
  120              	.L6:
  223:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****       {
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 7
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 7
 
 
  224:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****         /* Check the Speed parameter */
@@ -418,7 +418,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
  156              		.loc 1 242 0
  157 0094 8C68     		ldr	r4, [r1, #8]
  158 0096 BC40     		lsls	r4, r4, r7
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 8
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 8
 
 
  159 0098 3443     		orrs	r4, r4, r6
@@ -478,7 +478,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
  201 00dc 05F58065 		add	r5, r5, #1024
  202 00e0 A842     		cmp	r0, r5
  203 00e2 09D0     		beq	.L16
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 9
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 9
 
 
  204              		.loc 1 254 0 discriminator 5
@@ -538,7 +538,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
  248              		.loc 1 264 0
  249 0122 184D     		ldr	r5, .L19+12
  250 0124 2E60     		str	r6, [r5]
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 10
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 10
 
 
  265:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c **** 
@@ -598,7 +598,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
  286 0152 ED68     		ldr	r5, [r5, #12]
  287              	.LVL38:
  284:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****         temp &= ~(iocurrent);
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 11
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 11
 
 
  288              		.loc 1 284 0
@@ -658,7 +658,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
  331              		.global	HAL_GPIO_DeInit
  332              		.thumb
  333              		.thumb_func
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 12
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 12
 
 
  335              	HAL_GPIO_DeInit:
@@ -718,7 +718,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
  364 000e 61D0     		beq	.L23
  321:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****     {
  322:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****       /*------------------------- EXTI Mode Configuration --------------------*/
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 13
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 13
 
 
  323:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****       /* Clear the External Interrupt or Event for the current IO */
@@ -778,7 +778,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
  330:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****         EXTI->IMR &= ~((uint32_t)iocurrent);
  412              		.loc 1 330 0 is_stmt 1
  413 0064 204D     		ldr	r5, .L32+8
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 14
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 14
 
 
  414              	.LVL51:
@@ -838,7 +838,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
  451 00a2 DD08     		lsrs	r5, r3, #3
  452 00a4 0835     		adds	r5, r5, #8
  453 00a6 50F82570 		ldr	r7, [r0, r5, lsl #2]
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 15
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 15
 
 
  454 00aa 03F00706 		and	r6, r3, #7
@@ -898,7 +898,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
  494              		.global	HAL_GPIO_ReadPin
  495              		.thumb
  496              		.thumb_func
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 16
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 16
 
 
  498              	HAL_GPIO_ReadPin:
@@ -958,7 +958,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
  398:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   {
  399:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****     bitstatus = GPIO_PIN_RESET;
  516              		.loc 1 399 0
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 17
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 17
 
 
  517 000a 0020     		movs	r0, #0
@@ -1018,7 +1018,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
  429:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   }
  430:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   else
  431:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   {
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 18
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 18
 
 
  432:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****     GPIOx->BRR = (uint32_t)GPIO_Pin;
@@ -1078,7 +1078,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
  578              		.cfi_endproc
  579              	.LFE127:
  581              		.section	.text.HAL_GPIO_LockPin,"ax",%progbits
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 19
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 19
 
 
  582              		.align	2
@@ -1138,7 +1138,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
  609 0012 C161     		str	r1, [r0, #28]
  482:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   /* Set LCKx bit(s): LCKK='1' + LCK[15U-0] */
  483:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   GPIOx->LCKR = tmp;
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 20
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 20
 
 
  610              		.loc 1 483 0
@@ -1198,7 +1198,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
  503:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c **** void HAL_GPIO_EXTI_IRQHandler(uint16_t GPIO_Pin)
  504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c **** {
  505:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   /* EXTI line interrupt detected */
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 21
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 21
 
 
  506:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   if(__HAL_GPIO_EXTI_GET_IT(GPIO_Pin) != 0x00u)
@@ -1258,7 +1258,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
  684              		.loc 1 509 0
  685 000e FFF7FEFF 		bl	HAL_GPIO_EXTI_Callback
  686              	.LVL72:
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 22
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 22
 
 
  687              	.L48:
@@ -1277,30 +1277,30 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 1
  701              		.file 5 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
  702              		.file 6 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
  703              		.file 7 "Drivers/CMSIS/Include/core_cm4.h"
-ARM GAS  D:\Programme\Cygwin\tmp\cc844shQ.s 			page 23
+ARM GAS  D:\Programme\Cygwin\tmp\ccoELaF4.s 			page 23
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f3xx_hal_gpio.c
-D:\Programme\Cygwin\tmp\cc844shQ.s:22     .text.HAL_GPIO_Init:00000000 $t
-D:\Programme\Cygwin\tmp\cc844shQ.s:27     .text.HAL_GPIO_Init:00000000 HAL_GPIO_Init
-D:\Programme\Cygwin\tmp\cc844shQ.s:322    .text.HAL_GPIO_Init:00000178 $d
-D:\Programme\Cygwin\tmp\cc844shQ.s:330    .text.HAL_GPIO_DeInit:00000000 $t
-D:\Programme\Cygwin\tmp\cc844shQ.s:335    .text.HAL_GPIO_DeInit:00000000 HAL_GPIO_DeInit
-D:\Programme\Cygwin\tmp\cc844shQ.s:486    .text.HAL_GPIO_DeInit:000000e0 $d
-D:\Programme\Cygwin\tmp\cc844shQ.s:493    .text.HAL_GPIO_ReadPin:00000000 $t
-D:\Programme\Cygwin\tmp\cc844shQ.s:498    .text.HAL_GPIO_ReadPin:00000000 HAL_GPIO_ReadPin
-D:\Programme\Cygwin\tmp\cc844shQ.s:525    .text.HAL_GPIO_WritePin:00000000 $t
-D:\Programme\Cygwin\tmp\cc844shQ.s:530    .text.HAL_GPIO_WritePin:00000000 HAL_GPIO_WritePin
-D:\Programme\Cygwin\tmp\cc844shQ.s:551    .text.HAL_GPIO_TogglePin:00000000 $t
-D:\Programme\Cygwin\tmp\cc844shQ.s:556    .text.HAL_GPIO_TogglePin:00000000 HAL_GPIO_TogglePin
-D:\Programme\Cygwin\tmp\cc844shQ.s:582    .text.HAL_GPIO_LockPin:00000000 $t
-D:\Programme\Cygwin\tmp\cc844shQ.s:587    .text.HAL_GPIO_LockPin:00000000 HAL_GPIO_LockPin
-D:\Programme\Cygwin\tmp\cc844shQ.s:640    .text.HAL_GPIO_EXTI_Callback:00000000 $t
-D:\Programme\Cygwin\tmp\cc844shQ.s:645    .text.HAL_GPIO_EXTI_Callback:00000000 HAL_GPIO_EXTI_Callback
-D:\Programme\Cygwin\tmp\cc844shQ.s:658    .text.HAL_GPIO_EXTI_IRQHandler:00000000 $t
-D:\Programme\Cygwin\tmp\cc844shQ.s:663    .text.HAL_GPIO_EXTI_IRQHandler:00000000 HAL_GPIO_EXTI_IRQHandler
-D:\Programme\Cygwin\tmp\cc844shQ.s:692    .text.HAL_GPIO_EXTI_IRQHandler:00000014 $d
+D:\Programme\Cygwin\tmp\ccoELaF4.s:22     .text.HAL_GPIO_Init:00000000 $t
+D:\Programme\Cygwin\tmp\ccoELaF4.s:27     .text.HAL_GPIO_Init:00000000 HAL_GPIO_Init
+D:\Programme\Cygwin\tmp\ccoELaF4.s:322    .text.HAL_GPIO_Init:00000178 $d
+D:\Programme\Cygwin\tmp\ccoELaF4.s:330    .text.HAL_GPIO_DeInit:00000000 $t
+D:\Programme\Cygwin\tmp\ccoELaF4.s:335    .text.HAL_GPIO_DeInit:00000000 HAL_GPIO_DeInit
+D:\Programme\Cygwin\tmp\ccoELaF4.s:486    .text.HAL_GPIO_DeInit:000000e0 $d
+D:\Programme\Cygwin\tmp\ccoELaF4.s:493    .text.HAL_GPIO_ReadPin:00000000 $t
+D:\Programme\Cygwin\tmp\ccoELaF4.s:498    .text.HAL_GPIO_ReadPin:00000000 HAL_GPIO_ReadPin
+D:\Programme\Cygwin\tmp\ccoELaF4.s:525    .text.HAL_GPIO_WritePin:00000000 $t
+D:\Programme\Cygwin\tmp\ccoELaF4.s:530    .text.HAL_GPIO_WritePin:00000000 HAL_GPIO_WritePin
+D:\Programme\Cygwin\tmp\ccoELaF4.s:551    .text.HAL_GPIO_TogglePin:00000000 $t
+D:\Programme\Cygwin\tmp\ccoELaF4.s:556    .text.HAL_GPIO_TogglePin:00000000 HAL_GPIO_TogglePin
+D:\Programme\Cygwin\tmp\ccoELaF4.s:582    .text.HAL_GPIO_LockPin:00000000 $t
+D:\Programme\Cygwin\tmp\ccoELaF4.s:587    .text.HAL_GPIO_LockPin:00000000 HAL_GPIO_LockPin
+D:\Programme\Cygwin\tmp\ccoELaF4.s:640    .text.HAL_GPIO_EXTI_Callback:00000000 $t
+D:\Programme\Cygwin\tmp\ccoELaF4.s:645    .text.HAL_GPIO_EXTI_Callback:00000000 HAL_GPIO_EXTI_Callback
+D:\Programme\Cygwin\tmp\ccoELaF4.s:658    .text.HAL_GPIO_EXTI_IRQHandler:00000000 $t
+D:\Programme\Cygwin\tmp\ccoELaF4.s:663    .text.HAL_GPIO_EXTI_IRQHandler:00000000 HAL_GPIO_EXTI_IRQHandler
+D:\Programme\Cygwin\tmp\ccoELaF4.s:692    .text.HAL_GPIO_EXTI_IRQHandler:00000014 $d
                      .debug_frame:00000010 $d
 
 NO UNDEFINED SYMBOLS

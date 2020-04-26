@@ -13,11 +13,12 @@ set ARMCC5_CCOPT=%ARM_TOOL_LOC%
 set ARMCC5_FROMELFOPT=%ARM_TOOL_LOC%
 set ARMCC5_LINKOPT=%ARM_TOOL_LOC%
 
+
 echo ###############################################
 echo PRJ_LOC:
 echo ###############################################
 echo %PRJ_LOC%
-echo ls %PRJ_LOC%
+ls %PRJ_LOC%
 echo 
 echo ###############################################
 echo TOOL_LOC:

@@ -21,6 +21,8 @@ TARGET = BasicFW
 ######################################
 # debug build?
 DEBUG = 1
+# unit test build ?
+UTEST = 0
 # optimization
 OPT = -Og
 
@@ -146,6 +148,10 @@ ifeq ($(DEBUG), 1)
 CFLAGS += -g -gdwarf-2
 endif
 
+ifeq ($(UTEST), 1)
+CFLAGS += -D  __UTEST
+endif
+
 
 # Generate dependency information
 CFLAGS += -MMD -MP -MF"$(@:%.o=%.d)"
@@ -165,7 +171,6 @@ LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BU
 
 # default action: build all
 all: $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).hex $(BUILD_DIR)/$(TARGET).bin
-	-@echo '################################## build completted '##################################
 #######################################
 # build the application
 #######################################
@@ -196,15 +201,6 @@ $(BUILD_DIR):
 	mkdir $@		
 	
 
-#######################################
-# special builds
-#######################################
-utest: utestflag all
-	-@echo '################################## test build completted '##################################
-utestflag: 
-	-@echo '################################## first set utest macro '##################################
-	-$(CFLAGS) -D __UTEST
-	-@echo $(CFLAGS)
 #######################################
 # clean up
 #######################################
