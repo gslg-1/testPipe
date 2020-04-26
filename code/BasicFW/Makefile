@@ -162,10 +162,10 @@ LIBS = -lc -lm -lnosys
 LIBDIR = 
 LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
 
+
 # default action: build all
 all: $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).hex $(BUILD_DIR)/$(TARGET).bin
-
-
+	-@echo '################################## build completted '##################################
 #######################################
 # build the application
 #######################################
@@ -194,16 +194,26 @@ $(BUILD_DIR)/%.bin: $(BUILD_DIR)/%.elf | $(BUILD_DIR)
 	
 $(BUILD_DIR):
 	mkdir $@		
+	
 
+#######################################
+# special builds
+#######################################
+utest: utestflag all
+	-@echo '################################## test build completted '##################################
+utestflag: 
+	-@echo '################################## first set utest macro '##################################
+	-$(CFLAGS) -D __UTEST
+	-@echo $(CFLAGS)
 #######################################
 # clean up
 #######################################
 clean:
 	-rm -fR $(BUILD_DIR)
-  
 #######################################
 # dependencies
 #######################################
+
 -include $(wildcard $(BUILD_DIR)/*.d)
 
 # *** EOF ***

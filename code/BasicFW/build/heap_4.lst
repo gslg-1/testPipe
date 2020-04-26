@@ -1,4 +1,4 @@
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
   28:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** /*
   29:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c ****  * A sample implementation of pvPortMalloc() and vPortFree() that combines
   30:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c ****  * (coalescences) adjacent memory blocks as they are freed, and in so doing
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 2
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 2
 
 
   31:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c ****  * limits memory fragmentation.
@@ -118,7 +118,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
   85:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** /*
   86:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c ****  * Called automatically to setup the required heap structures the first time
   87:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c ****  * pvPortMalloc() is called.
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 3
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 3
 
 
   88:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c ****  */
@@ -178,7 +178,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
  142:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 
  143:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 				/* Ensure that blocks are always aligned to the required number
  144:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 				of bytes. */
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 4
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 4
 
 
  145:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 				if( ( xWantedSize & portBYTE_ALIGNMENT_MASK ) != 0x00 )
@@ -238,7 +238,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
  199:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 						pxBlock->xBlockSize = xWantedSize;
  200:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 
  201:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 						/* Insert the new block into the list of free blocks. */
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 5
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 5
 
 
  202:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 						prvInsertBlockIntoFreeList( pxNewBlockLink );
@@ -298,7 +298,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
  256:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 	#endif
  257:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 
  258:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 	configASSERT( ( ( ( size_t ) pvReturn ) & ( size_t ) portBYTE_ALIGNMENT_MASK ) == 0 );
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 6
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 6
 
 
  259:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 	return pvReturn;
@@ -358,7 +358,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
  313:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 	return xFreeBytesRemaining;
  314:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** }
  315:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** /*-----------------------------------------------------------*/
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 7
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 7
 
 
  316:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 
@@ -418,7 +418,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
   54              	.LVL5:
   55              	.L3:
  334:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 8
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 8
 
 
   56              		.loc 1 334 0
@@ -478,7 +478,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
   87 0038 1360     		str	r3, [r2]
  367:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 
  368:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 	/* Only one block exists - and it covers the entire usable heap space. */
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 9
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 9
 
 
  369:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 	xMinimumEverFreeBytesRemaining = pxFirstFreeBlock->xBlockSize;
@@ -538,7 +538,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
  128 0002 00E0     		b	.L7
  129              	.LVL14:
  130              	.L13:
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 10
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 10
 
 
  131 0004 1346     		mov	r3, r2
@@ -598,7 +598,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
  406:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 	{
  407:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 		if( pxIterator->pxNextFreeBlock != pxEnd )
  163              		.loc 1 407 0
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 11
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 11
 
 
  164 0026 0B49     		ldr	r1, .L15+4
@@ -658,7 +658,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
  435:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** }
  191              		.loc 1 435 0
  192 0048 5DF8044B 		ldr	r4, [sp], #4
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 12
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 12
 
 
  193              	.LCFI1:
@@ -718,7 +718,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
  243              		.loc 1 139 0
  244 001a 94B1     		cbz	r4, .L20
  141:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 13
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 13
 
 
  245              		.loc 1 141 0
@@ -778,7 +778,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
   35:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 
   36:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** /*-----------------------------------------------------------
   37:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  * Port specific definitions.
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 14
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 14
 
 
   38:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  *
@@ -838,7 +838,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
   92:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** #define portEND_SWITCHING_ISR( xSwitchRequired ) if( xSwitchRequired != pdFALSE ) portYIELD()
   93:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** #define portYIELD_FROM_ISR( x ) portEND_SWITCHING_ISR( x )
   94:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** /*-----------------------------------------------------------*/
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 15
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 15
 
 
   95:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 
@@ -898,7 +898,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
  149:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	#define portGET_HIGHEST_PRIORITY( uxTopPriority, uxReadyPriorities ) uxTopPriority = ( 31UL - ( ui
  150:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 
  151:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** #endif /* configUSE_PORT_OPTIMISED_TASK_SELECTION */
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 16
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 16
 
 
  152:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 
@@ -958,7 +958,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
  272              		.thumb
  273              		.syntax unified
  274              	.L21:
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 17
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 17
 
 
  275 0040 FEE7     		b	.L21
@@ -1018,7 +1018,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
  319 006e 0836     		adds	r6, r6, #8
  320              	.LVL32:
  183:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 18
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 18
 
 
  321              		.loc 1 183 0
@@ -1078,7 +1078,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
  368 00a6 0B60     		str	r3, [r1]
  211:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 					{
  369              		.loc 1 211 0
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 19
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 19
 
 
  370 00a8 1549     		ldr	r1, .L36+16
@@ -1138,7 +1138,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
  418              	
  419              	@ 0 "" 2
  420              	.LVL41:
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 20
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 20
 
 
  421              		.thumb
@@ -1198,7 +1198,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
  471 000a 50F8042C 		ldr	r2, [r0, #-4]
  472 000e 1849     		ldr	r1, .L46
  473 0010 0968     		ldr	r1, [r1]
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 21
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 21
 
 
  474 0012 12EA0104 		ands	r4, r2, r1
@@ -1258,7 +1258,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
  524              		.loc 1 287 0
  525 0048 22EA0102 		bic	r2, r2, r1
  526 004c 43F8042C 		str	r2, [r3, #-4]
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 22
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 22
 
 
  289:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 				{
@@ -1318,7 +1318,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
  577 0002 1868     		ldr	r0, [r3]
  578 0004 7047     		bx	lr
  579              	.L50:
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 23
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 23
 
 
  580 0006 00BF     		.align	2
@@ -1378,7 +1378,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
  640 0000 00000000 		.space	4
  641              		.section	.bss.xStart,"aw",%nobits
  642              		.align	2
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 24
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 24
 
 
  643              		.set	.LANCHOR1,. + 0
@@ -1410,43 +1410,43 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 1
  672              		.file 4 "d:\\tool_chain\\gcc-arm-none-eabi\\5.4 2016q3\\arm-none-eabi\\include\\machine\\_default_
  673              		.file 5 "d:\\tool_chain\\gcc-arm-none-eabi\\5.4 2016q3\\arm-none-eabi\\include\\sys\\_stdint.h"
  674              		.file 6 "Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
-ARM GAS  D:\Programme\Cygwin\tmp\ccwJZ3Wq.s 			page 25
+ARM GAS  D:\Programme\Cygwin\tmp\ccJV3BBN.s 			page 25
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 heap_4.c
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:22     .text.prvHeapInit:00000000 $t
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:26     .text.prvHeapInit:00000000 prvHeapInit
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:104    .text.prvHeapInit:0000004c $d
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:114    .text.prvInsertBlockIntoFreeList:00000000 $t
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:118    .text.prvInsertBlockIntoFreeList:00000000 prvInsertBlockIntoFreeList
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:200    .text.prvInsertBlockIntoFreeList:00000050 $d
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:206    .text.pvPortMalloc:00000000 $t
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:211    .text.pvPortMalloc:00000000 pvPortMalloc
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:435    .text.pvPortMalloc:000000f0 $d
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:444    .text.vPortFree:00000000 $t
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:449    .text.vPortFree:00000000 vPortFree
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:557    .text.vPortFree:00000070 $d
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:563    .text.xPortGetFreeHeapSize:00000000 $t
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:568    .text.xPortGetFreeHeapSize:00000000 xPortGetFreeHeapSize
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:582    .text.xPortGetFreeHeapSize:00000008 $d
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:587    .text.xPortGetMinimumEverFreeHeapSize:00000000 $t
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:592    .text.xPortGetMinimumEverFreeHeapSize:00000000 xPortGetMinimumEverFreeHeapSize
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:606    .text.xPortGetMinimumEverFreeHeapSize:00000008 $d
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:611    .text.vPortInitialiseBlocks:00000000 $t
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:616    .text.vPortInitialiseBlocks:00000000 vPortInitialiseBlocks
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:628    .bss.xFreeBytesRemaining:00000000 $d
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:632    .bss.xFreeBytesRemaining:00000000 xFreeBytesRemaining
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:635    .bss.pxEnd:00000000 $d
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:639    .bss.pxEnd:00000000 pxEnd
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:642    .bss.xStart:00000000 $d
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:646    .bss.xStart:00000000 xStart
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:649    .bss.ucHeap:00000000 $d
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:653    .bss.ucHeap:00000000 ucHeap
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:656    .bss.xBlockAllocatedBit:00000000 $d
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:660    .bss.xBlockAllocatedBit:00000000 xBlockAllocatedBit
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:663    .bss.xMinimumEverFreeBytesRemaining:00000000 $d
-D:\Programme\Cygwin\tmp\ccwJZ3Wq.s:667    .bss.xMinimumEverFreeBytesRemaining:00000000 xMinimumEverFreeBytesRemaining
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:22     .text.prvHeapInit:00000000 $t
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:26     .text.prvHeapInit:00000000 prvHeapInit
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:104    .text.prvHeapInit:0000004c $d
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:114    .text.prvInsertBlockIntoFreeList:00000000 $t
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:118    .text.prvInsertBlockIntoFreeList:00000000 prvInsertBlockIntoFreeList
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:200    .text.prvInsertBlockIntoFreeList:00000050 $d
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:206    .text.pvPortMalloc:00000000 $t
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:211    .text.pvPortMalloc:00000000 pvPortMalloc
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:435    .text.pvPortMalloc:000000f0 $d
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:444    .text.vPortFree:00000000 $t
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:449    .text.vPortFree:00000000 vPortFree
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:557    .text.vPortFree:00000070 $d
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:563    .text.xPortGetFreeHeapSize:00000000 $t
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:568    .text.xPortGetFreeHeapSize:00000000 xPortGetFreeHeapSize
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:582    .text.xPortGetFreeHeapSize:00000008 $d
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:587    .text.xPortGetMinimumEverFreeHeapSize:00000000 $t
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:592    .text.xPortGetMinimumEverFreeHeapSize:00000000 xPortGetMinimumEverFreeHeapSize
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:606    .text.xPortGetMinimumEverFreeHeapSize:00000008 $d
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:611    .text.vPortInitialiseBlocks:00000000 $t
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:616    .text.vPortInitialiseBlocks:00000000 vPortInitialiseBlocks
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:628    .bss.xFreeBytesRemaining:00000000 $d
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:632    .bss.xFreeBytesRemaining:00000000 xFreeBytesRemaining
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:635    .bss.pxEnd:00000000 $d
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:639    .bss.pxEnd:00000000 pxEnd
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:642    .bss.xStart:00000000 $d
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:646    .bss.xStart:00000000 xStart
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:649    .bss.ucHeap:00000000 $d
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:653    .bss.ucHeap:00000000 ucHeap
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:656    .bss.xBlockAllocatedBit:00000000 $d
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:660    .bss.xBlockAllocatedBit:00000000 xBlockAllocatedBit
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:663    .bss.xMinimumEverFreeBytesRemaining:00000000 $d
+D:\Programme\Cygwin\tmp\ccJV3BBN.s:667    .bss.xMinimumEverFreeBytesRemaining:00000000 xMinimumEverFreeBytesRemaining
                      .debug_frame:00000010 $d
 
 UNDEFINED SYMBOLS

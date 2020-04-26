@@ -1,4 +1,4 @@
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
   28:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   * @{
   29:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   */
   30:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** 
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 2
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 2
 
 
   31:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** #ifdef HAL_RCC_MODULE_ENABLED
@@ -118,7 +118,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
   85:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** @endverbatim
   86:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   * @{
   87:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   */
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 3
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 3
 
 
   88:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** 
@@ -178,7 +178,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  142:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****           if((HAL_GetTick() - tickstart) > RCC_DBP_TIMEOUT_VALUE)
  143:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****         {
  144:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****           return HAL_TIMEOUT;
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 4
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 4
 
 
  145:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****         }
@@ -238,7 +238,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  199:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   {
  200:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****     /* Check the parameters */
  201:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****     assert_param(IS_RCC_USART2CLKSOURCE(PeriphClkInit->Usart2ClockSelection));
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 5
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 5
 
 
  202:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****     
@@ -298,7 +298,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  256:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   {
  257:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****     /* Check the parameters */
  258:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****     assert_param(IS_RCC_I2C2CLKSOURCE(PeriphClkInit->I2c2ClockSelection));
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 6
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 6
 
 
  259:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****     
@@ -358,7 +358,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  313:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   /*------------------------------ I2S Configuration ------------------------*/ 
  314:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   if(((PeriphClkInit->PeriphClockSelection) & RCC_PERIPHCLK_I2S) == RCC_PERIPHCLK_I2S)
  315:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   {
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 7
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 7
 
 
  316:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****     /* Check the parameters */
@@ -418,7 +418,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  370:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   }
  371:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** 
  372:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** #endif /* STM32F303xE || STM32F398xx || */
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 8
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 8
 
 
  373:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****        /* STM32F303xC || STM32F358xx    */
@@ -478,7 +478,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  427:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   /*------------------------------ TIM15 clock Configuration ----------------*/ 
  428:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   if(((PeriphClkInit->PeriphClockSelection) & RCC_PERIPHCLK_TIM15) == RCC_PERIPHCLK_TIM15)
  429:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   {
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 9
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 9
 
 
  430:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****     /* Check the parameters */
@@ -538,7 +538,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  484:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** 
  485:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   /*------------------------------ CEC clock Configuration -------------------*/ 
  486:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   if(((PeriphClkInit->PeriphClockSelection) & RCC_PERIPHCLK_CEC) == RCC_PERIPHCLK_CEC)
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 10
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 10
 
 
  487:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   {
@@ -598,7 +598,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  541:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   {
  542:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****     /* Check the parameters */
  543:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****     assert_param(IS_RCC_TIM17CLKSOURCE(PeriphClkInit->Tim17ClockSelection));
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 11
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 11
 
 
  544:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****     
@@ -658,7 +658,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  598:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** #endif /* RCC_CFGR3_USART3SW */
  599:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   /* Get the I2C1 clock configuration -----------------------------------------*/
  600:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   PeriphClkInit->I2c1ClockSelection = __HAL_RCC_GET_I2C1_SOURCE();
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 12
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 12
 
 
  601:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** 
@@ -718,7 +718,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  655:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** 
  656:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   PeriphClkInit->PeriphClockSelection |= RCC_PERIPHCLK_I2S;
  657:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   /* Get the I2S clock configuration -----------------------------------------*/
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 13
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 13
 
 
  658:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   PeriphClkInit->I2sClockSelection = __HAL_RCC_GET_I2S_SOURCE();
@@ -778,7 +778,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  712:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** 
  713:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   PeriphClkInit->PeriphClockSelection |= RCC_PERIPHCLK_TIM8;
  714:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   /* Get the TIM8 clock configuration -----------------------------------------*/
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 14
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 14
 
 
  715:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   PeriphClkInit->Tim8ClockSelection = __HAL_RCC_GET_TIM8_SOURCE();
@@ -838,7 +838,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  769:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** 
  770:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   PeriphClkInit->PeriphClockSelection |= RCC_PERIPHCLK_TIM17;
  771:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   /* Get the TIM17 clock configuration -----------------------------------------*/
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 15
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 15
 
 
  772:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   PeriphClkInit->Tim17ClockSelection = __HAL_RCC_GET_TIM17_SOURCE();
@@ -898,7 +898,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  826:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_UART4   UART4 peripheral clock
  827:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_UART5   UART5 peripheral clock
  828:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_I2C2    I2C2 peripheral clock
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 16
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 16
 
 
  829:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_I2C3    I2C3 peripheral clock
@@ -958,7 +958,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  883:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_TIM15   TIM15 peripheral clock
  884:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_TIM16   TIM16 peripheral clock
  885:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_TIM17   TIM17 peripheral clock
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 17
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 17
 
 
  886:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   @endif
@@ -1018,7 +1018,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  940:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_TIM17   TIM17 peripheral clock
  941:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_TIM20   TIM20 peripheral clock
  942:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_TIM34   TIM34 peripheral clock
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 18
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 18
 
 
  943:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   @endif
@@ -1078,7 +1078,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  997:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** #else
  998:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       if (srcclk == RCC_USART1CLKSOURCE_PCLK1)
  999:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       {
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 19
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 19
 
 
 1000:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****         frequency = HAL_RCC_GetPCLK1Freq();
@@ -1138,7 +1138,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
 1054:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** 
 1055:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       /* Check if USART3 clock selection is PCLK1 */
 1056:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       if (srcclk == RCC_USART3CLKSOURCE_PCLK1)
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 20
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 20
 
 
 1057:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       {
@@ -1198,7 +1198,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
 1111:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       srcclk = __HAL_RCC_GET_UART5_SOURCE();
 1112:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** 
 1113:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       /* Check if UART5 clock selection is PCLK1 */
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 21
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 21
 
 
 1114:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       if (srcclk == RCC_UART5CLKSOURCE_PCLK1)
@@ -1258,7 +1258,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
 1168:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       }
 1169:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       break;
 1170:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****     }
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 22
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 22
 
 
 1171:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** #endif /* RCC_CFGR3_I2C2SW */
@@ -1318,7 +1318,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
 1225:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****         /* Check if USB clock selection is divided by 1.5 */
 1226:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****         else /* RCC_USBCLKSOURCE_PLL_DIV1_5 */
 1227:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****         {
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 23
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 23
 
 
 1228:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****           frequency = (RCC_GetPLLCLKFreq() * 3U) / 2U;
@@ -1378,7 +1378,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
 1282:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       break;
 1283:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****     }
 1284:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** #endif /* RCC_CFGR2_ADCPRE12 */
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 24
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 24
 
 
 1285:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** #if defined(RCC_CFGR2_ADCPRE34)
@@ -1438,7 +1438,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
 1339:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       else if (srcclk == RCC_TIM2CLK_HCLK)
 1340:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       {
 1341:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****         frequency = SystemCoreClock;
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 25
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 25
 
 
 1342:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       }
@@ -1498,7 +1498,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
 1396:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       else if (srcclk == RCC_TIM16CLK_HCLK)
 1397:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       {
 1398:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****         frequency = SystemCoreClock;
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 26
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 26
 
 
 1399:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       }
@@ -1558,7 +1558,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
 1453:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       else if (srcclk == RCC_TIM34CLK_HCLK)
 1454:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       {
 1455:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****         frequency = SystemCoreClock;
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 27
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 27
 
 
 1456:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       }
@@ -1618,7 +1618,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
 1510:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       break;
 1511:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****     }
 1512:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   }
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 28
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 28
 
 
 1513:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   return(frequency);
@@ -1678,7 +1678,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
   52              	.LVL5:
   53 0014 D26A     		ldr	r2, [r2, #44]
   54 0016 02F00F02 		and	r2, r2, #15
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 29
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 29
 
 
   55 001a 0132     		adds	r2, r2, #1
@@ -1738,7 +1738,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
   87              	.LFB123:
  108:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   uint32_t tickstart = 0U;
   88              		.loc 1 108 0
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 30
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 30
 
 
   89              		.cfi_startproc
@@ -1798,7 +1798,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  132:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****     {
  138              		.loc 1 132 0
  139 0034 7E4B     		ldr	r3, .L33+4
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 31
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 31
 
 
  140 0036 1B68     		ldr	r3, [r3]
@@ -1858,7 +1858,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  185 007a 6C4E     		ldr	r6, .L33
  186 007c 306A     		ldr	r0, [r6, #32]
  187 007e 20F44077 		bic	r7, r0, #768
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 32
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 32
 
 
  188              	.LVL23:
@@ -1918,7 +1918,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
   51:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif                                           
   52:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __NO_RETURN
   53:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __NO_RETURN                            __attribute__((__noreturn__))
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 33
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 33
 
 
   54:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -1978,7 +1978,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  108:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32_READ(addr)          (((const struct T_UINT32_READ *)(const void *)(add
  109:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  110:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __ALIGNED
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 34
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 34
 
 
  111:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __ALIGNED(x)                           __attribute__((aligned(x)))
@@ -2038,7 +2038,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  165:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  166:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __TZ_get_CONTROL_NS(void)
  167:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 35
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 35
 
 
  168:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
@@ -2098,7 +2098,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  222:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  223:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, apsr" : "=r" (result) );
  224:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 36
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 36
 
 
  225:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -2158,7 +2158,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  279:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR psp, %0" : : "r" (topOfProcStack) : );
  280:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  281:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 37
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 37
 
 
  282:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -2218,7 +2218,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  336:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  337:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
  338:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 38
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 38
 
 
  339:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Main Stack Pointer (non-secure)
@@ -2278,7 +2278,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  393:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Priority Mask (non-secure)
  394:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current state of the non-secure priority mask bit from the Priority Mask Reg
  395:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Priority Mask value
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 39
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 39
 
 
  396:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -2338,7 +2338,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  450:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __disable_fault_irq(void)
  451:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  452:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("cpsid f" : : : "memory");
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 40
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 40
 
 
  453:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -2398,7 +2398,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  507:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  508:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  509:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 41
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 41
 
 
  510:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -2458,7 +2458,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  564:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  565:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Fault Mask (non-secure)
  566:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the non-secure Fault Mask register when in secure state.
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 42
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 42
 
 
  567:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    faultMask  Fault Mask value to set
@@ -2518,7 +2518,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  621:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, psplim_ns"  : "=r" (result) );
  622:Drivers/CMSIS/Include/cmsis_gcc.h ****   return result;
  623:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 43
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 43
 
 
  624:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -2578,7 +2578,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  678:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  679:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_MSPLIM(void)
  680:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 44
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 44
 
 
  681:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (!(defined (__ARM_ARCH_8M_MAIN__ ) && (__ARM_ARCH_8M_MAIN__ == 1)) && \
@@ -2638,7 +2638,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  735:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  736:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  737:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE  ) && (__ARM_FEATURE_CMSE   == 3))
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 45
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 45
 
 
  738:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -2698,7 +2698,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  792:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __set_FPSCR(uint32_t fpscr)
  793:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  794:Drivers/CMSIS/Include/cmsis_gcc.h **** #if ((defined (__FPU_PRESENT) && (__FPU_PRESENT == 1U)) && \
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 46
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 46
 
 
  795:Drivers/CMSIS/Include/cmsis_gcc.h ****      (defined (__FPU_USED   ) && (__FPU_USED    == 1U))     )
@@ -2758,7 +2758,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  849:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  850:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __WFE()                             __ASM volatile ("wfe")
  851:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 47
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 47
 
 
  852:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -2818,7 +2818,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  906:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  907:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("rev %0, %1" : __CMSIS_GCC_OUT_REG (result) : __CMSIS_GCC_USE_REG (value) );
  908:Drivers/CMSIS/Include/cmsis_gcc.h ****   return result;
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 48
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 48
 
 
  909:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -2878,7 +2878,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  963:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  964:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  965:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 49
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 49
 
 
  966:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Breakpoint
@@ -2938,7 +2938,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  222              	.LBE22:
  157:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       /* Restore the Content of BDCR register */
  223              		.loc 1 157 0
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 50
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 50
 
 
  224 00a0 B1FA81F1 		clz	r1, r1
@@ -2998,7 +2998,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  273              		.syntax unified
  274              	.LBE27:
  275              	.LBE26:
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 51
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 51
 
 
  168:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****         {
@@ -3058,7 +3058,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  326 010c D6D0     		beq	.L17
  327              	.LVL38:
  328              	.L13:
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 52
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 52
 
 
  177:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** 
@@ -3118,7 +3118,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  374 015a 3449     		ldr	r1, .L33
  375 015c 4B68     		ldr	r3, [r1, #4]
  376 015e 23F48002 		bic	r2, r3, #4194304
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 53
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 53
 
 
  377 0162 236B     		ldr	r3, [r4, #48]
@@ -3178,7 +3178,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  423 01b4 CB6A     		ldr	r3, [r1, #44]
  424 01b6 23F4F872 		bic	r2, r3, #496
  425 01ba A369     		ldr	r3, [r4, #24]
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 54
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 54
 
 
  426 01bc 1343     		orrs	r3, r3, r2
@@ -3238,7 +3238,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  472 020e 23F40052 		bic	r2, r3, #8192
  473 0212 E36A     		ldr	r3, [r4, #44]
  474 0214 1343     		orrs	r3, r3, r2
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 55
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 55
 
 
  475 0216 0B63     		str	r3, [r1, #48]
@@ -3298,7 +3298,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  525              	.LVL44:
  583:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****                                         RCC_PERIPHCLK_I2C1   | RCC_PERIPHCLK_RTC;
  526              		.loc 1 583 0
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 56
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 56
 
 
  527 0000 204B     		ldr	r3, .L36
@@ -3358,7 +3358,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  667:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   /* Get the ADC1 clock configuration -----------------------------------------*/
  570              		.loc 1 667 0
  571 004e 134A     		ldr	r2, .L36+24
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 57
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 57
 
 
  572 0050 0260     		str	r2, [r0]
@@ -3418,7 +3418,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  621              	HAL_RCCEx_GetPeriphCLKFreq:
  622              	.LFB125:
  947:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****   /* frequency == 0 : means that no available frequency for the peripheral */
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 58
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 58
 
 
  623              		.loc 1 947 0
@@ -3478,7 +3478,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  675 0050 06D8     		bhi	.L49
  676 0052 B6F5004F 		cmp	r6, #32768
  677 0056 74D0     		beq	.L50
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 59
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 59
 
 
  678 0058 B6F5803F 		cmp	r6, #65536
@@ -3538,7 +3538,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  724 00bc 17E1     		b	.L39
  725              	.LVL50:
  726              	.L44:
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 60
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 60
 
 
  989:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** 
@@ -3598,7 +3598,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  771              	.LVL58:
  772              	.L45:
 1139:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** 
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 61
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 61
 
 
  773              		.loc 1 1139 0
@@ -3658,7 +3658,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  818              	.L50:
 1176:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** 
  819              		.loc 1 1176 0
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 62
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 62
 
 
  820 0142 624B     		ldr	r3, .L92+4
@@ -3718,7 +3718,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  864              		.loc 1 1218 0
  865 0188 504B     		ldr	r3, .L92+4
  866 018a 5B68     		ldr	r3, [r3, #4]
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 63
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 63
 
 
  867 018c 03F48003 		and	r3, r3, #4194304
@@ -3778,7 +3778,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  913              		.syntax unified
  914              	@ 988 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  915 01c8 93FAA3F3 		rbit r3, r3
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 64
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 64
 
 
  916              	@ 0 "" 2
@@ -3838,7 +3838,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  963              	.L54:
 1369:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c **** 
  964              		.loc 1 1369 0
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 65
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 65
 
 
  965 020c 2F4B     		ldr	r3, .L92+4
@@ -3898,7 +3898,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  1010 0248 51E0     		b	.L39
  1011              	.LVL106:
  1012              	.L67:
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 66
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 66
 
 
 1396:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       {
@@ -3958,7 +3958,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  1058              	.L70:
  972:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       }
  1059              		.loc 1 972 0
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 67
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 67
 
 
  1060 027c 4FF40040 		mov	r0, #32768
@@ -4018,7 +4018,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  1104 02aa 0020     		movs	r0, #0
  1105 02ac 1FE0     		b	.L39
  1106              	.L81:
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 68
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 68
 
 
 1181:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c ****       }
@@ -4078,7 +4078,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  1156              		.cfi_def_cfa_offset 16
  1157              		@ sp needed
  1158 02f0 70BD     		pop	{r4, r5, r6, pc}
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 69
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 69
 
 
  1159              		.cfi_endproc
@@ -4115,25 +4115,25 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 1
  1191              		.file 10 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
  1192              		.file 11 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
  1193              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h"
-ARM GAS  D:\Programme\Cygwin\tmp\ccAlmZKY.s 			page 70
+ARM GAS  D:\Programme\Cygwin\tmp\ccH3RrSg.s 			page 70
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f3xx_hal_rcc_ex.c
-D:\Programme\Cygwin\tmp\ccAlmZKY.s:22     .text.RCC_GetPLLCLKFreq:00000000 $t
-D:\Programme\Cygwin\tmp\ccAlmZKY.s:26     .text.RCC_GetPLLCLKFreq:00000000 RCC_GetPLLCLKFreq
-D:\Programme\Cygwin\tmp\ccAlmZKY.s:74     .text.RCC_GetPLLCLKFreq:00000030 $d
-D:\Programme\Cygwin\tmp\ccAlmZKY.s:81     .text.HAL_RCCEx_PeriphCLKConfig:00000000 $t
-D:\Programme\Cygwin\tmp\ccAlmZKY.s:86     .text.HAL_RCCEx_PeriphCLKConfig:00000000 HAL_RCCEx_PeriphCLKConfig
-D:\Programme\Cygwin\tmp\ccAlmZKY.s:506    .text.HAL_RCCEx_PeriphCLKConfig:0000022c $d
-D:\Programme\Cygwin\tmp\ccAlmZKY.s:513    .text.HAL_RCCEx_GetPeriphCLKConfig:00000000 $t
-D:\Programme\Cygwin\tmp\ccAlmZKY.s:518    .text.HAL_RCCEx_GetPeriphCLKConfig:00000000 HAL_RCCEx_GetPeriphCLKConfig
-D:\Programme\Cygwin\tmp\ccAlmZKY.s:603    .text.HAL_RCCEx_GetPeriphCLKConfig:00000084 $d
-D:\Programme\Cygwin\tmp\ccAlmZKY.s:616    .text.HAL_RCCEx_GetPeriphCLKFreq:00000000 $t
-D:\Programme\Cygwin\tmp\ccAlmZKY.s:621    .text.HAL_RCCEx_GetPeriphCLKFreq:00000000 HAL_RCCEx_GetPeriphCLKFreq
-D:\Programme\Cygwin\tmp\ccAlmZKY.s:1133   .text.HAL_RCCEx_GetPeriphCLKFreq:000002c8 $d
-D:\Programme\Cygwin\tmp\ccAlmZKY.s:1141   .text.HAL_RCCEx_GetPeriphCLKFreq:000002e0 $t
-D:\Programme\Cygwin\tmp\ccAlmZKY.s:1163   .rodata:00000000 $d
+D:\Programme\Cygwin\tmp\ccH3RrSg.s:22     .text.RCC_GetPLLCLKFreq:00000000 $t
+D:\Programme\Cygwin\tmp\ccH3RrSg.s:26     .text.RCC_GetPLLCLKFreq:00000000 RCC_GetPLLCLKFreq
+D:\Programme\Cygwin\tmp\ccH3RrSg.s:74     .text.RCC_GetPLLCLKFreq:00000030 $d
+D:\Programme\Cygwin\tmp\ccH3RrSg.s:81     .text.HAL_RCCEx_PeriphCLKConfig:00000000 $t
+D:\Programme\Cygwin\tmp\ccH3RrSg.s:86     .text.HAL_RCCEx_PeriphCLKConfig:00000000 HAL_RCCEx_PeriphCLKConfig
+D:\Programme\Cygwin\tmp\ccH3RrSg.s:506    .text.HAL_RCCEx_PeriphCLKConfig:0000022c $d
+D:\Programme\Cygwin\tmp\ccH3RrSg.s:513    .text.HAL_RCCEx_GetPeriphCLKConfig:00000000 $t
+D:\Programme\Cygwin\tmp\ccH3RrSg.s:518    .text.HAL_RCCEx_GetPeriphCLKConfig:00000000 HAL_RCCEx_GetPeriphCLKConfig
+D:\Programme\Cygwin\tmp\ccH3RrSg.s:603    .text.HAL_RCCEx_GetPeriphCLKConfig:00000084 $d
+D:\Programme\Cygwin\tmp\ccH3RrSg.s:616    .text.HAL_RCCEx_GetPeriphCLKFreq:00000000 $t
+D:\Programme\Cygwin\tmp\ccH3RrSg.s:621    .text.HAL_RCCEx_GetPeriphCLKFreq:00000000 HAL_RCCEx_GetPeriphCLKFreq
+D:\Programme\Cygwin\tmp\ccH3RrSg.s:1133   .text.HAL_RCCEx_GetPeriphCLKFreq:000002c8 $d
+D:\Programme\Cygwin\tmp\ccH3RrSg.s:1141   .text.HAL_RCCEx_GetPeriphCLKFreq:000002e0 $t
+D:\Programme\Cygwin\tmp\ccH3RrSg.s:1163   .rodata:00000000 $d
                      .debug_frame:00000010 $d
 
 UNDEFINED SYMBOLS

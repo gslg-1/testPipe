@@ -272,9 +272,9 @@ static void MX_GPIO_Init(void)
 void StartComUSBTask(void *argument)
 {
 #ifdef __UTEST
-  uint8_t txBuf[9] = "UnitTe\n\r";
-#else
   uint8_t txBuf[9] = "Normal\n\r";
+#else
+  uint8_t txBuf[9] = "UnitTe\n\r";
 #endif
   for(;;)
   {
