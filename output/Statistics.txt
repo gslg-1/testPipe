@@ -1,0 +1,28 @@
+
+CPAchecker general statistics
+-----------------------------
+
+Time for analysis setup:          0.320s
+  Time for loading CPAs:          0.000s
+  Time for loading parser:        0.096s
+  Time for CFA construction:      0.199s
+    Time for parsing file(s):     0.181s
+    Time for AST to CFA:          0.000s
+    Time for CFA sanity check:    0.000s
+    Time for post-processing:     0.000s
+Time for Analysis:                0.000s
+CPU time for analysis:            0.000s
+Total time for CPAchecker:        0.320s
+Total CPU time for CPAchecker:    0.906s
+Time for statistics:              0.000s
+
+Time for Garbage Collector:       0.010s (in 2 runs)
+Garbage Collector(s) used:    G1 Old Generation, G1 Young Generation
+Used heap memory:                 37MB (    36 MiB) max;     24MB (    23 MiB) avg;     45MB (    43 MiB) peak
+Used non-heap memory:             28MB (    26 MiB) max;     24MB (    23 MiB) avg;     28MB (    27 MiB) peak
+Used in G1 Old Gen pool:           5MB (     5 MiB) max;      3MB (     3 MiB) avg;      5MB (     5 MiB) peak
+Allocated heap memory:           134MB (   128 MiB) max;    134MB (   128 MiB) avg
+Allocated non-heap memory:        32MB (    30 MiB) max;     28MB (    27 MiB) avg
+Total process virtual memory:    260MB (   248 MiB) max;    255MB (   243 MiB) avg
+
+More details about the verification run can be found in the directory ".\output".
