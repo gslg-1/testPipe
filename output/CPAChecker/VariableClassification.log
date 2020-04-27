@@ -1,0 +1,136 @@
+IntBool
+
+[__REVSH::value, __REV::value]
+
+IntEq
+
+[]
+
+IntAdd
+
+[__NVIC_GetPriority::IRQn]
+
+IntOverflow
+
+[NVIC_DecodePriority::PriorityGroup, __NVIC_SetPriorityGrouping::PriorityGroup, __SSAT::__retval__, NVIC_DecodePriority::*pPreemptPriority, __NVIC_SetPendingIRQ::IRQn, NVIC_EncodePriority::__retval__, __SSAT::min, NVIC_DecodePriority::*pSubPriority, __NVIC_EnableIRQ::IRQn, __NVIC_DisableIRQ::(((NVIC_Type *)3758153984UL)->ICER)[((uint32_t )IRQn) >> 5UL], __NVIC_GetPendingIRQ::IRQn, __NVIC_SetPriority::(((SCB_Type *)3758157056UL)->SHP)[(((uint32_t )IRQn) & 15UL) - 4UL], __USAT::val, __SSAT::val, NVIC_DecodePriority::SubPriorityBits, NVIC_EncodePriority::PreemptPriority, NVIC_DecodePriority::PreemptPriorityBits, __NVIC_ClearPendingIRQ::(((NVIC_Type *)3758153984UL)->ICPR)[((uint32_t )IRQn) >> 5UL], SysTick_Config::ticks, __RBIT::result, __NVIC_ClearPendingIRQ::IRQn, __NVIC_GetEnableIRQ::IRQn, __RBIT::__CPAchecker_TMP_0, __RBIT::__retval__, NVIC_EncodePriority::SubPriority, __NVIC_SetPendingIRQ::(((NVIC_Type *)3758153984UL)->ISPR)[((uint32_t )IRQn) >> 5UL], __NVIC_SetPriorityGrouping::PriorityGroupTmp, NVIC_DecodePriority::Priority, __NVIC_DisableIRQ::IRQn, __NVIC_GetVector::__retval__, SysTick_Config::((SysTick_Type *)3758153744UL)->LOAD, NVIC_EncodePriority::PriorityGroup, NVIC_EncodePriority::SubPriorityBits, __USAT::max, __NVIC_EnableIRQ::(((NVIC_Type *)3758153984UL)->ISER)[((uint32_t )IRQn) >> 5UL], __NVIC_SetPriorityGrouping::reg_value, NVIC_DecodePriority::__CPAchecker_TMP_0, NVIC_DecodePriority::__CPAchecker_TMP_1, __USAT::sat, __RBIT::s, __RBIT::value, NVIC_DecodePriority::PriorityGroupTmp, __USAT::__retval__, __NVIC_GetActive::IRQn, __NVIC_SetPriority::priority, NVIC_EncodePriority::__CPAchecker_TMP_1, __ROR::op2, __NVIC_SetPriority::(((NVIC_Type *)3758153984UL)->IP)[(uint32_t )IRQn], NVIC_EncodePriority::__CPAchecker_TMP_0, __NVIC_SetPriorityGrouping::((SCB_Type *)3758157056UL)->AIRCR, NVIC_EncodePriority::PriorityGroupTmp, __ROR::op1, NVIC_EncodePriority::PreemptPriorityBits, __SSAT::sat, __ROR::__retval__, __SSAT::max]
+
+ALL
+
+[SystemCoreClock, SCB_GetFPUType::__retval__, __get_APSR::result, __get_CONTROL::result, __REV16::result, uwTick, ITM_SendChar::ch, __NVIC_SetVector::__CPAchecker_TMP_0, ITM_SendChar::__retval__, MX_USART2_UART_Init::huart2.Init.Mode, __NVIC_SetPriority::IRQn, uwTickPrio, __NVIC_GetPriority::IRQn, NVIC_DecodePriority::*pPreemptPriority, NVIC_EncodePriority::__retval__, MX_GPIO_Init::GPIO_InitStruct, __NVIC_SetVector::vectors[((int32_t )IRQn) + 16], SystemClock_Config::RCC_OscInitStruct.PLL.PLLSource, SystemClock_Config::RCC_ClkInitStruct.APB1CLKDivider, __SSAT::min, NVIC_DecodePriority::*pSubPriority, ITM_RxBuffer, __get_IPSR::__retval__, __REV::value, ITM_ReceiveChar::ch, ITM_CheckChar::__retval__, __SSAT::val, MX_GPIO_Init::tmpreg__1, AHBPrescTable, MX_GPIO_Init::tmpreg__2, ITM_ReceiveChar::__retval__, MX_GPIO_Init::tmpreg__3, vPortRaiseBASEPRI::ulNewBASEPRI, NVIC_DecodePriority::SubPriorityBits, __get_FPSCR::__retval__, MX_USART2_UART_Init::huart2.Init.Parity, SysTick_Config::ticks, SystemClock_Config::__CPAchecker_TMP_0, SystemClock_Config::__CPAchecker_TMP_1, __NVIC_GetActive::__retval__, SCB_GetFPUType::mvfr0, SystemClock_Config::RCC_OscInitStruct.OscillatorType, __RBIT::result, __NVIC_ClearPendingIRQ::IRQn, MX_USART2_UART_Init::huart2.AdvancedInit.AdvFeatureInit, __NVIC_GetPriority::__retval__, __RBIT::__CPAchecker_TMP_0, __REVSH::__CPAchecker_TMP_0, __NVIC_SystemReset::((SCB_Type *)3758157056UL)->AIRCR, __get_xPSR::result, NVIC_EncodePriority::SubPriority, MX_GPIO_Init::GPIO_InitStruct.Pull, __NVIC_SetVector::vector, ITM_SendChar::((ITM_Type *)3758096384UL)->TCR, __NVIC_SetPendingIRQ::(((NVIC_Type *)3758153984UL)->ISPR)[((uint32_t )IRQn) >> 5UL], SystemClock_Config::RCC_OscInitStruct.HSIState, SystemClock_Config::RCC_ClkInitStruct.APB2CLKDivider, __get_PRIMASK::result, SysTick_Config::((SysTick_Type *)3758153744UL)->LOAD, NVIC_EncodePriority::PriorityGroup, NVIC_EncodePriority::SubPriorityBits, __get_PRIMASK::__retval__, ulPortRaiseBASEPRI::__retval__, __get_xPSR::__retval__, __USAT::max, __NVIC_EnableIRQ::(((NVIC_Type *)3758153984UL)->ISER)[((uint32_t )IRQn) >> 5UL], __NVIC_SetVector::vectors, NVIC_DecodePriority::__CPAchecker_TMP_0, NVIC_DecodePriority::__CPAchecker_TMP_1, SysTick_Config::((SysTick_Type *)3758153744UL)->VAL, __RBIT::s, __RBIT::value, comUSBTaskHandle, NVIC_DecodePriority::PriorityGroupTmp, __NVIC_GetVector::((SCB_Type *)3758157056UL)->VTOR, __NVIC_SetPriority::priority, __NVIC_GetActive::IRQn, xPortIsInsideInterrupt::__retval__, NVIC_EncodePriority::__CPAchecker_TMP_1, __NVIC_SetVector::((SCB_Type *)3758157056UL)->VTOR, MX_GPIO_Init::tmpreg, SystemClock_Config::RCC_ClkInitStruct.SYSCLKSource, __ROR::op2, __NVIC_SetPriority::(((NVIC_Type *)3758153984UL)->IP)[(uint32_t )IRQn], MX_USART2_UART_Init::huart2.Init.BaudRate, NVIC_EncodePriority::__CPAchecker_TMP_0, SystemClock_Config::RCC_ClkInitStruct, __ROR::op1, __ROR::__retval__, __SSAT::sat, ITM_SendChar::((ITM_Type *)3758096384UL)->TER, MX_USART2_UART_Init::__CPAchecker_TMP_0, __REVSH::value, NVIC_DecodePriority::PriorityGroup, __NVIC_SetPriorityGrouping::PriorityGroup, APBPrescTable, SysTick_Config::__retval__, MX_USART2_UART_Init::huart2.Init.WordLength, __SSAT::__retval__, __get_CONTROL::__retval__, defaultTaskHandle, __REV::__CPAchecker_TMP_0, __NVIC_SetPendingIRQ::IRQn, MX_USART2_UART_Init::huart2.Init.OneBitSampling, SystemClock_Config::RCC_OscInitStruct.PLL.PLLState, MX_USART2_UART_Init::huart2.Instance, MX_USART2_UART_Init::huart2.Init.OverSampling, SystemClock_Config::RCC_ClkInitStruct.AHBCLKDivider, ITM_SendChar::((((ITM_Type *)3758096384UL)->PORT)[0U]).u32, __NVIC_EnableIRQ::IRQn, __NVIC_DisableIRQ::(((NVIC_Type *)3758153984UL)->ICER)[((uint32_t )IRQn) >> 5UL], __NVIC_GetPendingIRQ::IRQn, __NVIC_SetPriority::(((SCB_Type *)3758157056UL)->SHP)[(((uint32_t )IRQn) & 15UL) - 4UL], __get_APSR::__retval__, __get_PSP::result, __USAT::val, comUSBTask_attributes, __get_PSP::__retval__, HAL_TIM_PeriodElapsedCallback::htim->Instance, __NVIC_GetPriorityGrouping::__retval__, huart2, NVIC_EncodePriority::PreemptPriority, __REV::__retval__, NVIC_DecodePriority::PreemptPriorityBits, __NVIC_ClearPendingIRQ::(((NVIC_Type *)3758153984UL)->ICPR)[((uint32_t )IRQn) >> 5UL], __get_IPSR::result, blinkLEDTask_attributes, __NVIC_GetEnableIRQ::IRQn, __RBIT::__retval__, __NVIC_GetPriorityGrouping::((SCB_Type *)3758157056UL)->AIRCR, __NVIC_GetPendingIRQ::__retval__, __REV16::__retval__, __NVIC_GetEnableIRQ::__CPAchecker_TMP_0, __NVIC_GetVector::vectors, xPortIsInsideInterrupt::ulCurrentInterrupt, MX_GPIO_Init::GPIO_InitStruct.Speed, __get_MSP::result, MX_GPIO_Init::((RCC_TypeDef *)1073876992UL)->AHBENR, NVIC_DecodePriority::Priority, __NVIC_GetVector::__CPAchecker_TMP_0, __NVIC_SetPriorityGrouping::PriorityGroupTmp, __NVIC_DisableIRQ::IRQn, __get_MSP::__retval__, uwTickFreq, __NVIC_GetVector::__retval__, blinkLEDTaskHandle, SysTick_Config::((SysTick_Type *)3758153744UL)->CTRL, MX_USART2_UART_Init::huart2.Init.HwFlowCtl, xPortIsInsideInterrupt::xReturn, SCB_GetFPUType::((FPU_Type *)3758157616UL)->MVFR0, ulPortRaiseBASEPRI::ulOriginalBASEPRI, ITM_SendChar::((((ITM_Type *)3758096384UL)->PORT)[0U]).u8, __NVIC_GetEnableIRQ::__retval__, __NVIC_SetPriorityGrouping::reg_value, SystemClock_Config::RCC_OscInitStruct.PLL.PLLMUL, __USAT::sat, __NVIC_GetPendingIRQ::__CPAchecker_TMP_0, __REVSH::__retval__, MX_USART2_UART_Init::huart2.Init.StopBits, __USAT::__retval__, MX_GPIO_Init::GPIO_InitStruct.Mode, defaultTask_attributes, SystemClock_Config::RCC_OscInitStruct, SystemClock_Config::RCC_ClkInitStruct.ClockType, SystemClock_Config::RCC_OscInitStruct.HSICalibrationValue, __NVIC_SetPriorityGrouping::((SCB_Type *)3758157056UL)->AIRCR, NVIC_EncodePriority::PriorityGroupTmp, ulPortRaiseBASEPRI::ulNewBASEPRI, __NVIC_GetActive::__CPAchecker_TMP_0, NVIC_EncodePriority::PreemptPriorityBits, MX_GPIO_Init::GPIO_InitStruct.Pin, __SSAT::max]
+
+DEPENDENCIES
+
+[[HAL_TIM_PeriodElapsedCallback::htim->Instance] --> [1073818624],
+[ITM_ReceiveChar::__retval__, ITM_ReceiveChar::ch, ITM_RxBuffer] --> [-1, 1520786085],
+[ITM_CheckChar::__retval__] --> [0, 1],
+[ITM_SendChar::((ITM_Type *)3758096384UL)->TCR] --> [0, 1],
+[ITM_SendChar::((((ITM_Type *)3758096384UL)->PORT)[0U]).u8, ITM_SendChar::__retval__, ITM_SendChar::ch] --> [],
+[ITM_SendChar::((ITM_Type *)3758096384UL)->TER] --> [0, 1],
+[ITM_SendChar::((((ITM_Type *)3758096384UL)->PORT)[0U]).u32] --> [0],
+[MX_GPIO_Init::GPIO_InitStruct] --> [],
+[MX_GPIO_Init::((RCC_TypeDef *)1073876992UL)->AHBENR, MX_GPIO_Init::tmpreg, MX_GPIO_Init::tmpreg__1, MX_GPIO_Init::tmpreg__2, MX_GPIO_Init::tmpreg__3] --> [131072, 262144, 524288, 4194304],
+[MX_GPIO_Init::GPIO_InitStruct.Pin] --> [8192],
+[MX_GPIO_Init::GPIO_InitStruct.Mode] --> [1, 270598144],
+[MX_GPIO_Init::GPIO_InitStruct.Pull] --> [0],
+[MX_GPIO_Init::GPIO_InitStruct.Speed] --> [0],
+[MX_USART2_UART_Init::huart2.Instance] --> [1073759232],
+[MX_USART2_UART_Init::huart2.Init.BaudRate] --> [38400],
+[MX_USART2_UART_Init::huart2.Init.WordLength] --> [0],
+[MX_USART2_UART_Init::huart2.Init.StopBits] --> [0],
+[MX_USART2_UART_Init::huart2.Init.Parity] --> [0],
+[MX_USART2_UART_Init::huart2.Init.Mode] --> [12],
+[MX_USART2_UART_Init::huart2.Init.HwFlowCtl] --> [0],
+[MX_USART2_UART_Init::huart2.Init.OverSampling] --> [0],
+[MX_USART2_UART_Init::huart2.Init.OneBitSampling] --> [0],
+[MX_USART2_UART_Init::huart2.AdvancedInit.AdvFeatureInit] --> [0],
+[MX_USART2_UART_Init::__CPAchecker_TMP_0] --> [0],
+[huart2] --> [],
+[NVIC_DecodePriority::*pPreemptPriority, NVIC_DecodePriority::*pSubPriority, NVIC_DecodePriority::PreemptPriorityBits, NVIC_DecodePriority::Priority, NVIC_DecodePriority::PriorityGroup, NVIC_DecodePriority::PriorityGroupTmp, NVIC_DecodePriority::SubPriorityBits, NVIC_DecodePriority::__CPAchecker_TMP_0, NVIC_DecodePriority::__CPAchecker_TMP_1] --> [0, 1, 4, 7],
+[NVIC_EncodePriority::PreemptPriority, NVIC_EncodePriority::PreemptPriorityBits, NVIC_EncodePriority::PriorityGroup, NVIC_EncodePriority::PriorityGroupTmp, NVIC_EncodePriority::SubPriority, NVIC_EncodePriority::SubPriorityBits, NVIC_EncodePriority::__CPAchecker_TMP_0, NVIC_EncodePriority::__CPAchecker_TMP_1, NVIC_EncodePriority::__retval__] --> [0, 1, 4, 7],
+[SCB_GetFPUType::((FPU_Type *)3758157616UL)->MVFR0, SCB_GetFPUType::mvfr0] --> [32, 4080],
+[SCB_GetFPUType::__retval__] --> [0, 1],
+[SysTick_Config::((SysTick_Type *)3758153744UL)->LOAD, SysTick_Config::ticks] --> [1, 16777215],
+[SysTick_Config::__retval__] --> [0, 1],
+[__NVIC_SetPriority::IRQn] --> [-1, 0],
+[__NVIC_SetPriority::(((NVIC_Type *)3758153984UL)->IP)[(uint32_t )IRQn], __NVIC_SetPriority::(((SCB_Type *)3758157056UL)->SHP)[(((uint32_t )IRQn) & 15UL) - 4UL], __NVIC_SetPriority::priority] --> [4, 15, 255],
+[SysTick_Config::((SysTick_Type *)3758153744UL)->VAL] --> [0],
+[SysTick_Config::((SysTick_Type *)3758153744UL)->CTRL] --> [7],
+[SystemClock_Config::RCC_OscInitStruct] --> [],
+[SystemClock_Config::RCC_ClkInitStruct] --> [],
+[SystemClock_Config::RCC_OscInitStruct.OscillatorType] --> [2],
+[SystemClock_Config::RCC_OscInitStruct.HSIState] --> [1],
+[SystemClock_Config::RCC_OscInitStruct.HSICalibrationValue] --> [16],
+[SystemClock_Config::RCC_OscInitStruct.PLL.PLLState] --> [2],
+[SystemClock_Config::RCC_OscInitStruct.PLL.PLLSource] --> [0],
+[SystemClock_Config::RCC_OscInitStruct.PLL.PLLMUL] --> [3670016],
+[SystemClock_Config::__CPAchecker_TMP_0] --> [0],
+[SystemClock_Config::RCC_ClkInitStruct.ClockType] --> [15],
+[SystemClock_Config::RCC_ClkInitStruct.SYSCLKSource] --> [2],
+[SystemClock_Config::RCC_ClkInitStruct.AHBCLKDivider] --> [0],
+[SystemClock_Config::RCC_ClkInitStruct.APB1CLKDivider] --> [1024],
+[SystemClock_Config::RCC_ClkInitStruct.APB2CLKDivider] --> [0],
+[SystemClock_Config::__CPAchecker_TMP_1] --> [0],
+[__NVIC_ClearPendingIRQ::(((NVIC_Type *)3758153984UL)->ICPR)[((uint32_t )IRQn) >> 5UL], __NVIC_ClearPendingIRQ::IRQn] --> [0, 1, 31],
+[__NVIC_DisableIRQ::(((NVIC_Type *)3758153984UL)->ICER)[((uint32_t )IRQn) >> 5UL], __NVIC_DisableIRQ::IRQn] --> [0, 1, 31],
+[__NVIC_EnableIRQ::(((NVIC_Type *)3758153984UL)->ISER)[((uint32_t )IRQn) >> 5UL], __NVIC_EnableIRQ::IRQn] --> [0, 1, 31],
+[__NVIC_GetActive::IRQn] --> [0, 1, 31],
+[__NVIC_GetActive::__CPAchecker_TMP_0, __NVIC_GetActive::__retval__] --> [0, 1],
+[__NVIC_GetEnableIRQ::IRQn] --> [0, 1, 31],
+[__NVIC_GetEnableIRQ::__CPAchecker_TMP_0, __NVIC_GetEnableIRQ::__retval__] --> [0, 1],
+[__NVIC_GetPendingIRQ::IRQn] --> [0, 1, 31],
+[__NVIC_GetPendingIRQ::__CPAchecker_TMP_0, __NVIC_GetPendingIRQ::__retval__] --> [0, 1],
+[__NVIC_GetPriority::IRQn] --> [0],
+[__NVIC_GetPriority::__retval__] --> [4],
+[__NVIC_GetPriorityGrouping::((SCB_Type *)3758157056UL)->AIRCR, __NVIC_GetPriorityGrouping::__retval__] --> [8, 1792],
+[__NVIC_GetVector::((SCB_Type *)3758157056UL)->VTOR, __NVIC_GetVector::__CPAchecker_TMP_0, __NVIC_GetVector::vectors] --> [],
+[__NVIC_GetVector::__retval__] --> [],
+[__NVIC_SetPendingIRQ::(((NVIC_Type *)3758153984UL)->ISPR)[((uint32_t )IRQn) >> 5UL], __NVIC_SetPendingIRQ::IRQn] --> [0, 1, 31],
+[__NVIC_SetPriorityGrouping::((SCB_Type *)3758157056UL)->AIRCR, __NVIC_SetPriorityGrouping::PriorityGroup, __NVIC_SetPriorityGrouping::PriorityGroupTmp, __NVIC_SetPriorityGrouping::reg_value] --> [7, 8, 63743, 100270080],
+[__NVIC_SetVector::((SCB_Type *)3758157056UL)->VTOR, __NVIC_SetVector::__CPAchecker_TMP_0, __NVIC_SetVector::vectors] --> [],
+[__NVIC_SetVector::vector, __NVIC_SetVector::vectors[((int32_t )IRQn) + 16]] --> [],
+[__NVIC_SystemReset::((SCB_Type *)3758157056UL)->AIRCR] --> [4, 1792, 100270080],
+[__RBIT::__CPAchecker_TMP_0, __RBIT::__retval__, __RBIT::result, __RBIT::s, __RBIT::value] --> [0, 1, 31],
+[__REV::__CPAchecker_TMP_0, __REV::__retval__] --> [],
+[__REV::value] --> [],
+[__REV16::__retval__, __REV16::result] --> [],
+[__REVSH::__CPAchecker_TMP_0, __REVSH::__retval__] --> [],
+[__REVSH::value] --> [],
+[__ROR::__retval__, __ROR::op1, __ROR::op2] --> [0, 32],
+[__SSAT::__retval__, __SSAT::max, __SSAT::min, __SSAT::sat, __SSAT::val] --> [-1, 1, 32],
+[__USAT::__retval__, __USAT::max, __USAT::sat, __USAT::val] --> [0, 1, 31],
+[__get_APSR::__retval__, __get_APSR::result] --> [],
+[__get_CONTROL::__retval__, __get_CONTROL::result] --> [],
+[__get_FPSCR::__retval__] --> [0],
+[__get_IPSR::__retval__, __get_IPSR::result] --> [],
+[__get_MSP::__retval__, __get_MSP::result] --> [],
+[__get_PRIMASK::__retval__, __get_PRIMASK::result] --> [],
+[__get_PSP::__retval__, __get_PSP::result] --> [],
+[__get_xPSR::__retval__, __get_xPSR::result] --> [],
+[defaultTaskHandle] --> [0],
+[StartDefaultTask] --> [],
+[defaultTask_attributes] --> [],
+[blinkLEDTaskHandle] --> [0],
+[StartTask02] --> [],
+[blinkLEDTask_attributes] --> [],
+[comUSBTaskHandle] --> [0],
+[StartComUSBTask] --> [],
+[comUSBTask_attributes] --> [],
+[SystemCoreClock] --> [],
+[AHBPrescTable] --> [],
+[APBPrescTable] --> [],
+[uwTick] --> [],
+[uwTickPrio] --> [],
+[uwTickFreq] --> [],
+[ulPortRaiseBASEPRI::__retval__, ulPortRaiseBASEPRI::ulOriginalBASEPRI] --> [],
+[ulPortRaiseBASEPRI::ulNewBASEPRI] --> [],
+[vPortRaiseBASEPRI::ulNewBASEPRI] --> [],
+[xPortIsInsideInterrupt::ulCurrentInterrupt] --> [0],
+[xPortIsInsideInterrupt::__retval__, xPortIsInsideInterrupt::xReturn] --> [0, 1]]
+
+RELEVANT VARS
+
+[MX_USART2_UART_Init::__CPAchecker_TMP_0, NVIC_DecodePriority::PriorityGroup, ITM_SendChar::ch, NVIC_DecodePriority::pPreemptPriority, __NVIC_SetPriority::IRQn, __NVIC_GetPriority::IRQn, __NVIC_SetPendingIRQ::IRQn, MX_GPIO_Init::GPIO_InitStruct, MX_USART2_UART_Init, __SSAT::min, ITM_RxBuffer, __NVIC_EnableIRQ::IRQn, __NVIC_GetPendingIRQ::IRQn, __ISB, __USAT::val, NVIC_DecodePriority::pSubPriority, __SSAT::val, huart2, NVIC_DecodePriority::SubPriorityBits, NVIC_DecodePriority::PreemptPriorityBits, SysTick_Config::ticks, SystemClock_Config::__CPAchecker_TMP_0, SystemClock_Config::__CPAchecker_TMP_1, SCB_GetFPUType::mvfr0, __NVIC_ClearPendingIRQ::IRQn, __NVIC_GetEnableIRQ::IRQn, __NVIC_SetPriority, xPortIsInsideInterrupt::ulCurrentInterrupt, NVIC_DecodePriority::Priority, __NVIC_DisableIRQ::IRQn, __DSB, NVIC_EncodePriority::PriorityGroup, __USAT::max, NVIC_DecodePriority::__CPAchecker_TMP_0, __USAT::sat, NVIC_DecodePriority::__CPAchecker_TMP_1, __RBIT::value, HAL_TIM_PeriodElapsedCallback::htim, SystemClock_Config, NVIC_DecodePriority::PriorityGroupTmp, __NVIC_GetActive::IRQn, __ROR::op2, SystemClock_Config::RCC_OscInitStruct, MX_GPIO_Init, NVIC_EncodePriority::PriorityGroupTmp, SystemClock_Config::RCC_ClkInitStruct, __SSAT::sat, Error_Handler, __SSAT::max]
+
+RELEVANT FIELDS
+
+{union __anon_type_5=[u32, u16, u8], struct __anon_type_ITM_Type=[PORT, TER, TCR], struct __anon_type_FPU_Type=[MVFR0], struct __anon_type_TIM_HandleTypeDef=[Instance], struct __anon_type_NVIC_Type=[ISER, ISPR, IABR]}

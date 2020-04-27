@@ -1,0 +1,47 @@
+digraph functioncalls {
+rankdir=LR;
+
+main [shape="box", color=blue];
+HAL_IncTick [label="HAL_IncTick", shape="box", color=grey];
+HAL_TIM_PeriodElapsedCallback -> HAL_IncTick;
+HAL_GPIO_WritePin [label="HAL_GPIO_WritePin", shape="box", color=grey];
+MX_GPIO_Init -> HAL_GPIO_WritePin;
+HAL_GPIO_Init [label="HAL_GPIO_Init", shape="box", color=grey];
+MX_GPIO_Init -> HAL_GPIO_Init;
+HAL_UART_Init [label="HAL_UART_Init", shape="box", color=grey];
+MX_USART2_UART_Init -> HAL_UART_Init;
+Error_Handler [label="Error_Handler", ];
+MX_USART2_UART_Init -> Error_Handler;
+osDelay [label="osDelay", shape="box", color=grey];
+StartComUSBTask -> osDelay;
+StartDefaultTask -> osDelay;
+HAL_GPIO_TogglePin [label="HAL_GPIO_TogglePin", shape="box", color=grey];
+StartTask02 -> HAL_GPIO_TogglePin;
+StartTask02 -> osDelay;
+__NVIC_SetPriority [label="__NVIC_SetPriority", ];
+SysTick_Config -> __NVIC_SetPriority;
+HAL_RCC_OscConfig [label="HAL_RCC_OscConfig", shape="box", color=grey];
+SystemClock_Config -> HAL_RCC_OscConfig;
+HAL_RCC_ClockConfig [label="HAL_RCC_ClockConfig", shape="box", color=grey];
+SystemClock_Config -> HAL_RCC_ClockConfig;
+SystemClock_Config -> Error_Handler;
+__DSB [label="__DSB", ];
+__NVIC_DisableIRQ -> __DSB;
+__ISB [label="__ISB", ];
+__NVIC_DisableIRQ -> __ISB;
+__NVIC_SystemReset -> __DSB;
+HAL_Init [label="HAL_Init", shape="box", color=grey];
+main -> HAL_Init;
+SystemClock_Config [label="SystemClock_Config", ];
+main -> SystemClock_Config;
+MX_GPIO_Init [label="MX_GPIO_Init", ];
+main -> MX_GPIO_Init;
+MX_USART2_UART_Init [label="MX_USART2_UART_Init", ];
+main -> MX_USART2_UART_Init;
+osKernelInitialize [label="osKernelInitialize", shape="box", color=grey];
+main -> osKernelInitialize;
+osThreadNew [label="osThreadNew", shape="box", color=grey];
+main -> osThreadNew;
+osKernelStart [label="osKernelStart", shape="box", color=grey];
+main -> osKernelStart;
+}

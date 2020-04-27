@@ -1,0 +1,7 @@
+digraph __disable_irq {
+5 [shape="circle" label="N5\n3"]
+6 [shape="circle" label="N6\n2"]
+6 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">6</td><td align="left">Ignored inline assembler code</td></tr><tr><td align="right">7</td><td align="left">default return</td></tr></table>>]
+6 -> 4[label=""]
+5 -> 6 [label="Function start dummy edge" fontname="Courier New"]
+}

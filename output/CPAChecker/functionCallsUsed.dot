@@ -1,0 +1,32 @@
+digraph functioncalls {
+rankdir=LR;
+
+main [shape="box", color=blue];
+HAL_Init [label="HAL_Init", shape="box", color=grey];
+main -> HAL_Init;
+SystemClock_Config [label="SystemClock_Config", ];
+main -> SystemClock_Config;
+MX_GPIO_Init [label="MX_GPIO_Init", ];
+main -> MX_GPIO_Init;
+MX_USART2_UART_Init [label="MX_USART2_UART_Init", ];
+main -> MX_USART2_UART_Init;
+osKernelInitialize [label="osKernelInitialize", shape="box", color=grey];
+main -> osKernelInitialize;
+osThreadNew [label="osThreadNew", shape="box", color=grey];
+main -> osThreadNew;
+osKernelStart [label="osKernelStart", shape="box", color=grey];
+main -> osKernelStart;
+HAL_RCC_OscConfig [label="HAL_RCC_OscConfig", shape="box", color=grey];
+SystemClock_Config -> HAL_RCC_OscConfig;
+HAL_RCC_ClockConfig [label="HAL_RCC_ClockConfig", shape="box", color=grey];
+SystemClock_Config -> HAL_RCC_ClockConfig;
+Error_Handler [label="Error_Handler", ];
+SystemClock_Config -> Error_Handler;
+HAL_GPIO_WritePin [label="HAL_GPIO_WritePin", shape="box", color=grey];
+MX_GPIO_Init -> HAL_GPIO_WritePin;
+HAL_GPIO_Init [label="HAL_GPIO_Init", shape="box", color=grey];
+MX_GPIO_Init -> HAL_GPIO_Init;
+HAL_UART_Init [label="HAL_UART_Init", shape="box", color=grey];
+MX_USART2_UART_Init -> HAL_UART_Init;
+MX_USART2_UART_Init -> Error_Handler;
+}

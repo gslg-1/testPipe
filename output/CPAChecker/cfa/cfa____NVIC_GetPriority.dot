@@ -1,0 +1,12 @@
+digraph __NVIC_GetPriority {
+244 [shape="circle" label="N244\n4"]
+245 [shape="diamond" label="N245\n3"]
+247 [shape="circle" label="N247\n1"]
+248 [shape="circle" label="N248\n2"]
+243 [shape="circle" label="N243\n0"]
+244 -> 245 [label="Function start dummy edge" fontname="Courier New"]
+245 -> 247 [label="[((int32_t )IRQn) >= 0]" fontname="Courier New"]
+245 -> 248 [label="[!(((int32_t )IRQn) >= 0)]" fontname="Courier New"]
+247 -> 243 [label="return ((uint32_t )((((NVIC_Type *)3758153984UL)->IP)[(uint32_t )IRQn])) >> 4U;" fontname="Courier New"]
+248 -> 243 [label="return ((uint32_t )((((SCB_Type *)3758157056UL)->SHP)[(((uint32_t )IRQn) & 15UL) - 4UL])) >> 4U;" fontname="Courier New"]
+}

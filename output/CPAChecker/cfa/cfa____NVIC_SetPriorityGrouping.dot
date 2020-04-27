@@ -1,0 +1,7 @@
+digraph __NVIC_SetPriorityGrouping {
+161 [shape="circle" label="N161\n8"]
+162 [shape="circle" label="N162\n7"]
+162 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">162</td><td align="left">uint32_t reg_value;</td></tr><tr><td align="right">163</td><td align="left">uint32_t PriorityGroupTmp = PriorityGroup &amp; 7UL;</td></tr><tr><td align="right">164</td><td align="left">reg_value = ((SCB_Type *)3758157056UL)-&gt;AIRCR;</td></tr><tr><td align="right">165</td><td align="left">reg_value = reg_value &amp; 63743;</td></tr><tr><td align="right">166</td><td align="left">reg_value = (reg_value &#124; 100270080UL) &#124; (PriorityGroupTmp &lt;&lt; 8U);</td></tr><tr><td align="right">167</td><td align="left">((SCB_Type *)3758157056UL)-&gt;AIRCR = reg_value;</td></tr><tr><td align="right">168</td><td align="left">default return</td></tr></table>>]
+162 -> 160[label=""]
+161 -> 162 [label="Function start dummy edge" fontname="Courier New"]
+}

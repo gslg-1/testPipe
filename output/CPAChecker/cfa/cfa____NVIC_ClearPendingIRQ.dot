@@ -1,0 +1,13 @@
+digraph __NVIC_ClearPendingIRQ {
+218 [shape="circle" label="N218\n5"]
+219 [shape="diamond" label="N219\n4"]
+221 [shape="circle" label="N221\n3"]
+220 [shape="circle" label="N220\n1"]
+217 [shape="circle" label="N217\n0"]
+221 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">221</td><td align="left">(((NVIC_Type *)3758153984UL)-&gt;ICPR)[((uint32_t )IRQn) &gt;&gt; 5UL] = (uint32_t )(1UL &lt;&lt; (((uint32_t )IRQn) &amp; 31UL));</td></tr><tr><td align="right">222</td><td align="left"></td></tr></table>>]
+221 -> 220[label=""]
+218 -> 219 [label="Function start dummy edge" fontname="Courier New"]
+219 -> 221 [label="[((int32_t )IRQn) >= 0]" fontname="Courier New"]
+219 -> 220 [label="[!(((int32_t )IRQn) >= 0)]" fontname="Courier New"]
+220 -> 217 [label="default return" fontname="Courier New"]
+}

@@ -1,0 +1,7 @@
+line 2:	N2 -{int i = 0;}-> N3
+line 3:	N3 -{int a = 0;}-> N4
+line 5:	N4 -{while}-> N5
+line 6:	N6 -{[!(i == 20)]}-> N10
+line 9:	N12 -{i = i + 1;}-> N13
+line 10:	N15 -{a = a + 1;}-> N16
+line 13:	N8 -{[i != a]}-> N19

@@ -1,0 +1,13 @@
+digraph __NVIC_EnableIRQ {
+174 [shape="circle" label="N174\n5"]
+175 [shape="diamond" label="N175\n4"]
+177 [shape="circle" label="N177\n3"]
+176 [shape="circle" label="N176\n1"]
+173 [shape="circle" label="N173\n0"]
+177 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">177</td><td align="left">(((NVIC_Type *)3758153984UL)-&gt;ISER)[((uint32_t )IRQn) &gt;&gt; 5UL] = (uint32_t )(1UL &lt;&lt; (((uint32_t )IRQn) &amp; 31UL));</td></tr><tr><td align="right">178</td><td align="left"></td></tr></table>>]
+177 -> 176[label=""]
+174 -> 175 [label="Function start dummy edge" fontname="Courier New"]
+175 -> 177 [label="[((int32_t )IRQn) >= 0]" fontname="Courier New"]
+175 -> 176 [label="[!(((int32_t )IRQn) >= 0)]" fontname="Courier New"]
+176 -> 173 [label="default return" fontname="Courier New"]
+}

@@ -1,0 +1,15 @@
+digraph SCB_GetFPUType {
+309 [shape="circle" label="N309\n6"]
+310 [shape="circle" label="N310\n5"]
+312 [shape="diamond" label="N312\n3"]
+314 [shape="circle" label="N314\n1"]
+315 [shape="circle" label="N315\n2"]
+308 [shape="circle" label="N308\n0"]
+310 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">310</td><td align="left">uint32_t mvfr0;</td></tr><tr><td align="right">311</td><td align="left">mvfr0 = ((FPU_Type *)3758157616UL)-&gt;MVFR0;</td></tr></table>>]
+310 -> 312[label=""]
+309 -> 310 [label="Function start dummy edge" fontname="Courier New"]
+312 -> 314 [label="[(mvfr0 & 4080UL) == 32U]" fontname="Courier New"]
+312 -> 315 [label="[!((mvfr0 & 4080UL) == 32U)]" fontname="Courier New"]
+314 -> 308 [label="return 1U;" fontname="Courier New"]
+315 -> 308 [label="return 0U;" fontname="Courier New"]
+}

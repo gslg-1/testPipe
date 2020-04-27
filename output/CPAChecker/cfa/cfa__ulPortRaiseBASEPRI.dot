@@ -1,0 +1,7 @@
+digraph ulPortRaiseBASEPRI {
+376 [shape="circle" label="N376\n5"]
+377 [shape="circle" label="N377\n4"]
+377 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">377</td><td align="left">uint32_t ulOriginalBASEPRI;</td></tr><tr><td align="right">378</td><td align="left">uint32_t ulNewBASEPRI;</td></tr><tr><td align="right">379</td><td align="left">Ignored inline assembler code</td></tr><tr><td align="right">380</td><td align="left">return ulOriginalBASEPRI;</td></tr></table>>]
+377 -> 375[label=""]
+376 -> 377 [label="Function start dummy edge" fontname="Courier New"]
+}

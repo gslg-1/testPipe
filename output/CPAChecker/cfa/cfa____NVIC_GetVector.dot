@@ -1,0 +1,7 @@
+digraph __NVIC_GetVector {
+293 [shape="circle" label="N293\n4"]
+294 [shape="circle" label="N294\n3"]
+294 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">294</td><td align="left">uint32_t *__CPAchecker_TMP_0 = (uint32_t *)(((SCB_Type *)3758157056UL)-&gt;VTOR);</td></tr><tr><td align="right">295</td><td align="left">uint32_t *vectors = __CPAchecker_TMP_0;</td></tr><tr><td align="right">296</td><td align="left">return vectors[((int32_t )IRQn) + 16];</td></tr></table>>]
+294 -> 292[label=""]
+293 -> 294 [label="Function start dummy edge" fontname="Courier New"]
+}

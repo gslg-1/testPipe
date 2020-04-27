@@ -1,0 +1,15 @@
+digraph ITM_ReceiveChar {
+342 [shape="circle" label="N342\n7"]
+343 [shape="circle" label="N343\n6"]
+344 [shape="diamond" label="N344\n5"]
+346 [shape="circle" label="N346\n4"]
+345 [shape="circle" label="N345\n1"]
+341 [shape="circle" label="N341\n0"]
+346 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">346</td><td align="left">ch = ITM_RxBuffer;</td></tr><tr><td align="right">347</td><td align="left">ITM_RxBuffer = 1520786085L;</td></tr><tr><td align="right">348</td><td align="left"></td></tr></table>>]
+346 -> 345[label=""]
+342 -> 343 [label="Function start dummy edge" fontname="Courier New"]
+344 -> 346 [label="[ITM_RxBuffer != 1520786085L]" fontname="Courier New"]
+344 -> 345 [label="[!(ITM_RxBuffer != 1520786085L)]" fontname="Courier New"]
+345 -> 341 [label="return ch;" fontname="Courier New"]
+343 -> 344 [label="int32_t ch = -1;" fontname="Courier New"]
+}

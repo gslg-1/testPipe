@@ -1,0 +1,7 @@
+digraph __NVIC_GetPriorityGrouping {
+170 [shape="circle" label="N170\n2"]
+171 [shape="circle" label="N171\n1"]
+169 [shape="circle" label="N169\n0"]
+170 -> 171 [label="Function start dummy edge" fontname="Courier New"]
+171 -> 169 [label="return (uint32_t )(((((SCB_Type *)3758157056UL)->AIRCR) & 1792UL) >> 8U);" fontname="Courier New"]
+}

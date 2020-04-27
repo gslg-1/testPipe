@@ -1,0 +1,7 @@
+digraph __set_MSP {
+53 [shape="circle" label="N53\n3"]
+54 [shape="circle" label="N54\n2"]
+54 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">54</td><td align="left">Ignored inline assembler code</td></tr><tr><td align="right">55</td><td align="left">default return</td></tr></table>>]
+54 -> 52[label=""]
+53 -> 54 [label="Function start dummy edge" fontname="Courier New"]
+}

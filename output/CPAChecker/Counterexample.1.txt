@@ -1,0 +1,17 @@
+none:	N1 -{INIT GLOBAL VARS}-> N30
+lines 1-27:	N30 -{int main();}-> N31
+none:	N31 -{Function start dummy edge}-> N2
+line 2:	N2 -{int i = 0;}-> N3
+line 3:	N3 -{int a = 0;}-> N4
+line 5:	N4 -{while}-> N5
+line 5:	N5 -{}-> N6
+line 6:	N6 -{[!(i == 20)]}-> N10
+line 9:	N10 -{int __CPAchecker_TMP_0 = i;}-> N12
+line 9:	N12 -{i = i + 1;}-> N13
+line 9:	N13 -{__CPAchecker_TMP_0;}-> N14
+line 10:	N14 -{int __CPAchecker_TMP_1 = a;}-> N15
+line 10:	N15 -{a = a + 1;}-> N16
+line 10:	N16 -{__CPAchecker_TMP_1;}-> N17
+none:	N17 -{}-> N8
+line 13:	N8 -{[i != a]}-> N19
+line 14:	N19 -{Goto: ERROR}-> N27

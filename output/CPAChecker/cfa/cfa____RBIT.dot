@@ -1,0 +1,18 @@
+digraph __RBIT {
+113 [shape="circle" label="N113\n16"]
+114 [shape="circle" label="N114\n15"]
+119 [shape="doublecircle" label="N119\n10"]
+121 [shape="circle" label="N121\n6"]
+122 [shape="circle" label="N122\n9"]
+123 [shape="circle" label="N123\n5"]
+114 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">114</td><td align="left">uint32_t result;</td></tr><tr><td align="right">115</td><td align="left">uint32_t s = 31U;</td></tr><tr><td align="right">116</td><td align="left">result = value;</td></tr><tr><td align="right">117</td><td align="left">for</td></tr><tr><td align="right">118</td><td align="left">value = value &gt;&gt; 1U;</td></tr></table>>]
+114 -> 119[label=""]
+122 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">122</td><td align="left">result = result &lt;&lt; s;</td></tr><tr><td align="right">128</td><td align="left">return result;</td></tr></table>>]
+122 -> 112[label=""]
+123 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">123</td><td align="left">result = result &#124; (value &amp; 1U);</td></tr><tr><td align="right">124</td><td align="left">uint32_t __CPAchecker_TMP_0 = s;</td></tr><tr><td align="right">125</td><td align="left">s = s - 1;</td></tr><tr><td align="right">126</td><td align="left">__CPAchecker_TMP_0;</td></tr><tr><td align="right">127</td><td align="left"></td></tr><tr><td align="right">120</td><td align="left">value = value &gt;&gt; 1U;</td></tr></table>>]
+123 -> 119[label=""]
+113 -> 114 [label="Function start dummy edge" fontname="Courier New"]
+119 -> 121 [label="[value != 0U]" fontname="Courier New"]
+119 -> 122 [label="[!(value != 0U)]" fontname="Courier New"]
+121 -> 123 [label="result = result << 1U;" fontname="Courier New"]
+}

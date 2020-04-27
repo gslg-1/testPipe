@@ -272,13 +272,13 @@ static void MX_GPIO_Init(void)
 void StartComUSBTask(void *argument)
 {
 #ifdef __UTEST
-  uint8_t txBuf[9] = "Unit-T\n\r";
+  //uint8_t txBuf[9] = "Unit-T\n\r";
 #else
-  uint8_t txBuf[9] = "Normal\n\r";
+  //uint8_t txBuf[9] = "Normal\n\r";
 #endif
   for(;;)
   {
-    HAL_UART_Transmit(&huart2,txBuf,9,500);
+    //HAL_UART_Transmit(&huart2,txBuf,9,500);
     osDelay(1000);
   }
 }

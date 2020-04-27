@@ -1,0 +1,7 @@
+digraph __get_MSP {
+47 [shape="circle" label="N47\n4"]
+48 [shape="circle" label="N48\n3"]
+48 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">48</td><td align="left">uint32_t result;</td></tr><tr><td align="right">49</td><td align="left">Ignored inline assembler code</td></tr><tr><td align="right">50</td><td align="left">return result;</td></tr></table>>]
+48 -> 46[label=""]
+47 -> 48 [label="Function start dummy edge" fontname="Courier New"]
+}

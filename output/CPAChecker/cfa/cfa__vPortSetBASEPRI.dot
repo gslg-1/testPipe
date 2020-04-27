@@ -1,0 +1,7 @@
+digraph vPortSetBASEPRI {
+383 [shape="circle" label="N383\n3"]
+384 [shape="circle" label="N384\n2"]
+384 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">384</td><td align="left">Ignored inline assembler code</td></tr><tr><td align="right">385</td><td align="left">default return</td></tr></table>>]
+384 -> 382[label=""]
+383 -> 384 [label="Function start dummy edge" fontname="Courier New"]
+}

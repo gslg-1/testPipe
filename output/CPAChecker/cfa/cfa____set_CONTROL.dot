@@ -1,0 +1,7 @@
+digraph __set_CONTROL {
+15 [shape="circle" label="N15\n3"]
+16 [shape="circle" label="N16\n2"]
+16 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">16</td><td align="left">Ignored inline assembler code</td></tr><tr><td align="right">17</td><td align="left">default return</td></tr></table>>]
+16 -> 14[label=""]
+15 -> 16 [label="Function start dummy edge" fontname="Courier New"]
+}

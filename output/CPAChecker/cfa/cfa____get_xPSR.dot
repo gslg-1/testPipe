@@ -1,0 +1,7 @@
+digraph __get_xPSR {
+31 [shape="circle" label="N31\n4"]
+32 [shape="circle" label="N32\n3"]
+32 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">32</td><td align="left">uint32_t result;</td></tr><tr><td align="right">33</td><td align="left">Ignored inline assembler code</td></tr><tr><td align="right">34</td><td align="left">return result;</td></tr></table>>]
+32 -> 30[label=""]
+31 -> 32 [label="Function start dummy edge" fontname="Courier New"]
+}
