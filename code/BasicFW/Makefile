@@ -32,7 +32,6 @@ OPT = -Og
 #######################################
 # Build path
 BUILD_DIR = ../../output/build
-# PreBuild path
 PREBUILD_DIR = ../../output/prebuild
 ######################################
 # source
@@ -169,9 +168,11 @@ LIBS = -lc -lm -lnosys
 LIBDIR = 
 LDFLAGS = $(MCU)-specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
 
+PREBUILDS = $(addprefix $(PREBUILD_DIR)/,$(notdir $(C_SOURCES:.c=.p.c)))
 
 # default action: build all
-all: $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).hex $(BUILD_DIR)/$(TARGET).bin $(PREBUILD_DIR)/main.c
+
+all: $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).hex $(BUILD_DIR)/$(TARGET).bin $(PREBUILDS)
 #######################################
 # build the application
 #######################################
@@ -182,8 +183,8 @@ vpath %.c $(sort $(dir $(C_SOURCES)))
 OBJECTS += $(addprefix $(BUILD_DIR)/,$(notdir $(ASM_SOURCES:.s=.o)))
 vpath %.s $(sort $(dir $(ASM_SOURCES)))
 
-$(PREBUILD_DIR)/%.c: %.c Makefile | $(PREBUILD_DIR) 
-	$(CC) -e $(PREFLAG) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+$(PREBUILD_DIR)/%.p.c: %.c Makefile | $(PREBUILD_DIR) 
+	$(CC) -E $(C_DEFS) $(C_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections -Wa,-a,-ad,-alms=$(PREBUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
 
 $(BUILD_DIR)/%.o: %.c Makefile | $(BUILD_DIR) 
 	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
@@ -203,9 +204,14 @@ $(BUILD_DIR)/%.bin: $(BUILD_DIR)/%.elf | $(BUILD_DIR)
 	
 $(BUILD_DIR):
 	mkdir $@
-	
-$(PRBUILD_DIR):
-	mkdir $@
+
+$(PREBUILD_DIR):
+	mkdir $@		
+
+#######################################
+# prebuild
+#######################################
+prebuild: $(PREBUILDS)
 
 #######################################
 # clean up
@@ -218,5 +224,5 @@ clean:
 #######################################
 
 -include $(wildcard $(BUILD_DIR)/*.d)
-
+-include $(wildcard $(PREBUILD_DIR)/*.d)
 # *** EOF ***
