@@ -1,4 +1,4 @@
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
   28:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** #include "cmsis_compiler.h"
   29:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
   30:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** #include "FreeRTOS.h"                   // ARM.FreeRTOS::RTOS:Core
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 2
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 2
 
 
   31:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** #include "task.h"                       // ARM.FreeRTOS::RTOS:Core
@@ -118,7 +118,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
   85:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****                                    ((uint32_t)tskKERNEL_VERSION_MINOR *    10000UL) | \
   86:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****                                    ((uint32_t)tskKERNEL_VERSION_BUILD *        1UL))
   87:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 3
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 3
 
 
   88:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** #define KERNEL_ID                 "FreeRTOS V10.0.1"
@@ -178,7 +178,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  142:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     if (KernelState == osKernelInactive) {
  143:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       #if defined(USE_FreeRTOS_HEAP_5)
  144:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         vPortDefineHeapRegions (xHeapRegions);
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 4
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 4
 
 
  145:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       #endif
@@ -238,7 +238,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  199:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   osStatus_t stat;
  200:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  201:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   if (IS_IRQ()) {
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 5
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 5
 
 
  202:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     stat = osErrorISR;
@@ -298,7 +298,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  256:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****           if (xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED) {
  257:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****             lock = (int32_t)osError;
  258:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****           }
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 6
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 6
 
 
  259:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         }
@@ -358,7 +358,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  313:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   TickType_t ticks;
  314:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  315:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   if (IS_IRQ()) {
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 7
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 7
 
 
  316:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     ticks = xTaskGetTickCountFromISR();
@@ -418,7 +418,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  370:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       if (attr->priority != osPriorityNone) {
  371:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         prio = (UBaseType_t)attr->priority;
  372:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       }
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 8
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 8
 
 
  373:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
@@ -478,7 +478,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  427:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** osThreadId_t osThreadGetId (void) {
  428:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   osThreadId_t id;
  429:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 9
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 9
 
 
  430:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   if (IS_IRQ()) {
@@ -538,7 +538,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  484:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** osStatus_t osThreadSetPriority (osThreadId_t thread_id, osPriority_t priority) {
  485:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   TaskHandle_t hTask = (TaskHandle_t)thread_id;
  486:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   osStatus_t stat;
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 10
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 10
 
 
  487:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
@@ -598,7 +598,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  541:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
  542:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  543:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   return (stat);
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 11
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 11
 
 
  544:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** }
@@ -658,7 +658,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  598:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** }
  599:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  600:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** uint32_t osThreadGetCount (void) {
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 12
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 12
 
 
  601:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   uint32_t count;
@@ -718,7 +718,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  655:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       (void)xTaskNotifyAndQueryFromISR (hTask, 0, eNoAction, &rflags, NULL);
  656:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  657:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       portYIELD_FROM_ISR (yield);
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 13
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 13
 
 
  658:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     }
@@ -778,7 +778,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  712:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  713:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   return (rflags);
  714:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** }
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 14
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 14
 
 
  715:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
@@ -838,7 +838,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  769:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  770:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         if (td > tout) {
  771:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****           tout  = 0;
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 15
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 15
 
 
  772:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         } else {
@@ -898,7 +898,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  826:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  827:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** static void TimerCallback (TimerHandle_t hTimer) {
   29              		.loc 1 827 0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 16
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 16
 
 
   30              		.cfi_startproc
@@ -958,7 +958,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
    9:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
   10:Drivers/CMSIS/Include/cmsis_gcc.h ****  * SPDX-License-Identifier: Apache-2.0
   11:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 17
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 17
 
 
   12:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Licensed under the Apache License, Version 2.0 (the License); you may
@@ -1018,7 +1018,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
   66:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   67:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED_UNION
   68:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED_UNION                         union __attribute__((packed, aligned(1)))
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 18
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 18
 
 
   69:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -1078,7 +1078,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  123:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  124:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  125:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Enable IRQ Interrupts
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 19
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 19
 
 
  126:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Enables IRQ interrupts by clearing the I-bit in the CPSR.
@@ -1138,7 +1138,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  180:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  181:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __set_CONTROL(uint32_t control)
  182:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 20
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 20
 
 
  183:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR control, %0" : : "r" (control) : "memory");
@@ -1198,7 +1198,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  223:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, apsr" : "=r" (result) );
  224:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  225:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 21
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 21
 
 
  226:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1258,7 +1258,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  280:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  281:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  282:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 22
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 22
 
 
  283:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
@@ -1318,7 +1318,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  337:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
  338:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  339:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Main Stack Pointer (non-secure)
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 23
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 23
 
 
  340:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the non-secure Main Stack Pointer (MSP) when in secure state.
@@ -1378,7 +1378,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
   91              	.LBE337:
   92              	.LBE336:
  138:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     stat = osErrorISR;
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 24
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 24
 
 
   93              		.loc 1 138 0
@@ -1438,7 +1438,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  431:Drivers/CMSIS/Include/cmsis_gcc.h **** #if ((defined (__ARM_ARCH_7M__      ) && (__ARM_ARCH_7M__      == 1)) || \
  432:Drivers/CMSIS/Include/cmsis_gcc.h ****      (defined (__ARM_ARCH_7EM__     ) && (__ARM_ARCH_7EM__     == 1)) || \
  433:Drivers/CMSIS/Include/cmsis_gcc.h ****      (defined (__ARM_ARCH_8M_MAIN__ ) && (__ARM_ARCH_8M_MAIN__ == 1))    )
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 25
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 25
 
 
  434:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -1498,7 +1498,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  147:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     } else {
  121              		.loc 1 147 0
  122 0022 0020     		movs	r0, #0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 26
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 26
 
 
  123 0024 7047     		bx	lr
@@ -1558,7 +1558,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  160:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
  173              		.loc 1 160 0
  174 000a 4160     		str	r1, [r0, #4]
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 27
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 27
 
 
  175              	.L14:
@@ -1618,7 +1618,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  223              		.loc 1 176 0
  224 0002 FFF7FEFF 		bl	xTaskGetSchedulerState
  225              	.LVL13:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 28
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 28
 
 
  226 0006 48B1     		cbz	r0, .L25
@@ -1678,7 +1678,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  275              	.LBB340:
  276              	.LBB341:
  209:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 29
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 29
 
 
  277              		.loc 2 209 0
@@ -1738,7 +1738,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  324 0020 0222     		movs	r2, #2
  325 0022 094B     		ldr	r3, .L39
  326 0024 1A60     		str	r2, [r3]
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 30
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 30
 
 
  207:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       stat = osOK;
@@ -1798,7 +1798,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  376              		.loc 2 209 0
  377              		.syntax unified
  378              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 31
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 31
 
 
  379 0002 EFF30583 		MRS r3, ipsr
@@ -1858,7 +1858,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  226:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         break;
  427              		.loc 1 226 0
  428 0028 0120     		movs	r0, #1
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 32
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 32
 
 
  429 002a 08BD     		pop	{r3, pc}
@@ -1918,7 +1918,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  478              		.cfi_offset 14, -4
  479              	.LBB352:
  480              	.LBB353:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 33
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 33
 
 
  209:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
@@ -1978,7 +1978,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  528 0022 0228     		cmp	r0, #2
  529 0024 13D1     		bne	.L65
  263:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         break;
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 34
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 34
 
 
  530              		.loc 1 263 0
@@ -2038,7 +2038,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  576 0060 00000000 		.word	.LANCHOR0
  577              		.cfi_endproc
  578              	.LFE111:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 35
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 35
 
 
  580              		.section	.text.osKernelRestoreLock,"ax",%progbits
@@ -2098,7 +2098,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  629 0016 02D1     		bne	.L71
  630              	.LBB362:
  631              	.LBB363:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 36
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 36
 
 
  632              		.loc 2 465 0 is_stmt 1
@@ -2158,7 +2158,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  678 004c 6FF00504 		mvn	r4, #5
  679 0050 0AE0     		b	.L70
  680              	.L76:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 37
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 37
 
 
  681 0052 6FF00504 		mvn	r4, #5
@@ -2218,7 +2218,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  731              		.loc 2 209 0
  732              		.syntax unified
  733              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 38
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 38
 
 
  734 0002 EFF30583 		MRS r3, ipsr
@@ -2278,7 +2278,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  781 0022 FFF7FEFF 		bl	xTaskGetTickCount
  782              	.LVL44:
  322:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 39
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 39
 
 
  783              		.loc 1 322 0
@@ -2338,7 +2338,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
    8:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
    9:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  * the Software, and to permit persons to whom the Software is furnished to do so,
   10:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  * subject to the following conditions:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 40
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 40
 
 
   11:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  *
@@ -2398,7 +2398,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
   65:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 
   66:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	/* 32-bit tick type on a 32-bit architecture, so reads of the tick count do
   67:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	not need to be guarded with a critical section. */
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 41
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 41
 
 
   68:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	#define portTICK_TYPE_IS_ATOMIC 1
@@ -2458,7 +2458,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  122:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** /* Architecture specific optimisations. */
  123:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** #ifndef configUSE_PORT_OPTIMISED_TASK_SELECTION
  124:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	#define configUSE_PORT_OPTIMISED_TASK_SELECTION 1
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 42
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 42
 
 
  125:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** #endif
@@ -2518,7 +2518,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  179:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 		xReturn = pdFALSE;
  180:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	}
  181:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	else
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 43
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 43
 
 
  182:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	{
@@ -2578,7 +2578,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  208:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** {
  209:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** uint32_t ulOriginalBASEPRI, ulNewBASEPRI;
  210:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 44
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 44
 
 
  211:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	__asm volatile
@@ -2638,7 +2638,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  891              		.loc 1 344 0
  892 0000 014B     		ldr	r3, .L97
  893 0002 1868     		ldr	r0, [r3]
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 45
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 45
 
 
  894 0004 7047     		bx	lr
@@ -2698,7 +2698,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  945              		.loc 2 386 0
  946              		.syntax unified
  947              	@ 386 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 46
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 46
 
 
  948 0010 EFF31083 		MRS r3, primask
@@ -2758,7 +2758,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  370:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         prio = (UBaseType_t)attr->priority;
  994              		.loc 1 370 0
  995 003c 9469     		ldr	r4, [r2, #24]
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 47
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 47
 
 
  996 003e 04B9     		cbnz	r4, .L104
@@ -2818,7 +2818,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  1038 0070 D368     		ldr	r3, [r2, #12]
  1039 0072 83B9     		cbnz	r3, .L116
  389:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****           mem = 0;
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 48
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 48
 
 
  1040              		.loc 1 389 0 discriminator 2
@@ -2878,7 +2878,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  1083              		.loc 1 400 0
  1084 00a6 9268     		ldr	r2, [r2, #8]
  1085              	.LVL62:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 49
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 49
 
 
  399:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****                                                                                     (StaticTask_t *
@@ -2938,7 +2938,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  1133              	.LCFI11:
  1134              		.cfi_def_cfa_offset 20
  1135              		@ sp needed
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 50
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 50
 
 
  1136 00e0 F0BD     		pop	{r4, r5, r6, r7, pc}
@@ -2998,7 +2998,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  1187              		.loc 1 418 0
  1188 000c 63B9     		cbnz	r3, .L125
  418:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     name = NULL;
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 51
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 51
 
 
  1189              		.loc 1 418 0 is_stmt 0 discriminator 2
@@ -3058,7 +3058,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  1238              	.L129:
  1239 0034 00000000 		.word	.LANCHOR0
  1240              		.cfi_endproc
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 52
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 52
 
 
  1241              	.LFE118:
@@ -3118,7 +3118,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  1291              	.LBB390:
  1292              	.LBB391:
  1293              		.loc 2 465 0 is_stmt 1
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 53
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 53
 
 
  1294              		.syntax unified
@@ -3178,7 +3178,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  1345              		.cfi_offset 3, -8
  1346              		.cfi_offset 14, -4
  1347              	.LVL88:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 54
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 54
 
 
  1348              	.LBB392:
@@ -3238,7 +3238,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  447:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       case eRunning:   state = osThreadRunning;    break;
  1395              		.loc 1 447 0 is_stmt 1
  1396 001e FFF7FEFF 		bl	eTaskGetState
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 55
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 55
 
 
  1397              	.LVL89:
@@ -3298,7 +3298,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  1446              	.LVL100:
  1447 0058 08BD     		pop	{r3, pc}
  1448              	.L152:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 56
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 56
 
 
  449:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       case eBlocked:
@@ -3358,7 +3358,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  1499              	@ 0 "" 2
  1500              		.thumb
  1501              		.syntax unified
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 57
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 57
 
 
  1502              	.LBE401:
@@ -3418,7 +3418,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  1550              	.LVL112:
  472:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  1551              		.loc 1 472 0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 58
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 58
 
 
  1552 0032 08BD     		pop	{r3, pc}
@@ -3478,7 +3478,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  1606              	@ 0 "" 2
  1607              		.thumb
  1608              		.syntax unified
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 59
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 59
 
 
  1609              	.LBE405:
@@ -3538,7 +3538,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  1654              		.loc 1 496 0 is_stmt 1
  1655 0026 FFF7FEFF 		bl	vTaskPrioritySet
  1656              	.LVL118:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 60
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 60
 
 
  495:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     vTaskPrioritySet (hTask, (UBaseType_t)priority);
@@ -3598,7 +3598,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  1708              		.loc 1 502 0
  1709              		.cfi_startproc
  1710              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 61
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 61
 
 
  1711              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -3658,7 +3658,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  1760              	.LBE414:
  506:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     prio = osPriorityError;
  1761              		.loc 1 506 0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 62
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 62
 
 
  1762 001a 4BB9     		cbnz	r3, .L184
@@ -3718,7 +3718,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  1813              	.LBB417:
  209:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  1814              		.loc 2 209 0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 63
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 63
 
 
  1815              		.syntax unified
@@ -3778,7 +3778,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  1863              	@ 522 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c" 1
  1864 0022 BFF34F8F 		dsb
  1865              	@ 0 "" 2
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 64
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 64
 
 
  1866              	@ 522 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c" 1
@@ -3838,7 +3838,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  1917              		.syntax unified
  1918              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  1919 0002 EFF30583 		MRS r3, ipsr
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 65
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 65
 
 
  1920              	@ 0 "" 2
@@ -3898,7 +3898,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  1966 0022 0020     		movs	r0, #0
  1967 0024 08BD     		pop	{r3, pc}
  1968              	.LVL149:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 66
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 66
 
 
  1969              	.L200:
@@ -3958,7 +3958,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  2020              		.syntax unified
  2021              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  2022 0002 EFF30583 		MRS r3, ipsr
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 67
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 67
 
 
  2023              	@ 0 "" 2
@@ -4018,7 +4018,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  2069 0022 0020     		movs	r0, #0
  2070 0024 08BD     		pop	{r3, pc}
  2071              	.LVL161:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 68
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 68
 
 
  2072              	.L210:
@@ -4078,7 +4078,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  2123              	.L218:
  2124 0008 FEE7     		b	.L218
  2125              		.cfi_endproc
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 69
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 69
 
 
  2126              	.LFE128:
@@ -4138,7 +4138,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  2176              	@ 465 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  2177 0014 EFF31183 		MRS r3, basepri
  2178              	@ 0 "" 2
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 70
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 70
 
 
  2179              		.thumb
@@ -4198,7 +4198,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  2224              		.loc 1 598 0
  2225 003c 7047     		bx	lr
  2226              	.LVL179:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 71
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 71
 
 
  2227              	.L225:
@@ -4258,7 +4258,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  2277              		.syntax unified
  2278              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  2279 0002 EFF30583 		MRS r3, ipsr
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 72
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 72
 
 
  2280              	@ 0 "" 2
@@ -4318,7 +4318,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  2327 0024 08BD     		pop	{r3, pc}
  2328              	.L236:
  2329 0026 0020     		movs	r0, #0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 73
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 73
 
 
  2330 0028 08BD     		pop	{r3, pc}
@@ -4378,7 +4378,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  2381              		.syntax unified
  2382              	@ 386 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  2383 0008 EFF31083 		MRS r3, primask
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 74
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 74
 
 
  2384              	@ 0 "" 2
@@ -4438,7 +4438,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  624:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       count = uxTaskGetSystemState (task, count, NULL);
  2430              		.loc 1 624 0
  2431 0038 0746     		mov	r7, r0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 75
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 75
 
 
  2432 003a 80B1     		cbz	r0, .L244
@@ -4498,7 +4498,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  2477 0072 0024     		movs	r4, #0
  2478 0074 02E0     		b	.L242
  2479              	.L250:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 76
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 76
 
 
  2480 0076 0024     		movs	r4, #0
@@ -4558,7 +4558,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  2531              	.L257:
  649:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  2532              		.loc 1 649 0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 77
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 77
 
 
  2533 0014 4FF0FF33 		mov	r3, #-1
@@ -4618,7 +4618,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  2580              		.loc 1 652 0
  2581 0034 0025     		movs	r5, #0
  2582 0036 04AB     		add	r3, sp, #16
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 78
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 78
 
 
  2583 0038 43F8085D 		str	r5, [r3, #-8]!
@@ -4678,7 +4678,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  2631 007e FFF7FEFF 		bl	xTaskGenericNotify
  2632              	.LVL212:
  2633              	.L258:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 79
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 79
 
 
  666:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
@@ -4738,7 +4738,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  2686              	.LBB461:
  386:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  2687              		.loc 2 386 0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 80
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 80
 
 
  2688              		.syntax unified
@@ -4798,7 +4798,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  2735 0038 019C     		ldr	r4, [sp, #4]
  2736              	.LVL217:
  683:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 81
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 81
 
 
  2737              		.loc 1 683 0
@@ -4858,7 +4858,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  2785              	.L274:
  2786 0078 00000000 		.word	.LANCHOR0
  2787              		.cfi_endproc
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 82
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 82
 
 
  2788              	.LFE133:
@@ -4918,7 +4918,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  2838 0014 022B     		cmp	r3, #2
  2839 0016 06D1     		bne	.L278
  2840              	.LBB468:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 83
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 83
 
 
  2841              	.LBB469:
@@ -4978,7 +4978,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  2890              		.global	osThreadFlagsWait
  2891              		.thumb
  2892              		.thumb_func
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 84
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 84
 
 
  2894              	osThreadFlagsWait:
@@ -5038,7 +5038,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  2943 0014 47D1     		bne	.L293
  722:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     rflags = (uint32_t)osErrorISR;
  2944              		.loc 1 722 0 is_stmt 0 discriminator 2
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 85
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 85
 
 
  2945 0016 2D4B     		ldr	r3, .L302
@@ -5098,7 +5098,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  2991              	.L291:
  740:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  2992              		.loc 1 740 0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 86
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 86
 
 
  2993 0048 3346     		mov	r3, r6
@@ -5158,7 +5158,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3036 0086 361A     		subs	r6, r6, r0
  3037              	.LVL237:
  3038 0088 07E0     		b	.L290
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 87
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 87
 
 
  3039              	.LVL238:
@@ -5218,7 +5218,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3085              	.L298:
  761:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****               break;
  3086              		.loc 1 761 0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 88
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 88
 
 
  3087 00be 6FF00204 		mvn	r4, #2
@@ -5278,7 +5278,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3138              		.loc 2 386 0
  3139              		.syntax unified
  3140              	@ 386 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 89
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 89
 
 
  3141 0008 EFF31083 		MRS r3, primask
@@ -5338,7 +5338,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3188              	.LVL257:
  3189              	.L309:
  3190 0032 6FF00500 		mvn	r0, #5
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 90
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 90
 
 
  3191              	.LVL258:
@@ -5398,7 +5398,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3242              	.LBB485:
  386:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  3243              		.loc 2 386 0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 91
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 91
 
 
  3244              		.syntax unified
@@ -5458,7 +5458,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3291 0036 6FF00500 		mvn	r0, #5
  3292              	.LVL266:
  3293 003a 04E0     		b	.L315
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 92
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 92
 
 
  3294              	.LVL267:
@@ -5518,7 +5518,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3344              		.loc 2 209 0
  3345              		.syntax unified
  3346              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 93
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 93
 
 
  3347 0004 EFF30585 		MRS r5, ipsr
@@ -5578,7 +5578,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3391 0024 0028     		cmp	r0, #0
  3392 0026 3CD0     		beq	.L333
  3393 0028 1C46     		mov	r4, r3
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 94
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 94
 
 
  3394 002a 1746     		mov	r7, r2
@@ -5638,7 +5638,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3426 004c A168     		ldr	r1, [r4, #8]
  3427 004e 11B1     		cbz	r1, .L328
  3428              		.loc 1 868 0 is_stmt 0 discriminator 1
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 95
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 95
 
 
  3429 0050 E568     		ldr	r5, [r4, #12]
@@ -5698,7 +5698,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3465 0074 0129     		cmp	r1, #1
  3466 0076 07D1     		bne	.L329
  882:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         hTimer = xTimerCreateStatic (name, 1, reload, callb, TimerCallback, (StaticTimer_t *)attr->
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 96
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 96
 
 
  3467              		.loc 1 882 0
@@ -5758,7 +5758,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3516 00a8 00E0     		b	.L324
  3517              	.LVL299:
  3518              	.L340:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 97
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 97
 
 
  3519 00aa 0020     		movs	r0, #0
@@ -5818,7 +5818,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3565              	.LBE494:
  896:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   TimerHandle_t hTimer = (TimerHandle_t)timer_id;
  897:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   const char *p;
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 98
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 98
 
 
  898:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
@@ -5878,7 +5878,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3613              	.L348:
  3614 0028 0020     		movs	r0, #0
  3615              	.LVL307:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 99
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 99
 
 
  3616 002a 08BD     		pop	{r3, pc}
@@ -5938,7 +5938,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3661              	.LBB502:
  3662              	.LBB503:
  386:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 100
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 100
 
 
  3663              		.loc 2 386 0
@@ -5998,7 +5998,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3709 0028 FFF7FEFF 		bl	xTimerGenericCommand
  3710              	.LVL314:
  3711 002c 0128     		cmp	r0, #1
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 101
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 101
 
 
  3712 002e 0DD1     		bne	.L361
@@ -6058,7 +6058,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3754              	.LCFI50:
  3755              		.cfi_def_cfa_offset 4
  3756              		@ sp needed
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 102
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 102
 
 
  3757 0052 5DF804FB 		ldr	pc, [sp], #4
@@ -6118,7 +6118,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3805 000c 154B     		ldr	r3, .L377
  3806 000e 1B68     		ldr	r3, [r3]
  3807 0010 022B     		cmp	r3, #2
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 103
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 103
 
 
  3808 0012 02D1     		bne	.L368
@@ -6178,7 +6178,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3849              		.loc 1 945 0
  3850 003a 0020     		movs	r0, #0
  3851 003c 10E0     		b	.L367
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 104
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 104
 
 
  3852              	.LVL328:
@@ -6238,7 +6238,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3893              	.LVL337:
  3894              		.loc 1 953 0
  3895 0060 02B0     		add	sp, sp, #8
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 105
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 105
 
 
  3896              	.LCFI55:
@@ -6298,7 +6298,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3944              	@ 386 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  3945 0008 EFF31083 		MRS r3, primask
  3946              	@ 0 "" 2
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 106
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 106
 
 
  3947              		.thumb
@@ -6358,7 +6358,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  3997              	.LVL349:
  963:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
  964:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 107
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 107
 
 
  965:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   return (running);
@@ -6418,7 +6418,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  4042              	.LBE521:
  4043              	.LBE520:
  4044              		.loc 1 974 0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 108
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 108
 
 
  4045 000a F3B9     		cbnz	r3, .L393
@@ -6478,7 +6478,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  4089              	.LVL353:
  4090 0032 FFF7FEFF 		bl	xTimerGenericCommand
  4091              	.LVL354:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 109
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 109
 
 
  4092 0036 0128     		cmp	r0, #1
@@ -6538,7 +6538,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  4131              	.L396:
  4132              	.LCFI60:
  4133              		.cfi_def_cfa_offset 24
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 110
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 110
 
 
  4134              		.cfi_offset 4, -12
@@ -6598,7 +6598,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  4184              	.LBE524:
 1000:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   EventGroupHandle_t hEventGroup;
 1001:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   int32_t mem;
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 111
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 111
 
 
 1002:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
@@ -6658,7 +6658,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
 1010:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         mem = 1;
 1011:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       }
 1012:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       else {
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 112
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 112
 
 
 1013:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         if ((attr->cb_mem == NULL) && (attr->cb_size == 0U)) {
@@ -6718,7 +6718,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  4266              		.loc 1 1026 0
  4267 0050 43B9     		cbnz	r3, .L414
 1027:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         hEventGroup = xEventGroupCreate();
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 113
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 113
 
 
  4268              		.loc 1 1027 0
@@ -6778,7 +6778,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  4315 0000 10B5     		push	{r4, lr}
  4316              	.LCFI63:
  4317              		.cfi_def_cfa_offset 8
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 114
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 114
 
 
  4318              		.cfi_offset 4, -8
@@ -6838,7 +6838,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  4362              	.LBB534:
  4363              	.LBB535:
  4364              		.loc 2 465 0 is_stmt 1
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 115
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 115
 
 
  4365              		.syntax unified
@@ -6898,7 +6898,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  4408              		.loc 1 1054 0 is_stmt 1
  4409 0052 2146     		mov	r1, r4
  4410              	.LVL391:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 116
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 116
 
 
  4411 0054 1846     		mov	r0, r3
@@ -6958,7 +6958,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  4459              		@ frame_needed = 0, uses_anonymous_args = 0
  4460              	.LVL399:
  4461 0000 70B5     		push	{r4, r5, r6, lr}
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 117
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 117
 
 
  4462              	.LCFI66:
@@ -7018,7 +7018,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  4507              	.LBB540:
  4508              	.LBB541:
  4509              		.loc 2 465 0 is_stmt 1
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 118
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 118
 
 
  4510              		.syntax unified
@@ -7078,7 +7078,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  4555 0052 01E0     		b	.L429
  4556              	.LVL412:
  4557              	.L434:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 119
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 119
 
 
 1071:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       rflags = (uint32_t)osErrorResource;
@@ -7138,7 +7138,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  4601              		.thumb
  4602              		.syntax unified
  4603              	.LBE543:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 120
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 120
 
 
  4604              	.LBE542:
@@ -7198,7 +7198,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  4650              	.LVL419:
  4651              	.L442:
  4652              	.LCFI68:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 121
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 121
 
 
  4653              		.cfi_def_cfa_offset 0
@@ -7258,7 +7258,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  4695              		.loc 1 1104 0 discriminator 1
  4696 0008 11F07F4F 		tst	r1, #-16777216
  4697 000c 2FD1     		bne	.L454
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 122
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 122
 
 
  4698              	.LBB548:
@@ -7318,7 +7318,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
 1111:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     if (options & osFlagsWaitAll) {
  4744              		.loc 1 1111 0
  4745 0028 12F00106 		ands	r6, r2, #1
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 123
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 123
 
 
  4746 002c 01D0     		beq	.L458
@@ -7378,7 +7378,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  4784 0054 BDB1     		cbz	r5, .L460
 1128:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****           rflags = (uint32_t)osErrorTimeout;
  4785              		.loc 1 1128 0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 124
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 124
 
 
  4786 0056 6FF00100 		mvn	r0, #1
@@ -7438,7 +7438,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  4821              		.cfi_offset 7, -8
  4822              		.cfi_offset 14, -4
 1105:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 125
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 125
 
 
  4823              		.loc 1 1105 0
@@ -7498,7 +7498,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  4874              	.LVL441:
  4875 0000 08B5     		push	{r3, lr}
  4876              	.LCFI74:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 126
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 126
 
 
  4877              		.cfi_def_cfa_offset 8
@@ -7558,7 +7558,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  4924 001a 53B9     		cbnz	r3, .L470
  4925              	.L467:
 1154:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     stat = osErrorISR;
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 127
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 127
 
 
 1155:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
@@ -7618,7 +7618,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  4963              	.LFE150:
  4965              		.section	.text.osMutexNew,"ax",%progbits
  4966              		.align	2
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 128
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 128
 
 
  4967              		.global	osMutexNew
@@ -7678,7 +7678,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  5005 000a EFF31083 		MRS r3, primask
  5006              	@ 0 "" 2
  5007              		.thumb
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 129
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 129
 
 
  5008              		.syntax unified
@@ -7738,7 +7738,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
 1193:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       rmtx = 0U;
  5053              		.loc 1 1193 0
  5054 0034 0026     		movs	r6, #0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 130
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 130
 
 
  5055              	.L479:
@@ -7798,7 +7798,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  5090              	.L496:
 1197:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  5091              		.loc 1 1197 0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 131
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 131
 
 
  5092 005c 4FF0FF33 		mov	r3, #-1
@@ -7858,7 +7858,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  5131              		.loc 1 1224 0
  5132 0088 0420     		movs	r0, #4
  5133              	.LVL472:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 132
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 132
 
 
  5134 008a FFF7FEFF 		bl	xQueueCreateMutex
@@ -7918,7 +7918,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  5173              	.L486:
 1239:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       }
 1240:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       #endif
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 133
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 133
 
 
 1241:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
@@ -7978,7 +7978,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  5218              		.cfi_startproc
  5219              		@ args = 0, pretend = 0, frame = 0
  5220              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 134
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 134
 
 
  5221              	.LVL490:
@@ -8038,7 +8038,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  5262              		.loc 2 465 0 is_stmt 1
  5263              		.syntax unified
  5264              	@ 465 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 135
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 135
 
 
  5265 001c EFF31180 		MRS r0, basepri
@@ -8098,7 +8098,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  5301              	.LVL496:
  5302 0042 0128     		cmp	r0, #1
  5303 0044 14D0     		beq	.L513
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 136
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 136
 
 
 1280:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         if (timeout != 0U) {
@@ -8158,7 +8158,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
 1274:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         }
  5343              		.loc 1 1274 0
  5344 006a 6FF00200 		mvn	r0, #2
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 137
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 137
 
 
  5345 006e 10BD     		pop	{r4, pc}
@@ -8218,7 +8218,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
 1299:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   rmtx = (uint32_t)mutex_id & 1U;
 1300:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
 1301:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   stat = osOK;
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 138
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 138
 
 
 1302:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
@@ -8278,7 +8278,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
 1308:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
 1309:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   else {
 1310:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     if (rmtx != 0U) {
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 139
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 139
 
 
  5436              		.loc 1 1310 0
@@ -8338,7 +8338,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  5474 004e 7047     		bx	lr
  5475              	.LVL517:
  5476              	.L524:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 140
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 140
 
 
  5477              	.LCFI81:
@@ -8398,7 +8398,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  5527              		@ frame_needed = 0, uses_anonymous_args = 0
  5528              	.LVL527:
  5529 0000 08B5     		push	{r3, lr}
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 141
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 141
 
 
  5530              	.LCFI82:
@@ -8458,7 +8458,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  5576              		.syntax unified
  5577              	.LBE583:
  5578              	.LBE582:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 142
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 142
 
 
  5579              		.loc 1 1331 0
@@ -8518,7 +8518,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  5625              		.loc 1 1340 0
  5626              		.cfi_startproc
  5627              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 143
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 143
 
 
  5628              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -8578,7 +8578,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  5672              		.syntax unified
  5673              	@ 465 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  5674 001a EFF31183 		MRS r3, basepri
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 144
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 144
 
 
  5675              	@ 0 "" 2
@@ -8638,7 +8638,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  5709              	.L546:
  5710              	.LCFI85:
  5711              		.cfi_def_cfa_offset 8
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 145
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 145
 
 
  5712              		.cfi_offset 4, -8
@@ -8698,7 +8698,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  5762              	.LBB590:
  5763              	.LBB591:
  209:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 146
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 146
 
 
  5764              		.loc 2 209 0
@@ -8758,7 +8758,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  5808 0022 55D1     		bne	.L565
  5809              	.L554:
  5810              		.loc 1 1378 0 is_stmt 0 discriminator 5
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 147
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 147
 
 
  5811 0024 0028     		cmp	r0, #0
@@ -8818,7 +8818,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
 1387:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****           mem = 0;
  5848              		.loc 1 1387 0
  5849 0052 0023     		movs	r3, #0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 148
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 148
 
 
  5850              	.L555:
@@ -8878,7 +8878,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  5892 0084 BEB1     		cbz	r6, .L560
  5893              		.loc 1 1404 0 is_stmt 0 discriminator 1
  5894 0086 B5B1     		cbz	r5, .L560
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 149
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 149
 
 
 1405:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****           if (xSemaphoreGive (hSemaphore) != pdPASS) {
@@ -8938,7 +8938,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  5932              		.loc 1 1421 0
  5933 00b6 96B1     		cbz	r6, .L553
 1422:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         if (attr != NULL) {
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 150
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 150
 
 
  5934              		.loc 1 1422 0
@@ -8998,7 +8998,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  5975 00e0 02B0     		add	sp, sp, #8
  5976              	.LCFI88:
  5977              		.cfi_def_cfa_offset 16
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 151
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 151
 
 
  5978              		@ sp needed
@@ -9058,7 +9058,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  6023              	.LBE596:
 1444:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     stat = osErrorParameter;
 1445:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 152
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 152
 
 
 1446:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   else if (IS_IRQ()) {
@@ -9118,7 +9118,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  6069 0032 1AD1     		bne	.L583
 1454:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         stat = osErrorResource;
 1455:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       } else {
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 153
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 153
 
 
 1456:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         portYIELD_FROM_ISR (yield);
@@ -9178,7 +9178,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
 1466:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       }
 1467:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     }
 1468:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 154
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 154
 
 
 1469:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
@@ -9238,7 +9238,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  6160              		.thumb_func
  6162              	osSemaphoreRelease:
  6163              	.LFB158:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 155
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 155
 
 
 1472:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
@@ -9298,7 +9298,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  6203              		.loc 1 1483 0
  6204 0010 33B9     		cbnz	r3, .L592
  6205              		.loc 1 1483 0 is_stmt 0 discriminator 2
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 156
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 156
 
 
  6206 0012 184B     		ldr	r3, .L599
@@ -9358,7 +9358,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  6253              	.L593:
 1490:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     }
 1491:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 157
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 157
 
 
 1492:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   else {
@@ -9418,7 +9418,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  6295              		.cfi_def_cfa_offset 4
  6296              		@ sp needed
  6297 0070 5DF804FB 		ldr	pc, [sp], #4
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 158
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 158
 
 
  6298              	.L600:
@@ -9478,7 +9478,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  6342              		.loc 2 386 0
  6343              		.syntax unified
  6344              	@ 386 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 159
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 159
 
 
  6345 000a EFF31083 		MRS r3, primask
@@ -9538,7 +9538,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  6395 0030 00000000 		.word	.LANCHOR0
  6396              		.cfi_endproc
  6397              	.LFE159:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 160
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 160
 
 
  6399              		.section	.text.osSemaphoreDelete,"ax",%progbits
@@ -9598,7 +9598,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  6441 0010 022B     		cmp	r3, #2
  6442 0012 02D1     		bne	.L612
  6443              	.LBB618:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 161
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 161
 
 
  6444              	.LBB619:
@@ -9658,7 +9658,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  6483 002e 6FF00500 		mvn	r0, #5
  6484              	.LVL616:
  6485 0032 7047     		bx	lr
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 162
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 162
 
 
  6486              	.LVL617:
@@ -9718,7 +9718,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  6530              		.cfi_def_cfa_offset 24
  6531              	.LVL624:
  6532              	.LBB620:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 163
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 163
 
 
  6533              	.LBB621:
@@ -9778,7 +9778,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  6576              		.loc 1 1554 0
  6577 0020 002B     		cmp	r3, #0
  6578 0022 47D1     		bne	.L631
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 164
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 164
 
 
  6579              	.L623:
@@ -9838,7 +9838,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  6620 0058 0DE0     		b	.L624
  6621              	.L634:
 1565:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****           mem = 0;
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 165
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 165
 
 
 1566:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         }
@@ -9898,7 +9898,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
 1577:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       if (mem == 0) {
  6662              		.loc 1 1577 0
  6663 008c 23B9     		cbnz	r3, .L640
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 166
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 166
 
 
 1578:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         hQueue = xQueueCreate (msg_count, msg_size);
@@ -9958,7 +9958,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  6704 00b2 04E0     		b	.L622
  6705              	.L631:
  6706 00b4 0025     		movs	r5, #0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 167
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 167
 
 
  6707 00b6 02E0     		b	.L622
@@ -10018,7 +10018,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  6754              	.LBB627:
  209:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  6755              		.loc 2 209 0
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 168
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 168
 
 
  6756              		.syntax unified
@@ -10078,7 +10078,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  6799              		.loc 1 1608 0
  6800 0020 08B3     		cbz	r0, .L649
  6801              		.loc 1 1608 0 is_stmt 0 discriminator 1
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 169
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 169
 
 
  6802 0022 19B3     		cbz	r1, .L650
@@ -10138,7 +10138,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
 1624:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     }
 1625:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     else {
 1626:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       if (xQueueSendToBack (hQueue, msg_ptr, (TickType_t)timeout) != pdPASS) {
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 170
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 170
 
 
  6840              		.loc 1 1626 0 is_stmt 1
@@ -10198,7 +10198,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  6888 008c 03E0     		b	.L648
  6889              	.LVL663:
  6890              	.L656:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 171
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 171
 
 
 1605:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
@@ -10258,7 +10258,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  6935 0004 1C46     		mov	r4, r3
  6936              	.LVL667:
  6937              	.LBB632:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 172
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 172
 
 
  6938              	.LBB633:
@@ -10318,7 +10318,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  6981 001e B3B1     		cbz	r3, .L663
  6982              	.L662:
 1649:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     if ((hQueue == NULL) || (msg_ptr == NULL) || (timeout != 0U)) {
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 173
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 173
 
 
  6983              		.loc 1 1649 0
@@ -10378,7 +10378,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  7022              		.loc 1 1663 0 is_stmt 0 discriminator 1
  7023 0050 C9B1     		cbz	r1, .L671
 1664:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       stat = osErrorParameter;
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 174
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 174
 
 
 1665:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     }
@@ -10438,7 +10438,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  7069 0086 6FF00300 		mvn	r0, #3
  7070              	.LVL684:
  7071 008a 03E0     		b	.L664
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 175
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 175
 
 
  7072              	.LVL685:
@@ -10498,7 +10498,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  7112 0000 08B1     		cbz	r0, .L679
 1685:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     capacity = 0U;
 1686:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   } else {
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 176
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 176
 
 
 1687:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     /* capacity = pxQueue->uxLength */
@@ -10558,7 +10558,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  7151              	.LVL695:
 1703:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
 1704:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 177
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 177
 
 
 1705:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   return (size);
@@ -10618,7 +10618,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  7194              		.syntax unified
  7195              	@ 386 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  7196 000a EFF31083 		MRS r3, primask
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 178
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 178
 
 
  7197              	@ 0 "" 2
@@ -10678,7 +10678,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  7246 0030 00000000 		.word	.LANCHOR0
  7247              		.cfi_endproc
  7248              	.LFE166:
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 179
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 179
 
 
  7250              		.section	.text.osMessageQueueGetSpace,"ax",%progbits
@@ -10738,7 +10738,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  7288              		.syntax unified
  7289              	@ 386 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  7290 000c EFF31083 		MRS r3, primask
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 180
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 180
 
 
  7291              	@ 0 "" 2
@@ -10798,7 +10798,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  7340              	.LBB653:
  7341              		.loc 3 229 0
  7342              		.syntax unified
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 181
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 181
 
 
  7343              	@ 229 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
@@ -10858,7 +10858,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  7387              		@ frame_needed = 0, uses_anonymous_args = 0
  7388              	.LVL710:
  7389 0000 08B5     		push	{r3, lr}
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 182
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 182
 
 
  7390              	.LCFI116:
@@ -10918,7 +10918,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  7438 001a 5BB9     		cbnz	r3, .L706
  7439              	.L703:
 1753:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     stat = osErrorISR;
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 183
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 183
 
 
 1754:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
@@ -10978,7 +10978,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  7481              		.align	2
  7482              		.global	osMessageQueueDelete
  7483              		.thumb
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 184
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 184
 
 
  7484              		.thumb_func
@@ -11038,7 +11038,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  7530              	@ 0 "" 2
  7531              		.thumb
  7532              		.syntax unified
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 185
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 185
 
 
  7533              	.LBE665:
@@ -11098,7 +11098,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  7572              	.LVL729:
  7573              	.L716:
  7574 003a 6FF00500 		mvn	r0, #5
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 186
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 186
 
 
  7575              	.LVL730:
@@ -11158,7 +11158,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
 1816:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   Dummy implementation of the callback function vApplicationMallocFailedHook().
 1817:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** */
 1818:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** #if (configUSE_MALLOC_FAILED_HOOK == 1)
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 187
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 187
 
 
 1819:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** __WEAK void vApplicationMallocFailedHook (void){}
@@ -11218,7 +11218,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  7610              		.loc 1 1860 0
  7611 0008 8023     		movs	r3, #128
  7612 000a 1360     		str	r3, [r2]
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 188
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 188
 
 
  7613 000c 7047     		bx	lr
@@ -11278,7 +11278,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  7660      00000000 
  7660      00000000 
  7660      00000000 
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 189
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 189
 
 
  7661              		.section	.bss.Idle_TCB,"aw",%nobits
@@ -11335,227 +11335,227 @@ ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 1
  7704              		.file 13 "Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h"
  7705              		.file 14 "Middlewares/Third_Party/FreeRTOS/Source/include/portable.h"
  7706              		.file 15 "Inc/FreeRTOSConfig.h"
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 190
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 190
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 cmsis_os2.c
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:22     .text.TimerCallback:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:26     .text.TimerCallback:00000000 TimerCallback
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:56     .text.osKernelInitialize:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:61     .text.osKernelInitialize:00000000 osKernelInitialize
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:144    .text.osKernelInitialize:00000040 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:149    .text.osKernelGetInfo:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:154    .text.osKernelGetInfo:00000000 osKernelGetInfo
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:201    .text.osKernelGetInfo:00000024 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:207    .text.osKernelGetState:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:212    .text.osKernelGetState:00000000 osKernelGetState
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:254    .text.osKernelGetState:00000024 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:259    .text.osKernelStart:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:264    .text.osKernelStart:00000000 osKernelStart
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:353    .text.osKernelStart:00000048 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:358    .text.osKernelLock:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:363    .text.osKernelLock:00000000 osKernelLock
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:458    .text.osKernelLock:0000004c $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:463    .text.osKernelUnlock:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:468    .text.osKernelUnlock:00000000 osKernelUnlock
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:576    .text.osKernelUnlock:00000060 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:581    .text.osKernelRestoreLock:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:586    .text.osKernelRestoreLock:00000000 osKernelRestoreLock
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:708    .text.osKernelRestoreLock:0000006c $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:713    .text.osKernelGetTickCount:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:718    .text.osKernelGetTickCount:00000000 osKernelGetTickCount
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:788    .text.osKernelGetTickCount:00000028 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:793    .text.osKernelGetTickFreq:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:798    .text.osKernelGetTickFreq:00000000 osKernelGetTickFreq
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:812    .text.osKernelGetSysTimerCount:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:817    .text.osKernelGetSysTimerCount:00000000 osKernelGetSysTimerCount
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:873    .text.osKernelGetSysTimerCount:00000030 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:879    .text.osKernelGetSysTimerFreq:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:884    .text.osKernelGetSysTimerFreq:00000000 osKernelGetSysTimerFreq
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:898    .text.osKernelGetSysTimerFreq:00000008 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:903    .text.osThreadNew:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:908    .text.osThreadNew:00000000 osThreadNew
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1140   .text.osThreadNew:000000e4 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1145   .text.osThreadGetName:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1150   .text.osThreadGetName:00000000 osThreadGetName
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1239   .text.osThreadGetName:00000034 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1244   .text.osThreadGetId:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1249   .text.osThreadGetId:00000000 osThreadGetId
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1325   .text.osThreadGetId:00000030 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1330   .text.osThreadGetState:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1335   .text.osThreadGetState:00000000 osThreadGetState
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1402   .text.osThreadGetState:0000002a $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1457   .text.osThreadGetState:00000060 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1462   .text.osThreadGetStackSpace:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1467   .text.osThreadGetStackSpace:00000000 osThreadGetStackSpace
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1556   .text.osThreadGetStackSpace:00000034 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1561   .text.osThreadGetStackSize:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1566   .text.osThreadGetStackSize:00000000 osThreadGetStackSize
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1582   .text.osThreadSetPriority:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1587   .text.osThreadSetPriority:00000000 osThreadSetPriority
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1696   .text.osThreadSetPriority:00000054 $d
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 191
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:22     .text.TimerCallback:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:26     .text.TimerCallback:00000000 TimerCallback
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:56     .text.osKernelInitialize:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:61     .text.osKernelInitialize:00000000 osKernelInitialize
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:144    .text.osKernelInitialize:00000040 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:149    .text.osKernelGetInfo:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:154    .text.osKernelGetInfo:00000000 osKernelGetInfo
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:201    .text.osKernelGetInfo:00000024 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:207    .text.osKernelGetState:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:212    .text.osKernelGetState:00000000 osKernelGetState
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:254    .text.osKernelGetState:00000024 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:259    .text.osKernelStart:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:264    .text.osKernelStart:00000000 osKernelStart
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:353    .text.osKernelStart:00000048 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:358    .text.osKernelLock:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:363    .text.osKernelLock:00000000 osKernelLock
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:458    .text.osKernelLock:0000004c $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:463    .text.osKernelUnlock:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:468    .text.osKernelUnlock:00000000 osKernelUnlock
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:576    .text.osKernelUnlock:00000060 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:581    .text.osKernelRestoreLock:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:586    .text.osKernelRestoreLock:00000000 osKernelRestoreLock
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:708    .text.osKernelRestoreLock:0000006c $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:713    .text.osKernelGetTickCount:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:718    .text.osKernelGetTickCount:00000000 osKernelGetTickCount
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:788    .text.osKernelGetTickCount:00000028 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:793    .text.osKernelGetTickFreq:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:798    .text.osKernelGetTickFreq:00000000 osKernelGetTickFreq
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:812    .text.osKernelGetSysTimerCount:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:817    .text.osKernelGetSysTimerCount:00000000 osKernelGetSysTimerCount
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:873    .text.osKernelGetSysTimerCount:00000030 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:879    .text.osKernelGetSysTimerFreq:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:884    .text.osKernelGetSysTimerFreq:00000000 osKernelGetSysTimerFreq
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:898    .text.osKernelGetSysTimerFreq:00000008 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:903    .text.osThreadNew:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:908    .text.osThreadNew:00000000 osThreadNew
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1140   .text.osThreadNew:000000e4 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1145   .text.osThreadGetName:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1150   .text.osThreadGetName:00000000 osThreadGetName
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1239   .text.osThreadGetName:00000034 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1244   .text.osThreadGetId:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1249   .text.osThreadGetId:00000000 osThreadGetId
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1325   .text.osThreadGetId:00000030 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1330   .text.osThreadGetState:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1335   .text.osThreadGetState:00000000 osThreadGetState
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1402   .text.osThreadGetState:0000002a $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1457   .text.osThreadGetState:00000060 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1462   .text.osThreadGetStackSpace:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1467   .text.osThreadGetStackSpace:00000000 osThreadGetStackSpace
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1556   .text.osThreadGetStackSpace:00000034 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1561   .text.osThreadGetStackSize:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1566   .text.osThreadGetStackSize:00000000 osThreadGetStackSize
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1582   .text.osThreadSetPriority:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1587   .text.osThreadSetPriority:00000000 osThreadSetPriority
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1696   .text.osThreadSetPriority:00000054 $d
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 191
 
 
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1701   .text.osThreadGetPriority:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1706   .text.osThreadGetPriority:00000000 osThreadGetPriority
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1795   .text.osThreadGetPriority:0000003c $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1800   .text.osThreadYield:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1805   .text.osThreadYield:00000000 osThreadYield
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1890   .text.osThreadYield:00000040 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1896   .text.osThreadSuspend:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1901   .text.osThreadSuspend:00000000 osThreadSuspend
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1994   .text.osThreadSuspend:00000040 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1999   .text.osThreadResume:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2004   .text.osThreadResume:00000000 osThreadResume
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2097   .text.osThreadResume:00000040 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2102   .text.osThreadExit:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2107   .text.osThreadExit:00000000 osThreadExit
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2129   .text.osThreadTerminate:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2134   .text.osThreadTerminate:00000000 osThreadTerminate
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2253   .text.osThreadTerminate:00000050 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2258   .text.osThreadGetCount:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2263   .text.osThreadGetCount:00000000 osThreadGetCount
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2339   .text.osThreadGetCount:00000030 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2344   .text.osThreadEnumerate:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2349   .text.osThreadEnumerate:00000000 osThreadEnumerate
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2493   .text.osThreadEnumerate:00000080 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2498   .text.osThreadFlagsSet:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2503   .text.osThreadFlagsSet:00000000 osThreadFlagsSet
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2644   .text.osThreadFlagsSet:00000088 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2650   .text.osThreadFlagsClear:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2655   .text.osThreadFlagsClear:00000000 osThreadFlagsClear
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2786   .text.osThreadFlagsClear:00000078 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2791   .text.osThreadFlagsGet:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2796   .text.osThreadFlagsGet:00000000 osThreadFlagsGet
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2884   .text.osThreadFlagsGet:00000048 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2889   .text.osThreadFlagsWait:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:2894   .text.osThreadFlagsWait:00000000 osThreadFlagsWait
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3101   .text.osThreadFlagsWait:000000cc $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3106   .text.osDelay:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3111   .text.osDelay:00000000 osDelay
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3203   .text.osDelay:0000003c $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3208   .text.osDelayUntil:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3213   .text.osDelayUntil:00000000 osDelayUntil
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3313   .text.osDelayUntil:0000004c $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3318   .text.osTimerNew:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3323   .text.osTimerNew:00000000 osTimerNew
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3531   .text.osTimerNew:000000b0 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3537   .text.osTimerGetName:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3542   .text.osTimerGetName:00000000 osTimerGetName
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3631   .text.osTimerGetName:00000034 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3636   .text.osTimerStart:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3641   .text.osTimerStart:00000000 osTimerStart
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3761   .text.osTimerStart:00000058 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3766   .text.osTimerStop:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3771   .text.osTimerStop:00000000 osTimerStop
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3904   .text.osTimerStop:00000064 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3909   .text.osTimerIsRunning:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:3914   .text.osTimerIsRunning:00000000 osTimerIsRunning
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4003   .text.osTimerIsRunning:00000034 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4008   .text.osTimerDelete:00000000 $t
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 192
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1701   .text.osThreadGetPriority:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1706   .text.osThreadGetPriority:00000000 osThreadGetPriority
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1795   .text.osThreadGetPriority:0000003c $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1800   .text.osThreadYield:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1805   .text.osThreadYield:00000000 osThreadYield
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1890   .text.osThreadYield:00000040 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1896   .text.osThreadSuspend:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1901   .text.osThreadSuspend:00000000 osThreadSuspend
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1994   .text.osThreadSuspend:00000040 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1999   .text.osThreadResume:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2004   .text.osThreadResume:00000000 osThreadResume
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2097   .text.osThreadResume:00000040 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2102   .text.osThreadExit:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2107   .text.osThreadExit:00000000 osThreadExit
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2129   .text.osThreadTerminate:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2134   .text.osThreadTerminate:00000000 osThreadTerminate
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2253   .text.osThreadTerminate:00000050 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2258   .text.osThreadGetCount:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2263   .text.osThreadGetCount:00000000 osThreadGetCount
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2339   .text.osThreadGetCount:00000030 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2344   .text.osThreadEnumerate:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2349   .text.osThreadEnumerate:00000000 osThreadEnumerate
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2493   .text.osThreadEnumerate:00000080 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2498   .text.osThreadFlagsSet:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2503   .text.osThreadFlagsSet:00000000 osThreadFlagsSet
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2644   .text.osThreadFlagsSet:00000088 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2650   .text.osThreadFlagsClear:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2655   .text.osThreadFlagsClear:00000000 osThreadFlagsClear
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2786   .text.osThreadFlagsClear:00000078 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2791   .text.osThreadFlagsGet:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2796   .text.osThreadFlagsGet:00000000 osThreadFlagsGet
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2884   .text.osThreadFlagsGet:00000048 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2889   .text.osThreadFlagsWait:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:2894   .text.osThreadFlagsWait:00000000 osThreadFlagsWait
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3101   .text.osThreadFlagsWait:000000cc $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3106   .text.osDelay:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3111   .text.osDelay:00000000 osDelay
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3203   .text.osDelay:0000003c $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3208   .text.osDelayUntil:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3213   .text.osDelayUntil:00000000 osDelayUntil
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3313   .text.osDelayUntil:0000004c $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3318   .text.osTimerNew:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3323   .text.osTimerNew:00000000 osTimerNew
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3531   .text.osTimerNew:000000b0 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3537   .text.osTimerGetName:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3542   .text.osTimerGetName:00000000 osTimerGetName
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3631   .text.osTimerGetName:00000034 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3636   .text.osTimerStart:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3641   .text.osTimerStart:00000000 osTimerStart
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3761   .text.osTimerStart:00000058 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3766   .text.osTimerStop:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3771   .text.osTimerStop:00000000 osTimerStop
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3904   .text.osTimerStop:00000064 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3909   .text.osTimerIsRunning:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:3914   .text.osTimerIsRunning:00000000 osTimerIsRunning
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4003   .text.osTimerIsRunning:00000034 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4008   .text.osTimerDelete:00000000 $t
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 192
 
 
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4013   .text.osTimerDelete:00000000 osTimerDelete
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4151   .text.osTimerDelete:00000064 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4156   .text.osEventFlagsNew:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4161   .text.osEventFlagsNew:00000000 osEventFlagsNew
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4298   .text.osEventFlagsNew:00000068 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4303   .text.osEventFlagsSet:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4308   .text.osEventFlagsSet:00000000 osEventFlagsSet
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4443   .text.osEventFlagsSet:00000074 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4449   .text.osEventFlagsClear:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4454   .text.osEventFlagsClear:00000000 osEventFlagsClear
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4569   .text.osEventFlagsClear:0000005c $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4574   .text.osEventFlagsGet:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4579   .text.osEventFlagsGet:00000000 osEventFlagsGet
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4663   .text.osEventFlagsGet:00000030 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4668   .text.osEventFlagsWait:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4673   .text.osEventFlagsWait:00000000 osEventFlagsWait
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4858   .text.osEventFlagsWait:00000094 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4863   .text.osEventFlagsDelete:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4868   .text.osEventFlagsDelete:00000000 osEventFlagsDelete
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4961   .text.osEventFlagsDelete:00000040 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4966   .text.osMutexNew:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:4971   .text.osMutexNew:00000000 osMutexNew
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:5205   .text.osMutexNew:000000cc $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:5210   .text.osMutexAcquire:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:5215   .text.osMutexAcquire:00000000 osMutexAcquire
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:5362   .text.osMutexAcquire:0000007c $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:5367   .text.osMutexRelease:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:5372   .text.osMutexRelease:00000000 osMutexRelease
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:5512   .text.osMutexRelease:00000070 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:5517   .text.osMutexGetOwner:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:5522   .text.osMutexGetOwner:00000000 osMutexGetOwner
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:5613   .text.osMutexGetOwner:00000038 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:5618   .text.osMutexDelete:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:5623   .text.osMutexDelete:00000000 osMutexDelete
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:5734   .text.osMutexDelete:0000004c $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:5739   .text.osSemaphoreNew:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:5744   .text.osSemaphoreNew:00000000 osSemaphoreNew
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:5984   .text.osSemaphoreNew:000000e4 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:5989   .text.osSemaphoreAcquire:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:5994   .text.osSemaphoreAcquire:00000000 osSemaphoreAcquire
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:6151   .text.osSemaphoreAcquire:00000080 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:6157   .text.osSemaphoreRelease:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:6162   .text.osSemaphoreRelease:00000000 osSemaphoreRelease
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:6301   .text.osSemaphoreRelease:00000074 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:6307   .text.osSemaphoreGetCount:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:6312   .text.osSemaphoreGetCount:00000000 osSemaphoreGetCount
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:6395   .text.osSemaphoreGetCount:00000030 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:6400   .text.osSemaphoreDelete:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:6405   .text.osSemaphoreDelete:00000000 osSemaphoreDelete
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:6505   .text.osSemaphoreDelete:00000048 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:6510   .text.osMessageQueueNew:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:6515   .text.osMessageQueueNew:00000000 osMessageQueueNew
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:6726   .text.osMessageQueueNew:000000c4 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:6731   .text.osMessageQueuePut:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:6736   .text.osMessageQueuePut:00000000 osMessageQueuePut
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:6909   .text.osMessageQueuePut:0000009c $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:6915   .text.osMessageQueueGet:00000000 $t
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 193
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4013   .text.osTimerDelete:00000000 osTimerDelete
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4151   .text.osTimerDelete:00000064 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4156   .text.osEventFlagsNew:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4161   .text.osEventFlagsNew:00000000 osEventFlagsNew
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4298   .text.osEventFlagsNew:00000068 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4303   .text.osEventFlagsSet:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4308   .text.osEventFlagsSet:00000000 osEventFlagsSet
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4443   .text.osEventFlagsSet:00000074 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4449   .text.osEventFlagsClear:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4454   .text.osEventFlagsClear:00000000 osEventFlagsClear
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4569   .text.osEventFlagsClear:0000005c $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4574   .text.osEventFlagsGet:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4579   .text.osEventFlagsGet:00000000 osEventFlagsGet
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4663   .text.osEventFlagsGet:00000030 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4668   .text.osEventFlagsWait:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4673   .text.osEventFlagsWait:00000000 osEventFlagsWait
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4858   .text.osEventFlagsWait:00000094 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4863   .text.osEventFlagsDelete:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4868   .text.osEventFlagsDelete:00000000 osEventFlagsDelete
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4961   .text.osEventFlagsDelete:00000040 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4966   .text.osMutexNew:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:4971   .text.osMutexNew:00000000 osMutexNew
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:5205   .text.osMutexNew:000000cc $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:5210   .text.osMutexAcquire:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:5215   .text.osMutexAcquire:00000000 osMutexAcquire
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:5362   .text.osMutexAcquire:0000007c $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:5367   .text.osMutexRelease:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:5372   .text.osMutexRelease:00000000 osMutexRelease
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:5512   .text.osMutexRelease:00000070 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:5517   .text.osMutexGetOwner:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:5522   .text.osMutexGetOwner:00000000 osMutexGetOwner
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:5613   .text.osMutexGetOwner:00000038 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:5618   .text.osMutexDelete:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:5623   .text.osMutexDelete:00000000 osMutexDelete
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:5734   .text.osMutexDelete:0000004c $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:5739   .text.osSemaphoreNew:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:5744   .text.osSemaphoreNew:00000000 osSemaphoreNew
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:5984   .text.osSemaphoreNew:000000e4 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:5989   .text.osSemaphoreAcquire:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:5994   .text.osSemaphoreAcquire:00000000 osSemaphoreAcquire
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:6151   .text.osSemaphoreAcquire:00000080 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:6157   .text.osSemaphoreRelease:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:6162   .text.osSemaphoreRelease:00000000 osSemaphoreRelease
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:6301   .text.osSemaphoreRelease:00000074 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:6307   .text.osSemaphoreGetCount:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:6312   .text.osSemaphoreGetCount:00000000 osSemaphoreGetCount
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:6395   .text.osSemaphoreGetCount:00000030 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:6400   .text.osSemaphoreDelete:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:6405   .text.osSemaphoreDelete:00000000 osSemaphoreDelete
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:6505   .text.osSemaphoreDelete:00000048 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:6510   .text.osMessageQueueNew:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:6515   .text.osMessageQueueNew:00000000 osMessageQueueNew
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:6726   .text.osMessageQueueNew:000000c4 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:6731   .text.osMessageQueuePut:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:6736   .text.osMessageQueuePut:00000000 osMessageQueuePut
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:6909   .text.osMessageQueuePut:0000009c $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:6915   .text.osMessageQueueGet:00000000 $t
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 193
 
 
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:6920   .text.osMessageQueueGet:00000000 osMessageQueueGet
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7092   .text.osMessageQueueGet:00000098 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7098   .text.osMessageQueueGetCapacity:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7103   .text.osMessageQueueGetCapacity:00000000 osMessageQueueGetCapacity
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7128   .text.osMessageQueueGetMsgSize:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7133   .text.osMessageQueueGetMsgSize:00000000 osMessageQueueGetMsgSize
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7158   .text.osMessageQueueGetCount:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7163   .text.osMessageQueueGetCount:00000000 osMessageQueueGetCount
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7246   .text.osMessageQueueGetCount:00000030 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7251   .text.osMessageQueueGetSpace:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7256   .text.osMessageQueueGetSpace:00000000 osMessageQueueGetSpace
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7372   .text.osMessageQueueGetSpace:0000004c $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7377   .text.osMessageQueueReset:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7382   .text.osMessageQueueReset:00000000 osMessageQueueReset
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7476   .text.osMessageQueueReset:00000040 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7481   .text.osMessageQueueDelete:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7486   .text.osMessageQueueDelete:00000000 osMessageQueueDelete
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7586   .text.osMessageQueueDelete:00000048 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7591   .text.vApplicationGetIdleTaskMemory:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7596   .text.vApplicationGetIdleTaskMemory:00000000 vApplicationGetIdleTaskMemory
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7617   .text.vApplicationGetIdleTaskMemory:00000010 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7623   .text.vApplicationGetTimerTaskMemory:00000000 $t
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7628   .text.vApplicationGetTimerTaskMemory:00000000 vApplicationGetTimerTaskMemory
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7649   .text.vApplicationGetTimerTaskMemory:00000010 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7655   .bss.Idle_Stack:00000000 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7659   .bss.Idle_Stack:00000000 Idle_Stack
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7662   .bss.Idle_TCB:00000000 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7666   .bss.Idle_TCB:00000000 Idle_TCB
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7669   .rodata.str1.4:00000000 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7673   .bss.Timer_Stack:00000000 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7677   .bss.Timer_Stack:00000000 Timer_Stack
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7680   .bss.KernelState:00000000 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7684   .bss.KernelState:00000000 KernelState
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7687   .bss.Timer_TCB:00000000 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:7691   .bss.Timer_TCB:00000000 Timer_TCB
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:6920   .text.osMessageQueueGet:00000000 osMessageQueueGet
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7092   .text.osMessageQueueGet:00000098 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7098   .text.osMessageQueueGetCapacity:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7103   .text.osMessageQueueGetCapacity:00000000 osMessageQueueGetCapacity
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7128   .text.osMessageQueueGetMsgSize:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7133   .text.osMessageQueueGetMsgSize:00000000 osMessageQueueGetMsgSize
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7158   .text.osMessageQueueGetCount:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7163   .text.osMessageQueueGetCount:00000000 osMessageQueueGetCount
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7246   .text.osMessageQueueGetCount:00000030 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7251   .text.osMessageQueueGetSpace:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7256   .text.osMessageQueueGetSpace:00000000 osMessageQueueGetSpace
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7372   .text.osMessageQueueGetSpace:0000004c $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7377   .text.osMessageQueueReset:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7382   .text.osMessageQueueReset:00000000 osMessageQueueReset
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7476   .text.osMessageQueueReset:00000040 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7481   .text.osMessageQueueDelete:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7486   .text.osMessageQueueDelete:00000000 osMessageQueueDelete
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7586   .text.osMessageQueueDelete:00000048 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7591   .text.vApplicationGetIdleTaskMemory:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7596   .text.vApplicationGetIdleTaskMemory:00000000 vApplicationGetIdleTaskMemory
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7617   .text.vApplicationGetIdleTaskMemory:00000010 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7623   .text.vApplicationGetTimerTaskMemory:00000000 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7628   .text.vApplicationGetTimerTaskMemory:00000000 vApplicationGetTimerTaskMemory
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7649   .text.vApplicationGetTimerTaskMemory:00000010 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7655   .bss.Idle_Stack:00000000 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7659   .bss.Idle_Stack:00000000 Idle_Stack
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7662   .bss.Idle_TCB:00000000 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7666   .bss.Idle_TCB:00000000 Idle_TCB
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7669   .rodata.str1.4:00000000 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7673   .bss.Timer_Stack:00000000 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7677   .bss.Timer_Stack:00000000 Timer_Stack
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7680   .bss.KernelState:00000000 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7684   .bss.KernelState:00000000 KernelState
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7687   .bss.Timer_TCB:00000000 $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:7691   .bss.Timer_TCB:00000000 Timer_TCB
                      .debug_frame:00000010 $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1407   .text.osThreadGetState:0000002f $d
-D:\Programme\Cygwin\tmp\cc0iq0hx.s:1407   .text.osThreadGetState:00000030 $t
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1407   .text.osThreadGetState:0000002f $d
+D:\Programme\Cygwin\tmp\ccqsqAFh.s:1407   .text.osThreadGetState:00000030 $t
 
 UNDEFINED SYMBOLS
 pvTimerGetTimerID
@@ -11575,7 +11575,7 @@ eTaskGetState
 uxTaskGetStackHighWaterMark
 vTaskPrioritySet
 uxTaskPriorityGet
-ARM GAS  D:\Programme\Cygwin\tmp\cc0iq0hx.s 			page 194
+ARM GAS  D:\Programme\Cygwin\tmp\ccqsqAFh.s 			page 194
 
 
 vTaskSuspend

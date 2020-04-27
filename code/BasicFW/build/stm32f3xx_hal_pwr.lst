@@ -1,4 +1,4 @@
-ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 1
+ARM GAS  D:\Programme\Cygwin\tmp\cciwLQDo.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 1
   27:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** #include "stm32f3xx_hal.h"
   28:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** 
   29:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** /** @addtogroup STM32F3xx_HAL_Driver
-ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 2
+ARM GAS  D:\Programme\Cygwin\tmp\cciwLQDo.s 			page 2
 
 
   30:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   * @{
@@ -118,7 +118,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 1
   36 0000 044B     		ldr	r3, .L2
   37 0002 1A69     		ldr	r2, [r3, #16]
   38 0004 42F08052 		orr	r2, r2, #268435456
-ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 3
+ARM GAS  D:\Programme\Cygwin\tmp\cciwLQDo.s 			page 3
 
 
   39 0008 1A61     		str	r2, [r3, #16]
@@ -178,7 +178,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 1
   84              	HAL_PWR_DisableBkUpAccess:
   85              	.LFB125:
   91:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** }
-ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 4
+ARM GAS  D:\Programme\Cygwin\tmp\cciwLQDo.s 			page 4
 
 
   92:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** 
@@ -238,7 +238,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 1
  122:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****           forced in input pull down configuration and is active on rising edges.
  123:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****       (+) There are up to three WakeUp pins:
  124:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****           (++)WakeUp Pin 1 on PA.00.
-ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 5
+ARM GAS  D:\Programme\Cygwin\tmp\cciwLQDo.s 			page 5
 
 
  125:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****           (++)WakeUp Pin 2 on PC.13 (STM32F303xC, STM32F303xE only).
@@ -298,7 +298,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 1
  179:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****           (++) Low Power regulator ON.
  180:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****           (++) PWR_STOPENTRY_WFI: enter STOP mode with WFI instruction or
  181:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****           (++) PWR_STOPENTRY_WFE: enter STOP mode with WFE instruction
-ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 6
+ARM GAS  D:\Programme\Cygwin\tmp\cciwLQDo.s 			page 6
 
 
  182:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****       (+) Exit:
@@ -358,7 +358,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 1
  236:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** /**
  237:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   * @brief Enables the WakeUp PINx functionality.
  238:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   * @param WakeUpPinx Specifies the Power Wake-Up pin to enable.
-ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 7
+ARM GAS  D:\Programme\Cygwin\tmp\cciwLQDo.s 			page 7
 
 
  239:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   *         This parameter can be value of :
@@ -418,7 +418,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 1
  261:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   assert_param(IS_PWR_WAKEUP_PIN(WakeUpPinx));
  262:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   /* Disable the EWUPx pin */
  263:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   CLEAR_BIT(PWR->CSR, WakeUpPinx);
-ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 8
+ARM GAS  D:\Programme\Cygwin\tmp\cciwLQDo.s 			page 8
 
 
  146              		.loc 1 263 0
@@ -478,7 +478,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 1
  176 0002 1369     		ldr	r3, [r2, #16]
  177 0004 23F00403 		bic	r3, r3, #4
  178 0008 1361     		str	r3, [r2, #16]
-ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 9
+ARM GAS  D:\Programme\Cygwin\tmp\cciwLQDo.s 			page 9
 
 
  290:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** 
@@ -538,7 +538,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 1
  303:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   }
  304:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** }
  305:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** 
-ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 10
+ARM GAS  D:\Programme\Cygwin\tmp\cciwLQDo.s 			page 10
 
 
  306:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** /**
@@ -598,7 +598,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 1
  238              		.loc 1 343 0
  239 000a 1060     		str	r0, [r2]
  344:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** 
-ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 11
+ARM GAS  D:\Programme\Cygwin\tmp\cciwLQDo.s 			page 11
 
 
  345:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   /* Set SLEEPDEEP bit of Cortex System Control Register */
@@ -658,7 +658,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 1
  275 0026 1369     		ldr	r3, [r2, #16]
  276 0028 23F00403 		bic	r3, r3, #4
  277 002c 1361     		str	r3, [r2, #16]
-ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 12
+ARM GAS  D:\Programme\Cygwin\tmp\cciwLQDo.s 			page 12
 
 
  278 002e 7047     		bx	lr
@@ -718,7 +718,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 1
  388:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   __WFI();
  310              		.loc 1 388 0
  311              		.syntax unified
-ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 13
+ARM GAS  D:\Programme\Cygwin\tmp\cciwLQDo.s 			page 13
 
 
  312              	@ 388 "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c" 1
@@ -778,7 +778,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 1
  355              		.thumb
  356              		.thumb_func
  358              	HAL_PWR_DisableSleepOnExit:
-ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 14
+ARM GAS  D:\Programme\Cygwin\tmp\cciwLQDo.s 			page 14
 
 
  359              	.LFB132:
@@ -838,7 +838,7 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 1
  390              		@ link register save eliminated.
  428:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   /* Set SEVONPEND bit of Cortex System Control Register */
  429:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   SET_BIT(SCB->SCR, ((uint32_t)SCB_SCR_SEVONPEND_Msk));
-ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 15
+ARM GAS  D:\Programme\Cygwin\tmp\cciwLQDo.s 			page 15
 
 
  391              		.loc 1 429 0
@@ -896,47 +896,47 @@ ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 1
  433              		.file 3 "d:\\tool_chain\\gcc-arm-none-eabi\\5.4 2016q3\\arm-none-eabi\\include\\sys\\_stdint.h"
  434              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
  435              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f302x8.h"
-ARM GAS  D:\Programme\Cygwin\tmp\ccRchwqY.s 			page 16
+ARM GAS  D:\Programme\Cygwin\tmp\cciwLQDo.s 			page 16
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f3xx_hal_pwr.c
-D:\Programme\Cygwin\tmp\ccRchwqY.s:22     .text.HAL_PWR_DeInit:00000000 $t
-D:\Programme\Cygwin\tmp\ccRchwqY.s:27     .text.HAL_PWR_DeInit:00000000 HAL_PWR_DeInit
-D:\Programme\Cygwin\tmp\ccRchwqY.s:48     .text.HAL_PWR_DeInit:00000014 $d
-D:\Programme\Cygwin\tmp\ccRchwqY.s:53     .text.HAL_PWR_EnableBkUpAccess:00000000 $t
-D:\Programme\Cygwin\tmp\ccRchwqY.s:58     .text.HAL_PWR_EnableBkUpAccess:00000000 HAL_PWR_EnableBkUpAccess
-D:\Programme\Cygwin\tmp\ccRchwqY.s:74     .text.HAL_PWR_EnableBkUpAccess:0000000c $d
-D:\Programme\Cygwin\tmp\ccRchwqY.s:79     .text.HAL_PWR_DisableBkUpAccess:00000000 $t
-D:\Programme\Cygwin\tmp\ccRchwqY.s:84     .text.HAL_PWR_DisableBkUpAccess:00000000 HAL_PWR_DisableBkUpAccess
-D:\Programme\Cygwin\tmp\ccRchwqY.s:100    .text.HAL_PWR_DisableBkUpAccess:0000000c $d
-D:\Programme\Cygwin\tmp\ccRchwqY.s:105    .text.HAL_PWR_EnableWakeUpPin:00000000 $t
-D:\Programme\Cygwin\tmp\ccRchwqY.s:110    .text.HAL_PWR_EnableWakeUpPin:00000000 HAL_PWR_EnableWakeUpPin
-D:\Programme\Cygwin\tmp\ccRchwqY.s:128    .text.HAL_PWR_EnableWakeUpPin:0000000c $d
-D:\Programme\Cygwin\tmp\ccRchwqY.s:133    .text.HAL_PWR_DisableWakeUpPin:00000000 $t
-D:\Programme\Cygwin\tmp\ccRchwqY.s:138    .text.HAL_PWR_DisableWakeUpPin:00000000 HAL_PWR_DisableWakeUpPin
-D:\Programme\Cygwin\tmp\ccRchwqY.s:156    .text.HAL_PWR_DisableWakeUpPin:0000000c $d
-D:\Programme\Cygwin\tmp\ccRchwqY.s:161    .text.HAL_PWR_EnterSLEEPMode:00000000 $t
-D:\Programme\Cygwin\tmp\ccRchwqY.s:166    .text.HAL_PWR_EnterSLEEPMode:00000000 HAL_PWR_EnterSLEEPMode
-D:\Programme\Cygwin\tmp\ccRchwqY.s:210    .text.HAL_PWR_EnterSLEEPMode:0000001c $d
-D:\Programme\Cygwin\tmp\ccRchwqY.s:215    .text.HAL_PWR_EnterSTOPMode:00000000 $t
-D:\Programme\Cygwin\tmp\ccRchwqY.s:220    .text.HAL_PWR_EnterSTOPMode:00000000 HAL_PWR_EnterSTOPMode
-D:\Programme\Cygwin\tmp\ccRchwqY.s:282    .text.HAL_PWR_EnterSTOPMode:00000030 $d
-D:\Programme\Cygwin\tmp\ccRchwqY.s:288    .text.HAL_PWR_EnterSTANDBYMode:00000000 $t
-D:\Programme\Cygwin\tmp\ccRchwqY.s:293    .text.HAL_PWR_EnterSTANDBYMode:00000000 HAL_PWR_EnterSTANDBYMode
-D:\Programme\Cygwin\tmp\ccRchwqY.s:321    .text.HAL_PWR_EnterSTANDBYMode:00000018 $d
-D:\Programme\Cygwin\tmp\ccRchwqY.s:327    .text.HAL_PWR_EnableSleepOnExit:00000000 $t
-D:\Programme\Cygwin\tmp\ccRchwqY.s:332    .text.HAL_PWR_EnableSleepOnExit:00000000 HAL_PWR_EnableSleepOnExit
-D:\Programme\Cygwin\tmp\ccRchwqY.s:348    .text.HAL_PWR_EnableSleepOnExit:0000000c $d
-D:\Programme\Cygwin\tmp\ccRchwqY.s:353    .text.HAL_PWR_DisableSleepOnExit:00000000 $t
-D:\Programme\Cygwin\tmp\ccRchwqY.s:358    .text.HAL_PWR_DisableSleepOnExit:00000000 HAL_PWR_DisableSleepOnExit
-D:\Programme\Cygwin\tmp\ccRchwqY.s:374    .text.HAL_PWR_DisableSleepOnExit:0000000c $d
-D:\Programme\Cygwin\tmp\ccRchwqY.s:379    .text.HAL_PWR_EnableSEVOnPend:00000000 $t
-D:\Programme\Cygwin\tmp\ccRchwqY.s:384    .text.HAL_PWR_EnableSEVOnPend:00000000 HAL_PWR_EnableSEVOnPend
-D:\Programme\Cygwin\tmp\ccRchwqY.s:400    .text.HAL_PWR_EnableSEVOnPend:0000000c $d
-D:\Programme\Cygwin\tmp\ccRchwqY.s:405    .text.HAL_PWR_DisableSEVOnPend:00000000 $t
-D:\Programme\Cygwin\tmp\ccRchwqY.s:410    .text.HAL_PWR_DisableSEVOnPend:00000000 HAL_PWR_DisableSEVOnPend
-D:\Programme\Cygwin\tmp\ccRchwqY.s:426    .text.HAL_PWR_DisableSEVOnPend:0000000c $d
+D:\Programme\Cygwin\tmp\cciwLQDo.s:22     .text.HAL_PWR_DeInit:00000000 $t
+D:\Programme\Cygwin\tmp\cciwLQDo.s:27     .text.HAL_PWR_DeInit:00000000 HAL_PWR_DeInit
+D:\Programme\Cygwin\tmp\cciwLQDo.s:48     .text.HAL_PWR_DeInit:00000014 $d
+D:\Programme\Cygwin\tmp\cciwLQDo.s:53     .text.HAL_PWR_EnableBkUpAccess:00000000 $t
+D:\Programme\Cygwin\tmp\cciwLQDo.s:58     .text.HAL_PWR_EnableBkUpAccess:00000000 HAL_PWR_EnableBkUpAccess
+D:\Programme\Cygwin\tmp\cciwLQDo.s:74     .text.HAL_PWR_EnableBkUpAccess:0000000c $d
+D:\Programme\Cygwin\tmp\cciwLQDo.s:79     .text.HAL_PWR_DisableBkUpAccess:00000000 $t
+D:\Programme\Cygwin\tmp\cciwLQDo.s:84     .text.HAL_PWR_DisableBkUpAccess:00000000 HAL_PWR_DisableBkUpAccess
+D:\Programme\Cygwin\tmp\cciwLQDo.s:100    .text.HAL_PWR_DisableBkUpAccess:0000000c $d
+D:\Programme\Cygwin\tmp\cciwLQDo.s:105    .text.HAL_PWR_EnableWakeUpPin:00000000 $t
+D:\Programme\Cygwin\tmp\cciwLQDo.s:110    .text.HAL_PWR_EnableWakeUpPin:00000000 HAL_PWR_EnableWakeUpPin
+D:\Programme\Cygwin\tmp\cciwLQDo.s:128    .text.HAL_PWR_EnableWakeUpPin:0000000c $d
+D:\Programme\Cygwin\tmp\cciwLQDo.s:133    .text.HAL_PWR_DisableWakeUpPin:00000000 $t
+D:\Programme\Cygwin\tmp\cciwLQDo.s:138    .text.HAL_PWR_DisableWakeUpPin:00000000 HAL_PWR_DisableWakeUpPin
+D:\Programme\Cygwin\tmp\cciwLQDo.s:156    .text.HAL_PWR_DisableWakeUpPin:0000000c $d
+D:\Programme\Cygwin\tmp\cciwLQDo.s:161    .text.HAL_PWR_EnterSLEEPMode:00000000 $t
+D:\Programme\Cygwin\tmp\cciwLQDo.s:166    .text.HAL_PWR_EnterSLEEPMode:00000000 HAL_PWR_EnterSLEEPMode
+D:\Programme\Cygwin\tmp\cciwLQDo.s:210    .text.HAL_PWR_EnterSLEEPMode:0000001c $d
+D:\Programme\Cygwin\tmp\cciwLQDo.s:215    .text.HAL_PWR_EnterSTOPMode:00000000 $t
+D:\Programme\Cygwin\tmp\cciwLQDo.s:220    .text.HAL_PWR_EnterSTOPMode:00000000 HAL_PWR_EnterSTOPMode
+D:\Programme\Cygwin\tmp\cciwLQDo.s:282    .text.HAL_PWR_EnterSTOPMode:00000030 $d
+D:\Programme\Cygwin\tmp\cciwLQDo.s:288    .text.HAL_PWR_EnterSTANDBYMode:00000000 $t
+D:\Programme\Cygwin\tmp\cciwLQDo.s:293    .text.HAL_PWR_EnterSTANDBYMode:00000000 HAL_PWR_EnterSTANDBYMode
+D:\Programme\Cygwin\tmp\cciwLQDo.s:321    .text.HAL_PWR_EnterSTANDBYMode:00000018 $d
+D:\Programme\Cygwin\tmp\cciwLQDo.s:327    .text.HAL_PWR_EnableSleepOnExit:00000000 $t
+D:\Programme\Cygwin\tmp\cciwLQDo.s:332    .text.HAL_PWR_EnableSleepOnExit:00000000 HAL_PWR_EnableSleepOnExit
+D:\Programme\Cygwin\tmp\cciwLQDo.s:348    .text.HAL_PWR_EnableSleepOnExit:0000000c $d
+D:\Programme\Cygwin\tmp\cciwLQDo.s:353    .text.HAL_PWR_DisableSleepOnExit:00000000 $t
+D:\Programme\Cygwin\tmp\cciwLQDo.s:358    .text.HAL_PWR_DisableSleepOnExit:00000000 HAL_PWR_DisableSleepOnExit
+D:\Programme\Cygwin\tmp\cciwLQDo.s:374    .text.HAL_PWR_DisableSleepOnExit:0000000c $d
+D:\Programme\Cygwin\tmp\cciwLQDo.s:379    .text.HAL_PWR_EnableSEVOnPend:00000000 $t
+D:\Programme\Cygwin\tmp\cciwLQDo.s:384    .text.HAL_PWR_EnableSEVOnPend:00000000 HAL_PWR_EnableSEVOnPend
+D:\Programme\Cygwin\tmp\cciwLQDo.s:400    .text.HAL_PWR_EnableSEVOnPend:0000000c $d
+D:\Programme\Cygwin\tmp\cciwLQDo.s:405    .text.HAL_PWR_DisableSEVOnPend:00000000 $t
+D:\Programme\Cygwin\tmp\cciwLQDo.s:410    .text.HAL_PWR_DisableSEVOnPend:00000000 HAL_PWR_DisableSEVOnPend
+D:\Programme\Cygwin\tmp\cciwLQDo.s:426    .text.HAL_PWR_DisableSEVOnPend:0000000c $d
                      .debug_frame:00000010 $d
 
 NO UNDEFINED SYMBOLS
