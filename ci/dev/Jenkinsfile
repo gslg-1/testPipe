@@ -3,6 +3,20 @@ pipeline
     agent any
     stages
     {
+        stage('Start')
+        {
+            steps
+            {
+                echo "Start Pipeline for a Fix"
+            }
+        }
+        stage('Availability Check')
+        {
+            steps
+            {
+                echo "Check if all required Tests, Modules, Reviews  and Designs of the feature are available "
+            }
+        }
         stage('Build')
         {
             steps
@@ -21,35 +35,20 @@ pipeline
                         echo "Static Analysis"
                     }
                 }
-                stage('Unit Test')
+                stage('Unit Test (off target)')
                 {
                     steps
                     {
                         echo "Unit Test"
                     }
                 }
-                stage('Integration Test')
             }
         }
-        stage('Add & Commit Changes')
+        stage('Deploy')
         {
             steps
             {
-                echo "Add & Commit Changes" 
-            }
-        }
-        stage('Local Merge with Feature Branch')
-        {
-            steps
-            {
-                echo "Local Merge with Feature Branch" 
-            }
-        }
-        stage('Push new Result to Remot Repository')
-        {
-            steps
-            {
-                echo "Push to the feature branch"
+                echo "Deploy" 
             }
         }
     }

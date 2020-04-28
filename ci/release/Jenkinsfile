@@ -3,59 +3,18 @@ pipeline
     agent any
     stages
     {
-        stage('Start')
+        stage('Availabity Check')
         {
             steps
             {
                 echo "Start Pipeline for a Fix"
             }
         }
-        stage('Build')
+        stage('Deploy')
         {
             steps
             {
                 echo "Build Project"
-            }
-        }
-        stage('Test & Analysis')
-        {
-            parallel
-            {
-                stage('Static Analysis')
-                {
-                    steps
-                    {
-                        echo "Static Analysis"
-                    }
-                }
-                stage('Unit Test (off target)')
-                {
-                    steps
-                    {
-                        echo "Unit Test"
-                    }
-                }
-            }
-        }
-        stage('Add & Commit Changes')
-        {
-            steps
-            {
-                echo "Add & Commit Changes" 
-            }
-        }
-        stage('Local Merge with Feature Branch')
-        {
-            steps
-            {
-                echo "Local Merge with Feature Branch" 
-            }
-        }
-        stage('Push new Result to Remot Repository')
-        {
-            steps
-            {
-                echo "Push to the feature branch"
             }
         }
     }

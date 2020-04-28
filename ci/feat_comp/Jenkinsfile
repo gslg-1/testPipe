@@ -42,27 +42,20 @@ pipeline
                         echo "Unit Test"
                     }
                 }
+                stage('Unit Test (on target)')
+                {
+                    steps
+                    {
+                        echo "Unit Test"
+                    }
+                }
             }
         }
-        stage('Add & Commit Changes')
+        stage('Deploy')
         {
             steps
             {
-                echo "Add & Commit Changes" 
-            }
-        }
-        stage('Local Merge with Feature Branch')
-        {
-            steps
-            {
-                echo "Local Merge with Feature Branch" 
-            }
-        }
-        stage('Push new Result to Remot Repository')
-        {
-            steps
-            {
-                echo "Push to the feature branch"
+                echo "Deploy" 
             }
         }
     }
