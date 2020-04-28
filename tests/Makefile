@@ -1,3 +1,10 @@
+# ==========================================
+#   Unity Project - A Test Framework for C
+#   Copyright (c) 2007 Mike Karlesky, Mark VanderVoord, Greg Williams
+#   [Released under MIT License. Please refer to license.txt for details]
+# ==========================================
+
+#We try to detect the OS we are running on, and adjust commands as needed
 ifeq ($(OS),Windows_NT)
   ifeq ($(shell uname -s),) # not in a bash-like shell
 	CLEANUP = del /F /Q
@@ -10,80 +17,60 @@ ifeq ($(OS),Windows_NT)
 else
 	CLEANUP = rm -f
 	MKDIR = mkdir -p
-	TARGET_EXTENSION=out
+	TARGET_EXTENSION=.out
 endif
 
-.PHONY: clean
-.PHONY: test
+C_COMPILER=gcc
+ifeq ($(shell uname -s), Darwin)
+C_COMPILER=clang
+endif
 
-PATHU = ../exec/tools/Unity/src/
-PATHS = ./src/    
-PATHT = ./tests/
-PATHB = ../output/unity/
-PATHD = ../output/unity/depends/
-PATHO = ../output/unity/objs/
-PATHR = ../output/unity/results/
+UNITY_ROOT=../exec/tools/Unity
+OUTPUT_DIR=../output/unity
 
-BUILD_PATHS = $(PATHB) $(PATHD) $(PATHO) $(PATHR)
 
-SRCT = $(wildcard $(PATHT)*.c)
+CFLAGS=-std=c99
+CFLAGS += -Wall
+CFLAGS += -Wextra
+CFLAGS += -Wpointer-arith
+CFLAGS += -Wcast-align
+CFLAGS += -Wwrite-strings
+CFLAGS += -Wswitch-default
+CFLAGS += -Wunreachable-code
+CFLAGS += -Winit-self
+CFLAGS += -Wmissing-field-initializers
+CFLAGS += -Wno-unknown-pragmas
+CFLAGS += -Wstrict-prototypes
+CFLAGS += -Wundef
+CFLAGS += -Wold-style-definition
+#CFLAGS += -Wno-misleading-indentation
 
-COMPILE=gcc -c
-LINK=gcc
-DEPEND=gcc -MM -MG -MF
-CFLAGS=-I. -I$(PATHU) -I$(PATHS) -DTEST
+TARGET_BASE1=all_tests
+TARGET1 = $(TARGET_BASE1)$(TARGET_EXTENSION)
+SRC_FILES1=\
+  $(UNITY_ROOT)/src/unity.c \
+  $(UNITY_ROOT)/extras/fixture/src/unity_fixture.c \
+  src/ProductionCode.c \
+  src/ProductionCode2.c \
+  test/TestProductionCode.c \
+  test/TestProductionCode2.c \
+  test/test_runners/TestProductionCode_Runner.c \
+  test/test_runners/TestProductionCode2_Runner.c \
+  test/test_runners/all_tests.c
+INC_DIRS=-Isrc -I$(UNITY_ROOT)/src -I$(UNITY_ROOT)/extras/fixture/src
+SYMBOLS=-DUNITY_FIXTURE_NO_EXTRAS
 
-RESULTS = $(patsubst $(PATHT)Test%.c,$(PATHR)Test%.txt,$(SRCT) )
+all: clean default 
 
-PASSED = `grep -s PASS $(PATHR)*.txt`
-FAIL = `grep -s FAIL $(PATHR)*.txt`
-IGNORE = `grep -s IGNORE $(PATHR)*.txt`
-
-test: $(BUILD_PATHS) $(RESULTS)
-	@echo "-----------------------\nIGNORES:\n-----------------------"
-	@echo "$(IGNORE)"
-	@echo "-----------------------\nFAILURES:\n-----------------------"
-	@echo "$(FAIL)"
-	@echo "-----------------------\nPASSED:\n-----------------------"
-	@echo "$(PASSED)"
-	@echo "\nDONE"
-
-$(PATHR)%.txt: $(PATHB)%.$(TARGET_EXTENSION)
-	-./$< > $@ 2>&1
-
-$(PATHB)Test%.$(TARGET_EXTENSION): $(PATHO)Test%.o $(PATHO)%.o $(PATHU)unity.o $(PATHD)Test%.d
-	$(LINK) -o $@ $^
-
-$(PATHO)%.o:: $(PATHT)%.c
-	$(COMPILE) $(CFLAGS) $< -o $@
-
-$(PATHO)%.o:: $(PATHS)%.c
-	$(COMPILE) $(CFLAGS) $< -o $@
-
-$(PATHO)%.o:: $(PATHU)%.c $(PATHU)%.h
-	$(COMPILE) $(CFLAGS) $< -o $@
-
-$(PATHD)%.d:: $(PATHT)%.c
-	$(DEPEND) $@ $<
-
-$(PATHB):
-	$(MKDIR) $(PATHB)
-
-$(PATHD):
-	$(MKDIR) $(PATHD)
-
-$(PATHO):
-	$(MKDIR) $(PATHO)
-
-$(PATHR):
-	$(MKDIR) $(PATHR)
+default: $(OUTPUT_DIR)
+	$(C_COMPILER) $(CFLAGS) $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(OUTPUT_DIR)/$(TARGET1)
+	- ./$(OUTPUT_DIR)/$(TARGET1) -v
+  
+$(OUTPUT_DIR):
+	mkdir $@
 
 clean:
-	$(CLEANUP) $(PATHO)*.o
-	$(CLEANUP) $(PATHB)*.$(TARGET_EXTENSION)
-	$(CLEANUP) $(PATHR)*.txt
+	$(CLEANUP) $(OUTPUT_DIR)/$(TARGET1)
 
-.PRECIOUS: $(PATHB)Test%.$(TARGET_EXTENSION)
-.PRECIOUS: $(PATHD)%.d
-.PRECIOUS: $(PATHO)%.o
-.PRECIOUS: $(PATHR)%.txt
+ci: CFLAGS += -Werror
+ci: default
