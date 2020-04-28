@@ -17,10 +17,19 @@ TEST_TEAR_DOWN(example1)
 {
 }
 
-TEST(example1, getGreatest)
+TEST(example1, getGreatest_should_return_the_greatest_value)
 {
   //All of these should pass
   TEST_ASSERT_EQUAL(36, getGreatest(17,36));
   TEST_ASSERT_EQUAL(0, getGreatest(0,0));
   TEST_ASSERT_EQUAL(255, getGreatest(17,255));
+  TEST_ASSERT_EQUAL(255, getGreatest(0,255));
+}
+
+TEST(example1, getGreatest_prepared_to_fail_the_test)
+{
+  //All of these should pass
+  TEST_ASSERT_EQUAL(0, getGreatest(0,0));
+  TEST_ASSERT_EQUAL(17, getGreatest(17,255));
+  TEST_ASSERT_EQUAL(255, getGreatest(0,255));
 }
