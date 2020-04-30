@@ -1,6 +1,9 @@
 pipeline
 {
     agent any
+    environment {
+        LOCAL_BRANCH=local_branch
+    }
     stages
     {
         stage('Start')
