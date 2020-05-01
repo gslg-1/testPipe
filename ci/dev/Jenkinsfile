@@ -61,12 +61,11 @@ int deleteDir(path)
 */
 String[] listModules(path)
 {
-    def tmp;
     if (path?.trim())
     {
-        tmp = 'ls -l $path | grep "*.h" | sed s/.h//h'.execute().text;
+        def tmp = 'ls -l $path | grep "*.h" | sed s/.h//h'.execute().text;
         println(tmp);
-        return 0;
+        return tmp;
     }
     return 1;
 }
