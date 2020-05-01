@@ -12,11 +12,15 @@ pipeline
             steps
             {
                 echo "Check if all required Tests, Modules"
+                sh('''git branch''')
                 script
                 {
                     // List all Modules
                     Modules = 'ls -l code/*/modules/src | grep "*.h" | sed "s/.h//h"'.execute().text;
                     println(Modules);
+                    // List all features, feat_*
+                    feat_ls= 'git log | grep -oh "\w*feat_\w* *"'.execute().text;       //problem if its available multible times
+                    // List all Mods of the specs
                 }
                 //script
                 //{
@@ -118,15 +122,13 @@ pipeline
     }
     post
     {
-        always {
-            echo 'Clean Up the workspace'
-            deleteDir()
-        }
         success {
             echo 'The pipe succeded'
+            deleteDir()
         }
         unstable {
             echo 'the pipe failed'
+            deleteDir()
         }
         failure {
             echo 'the pipe failed'
@@ -135,6 +137,7 @@ pipeline
                     git commit -m "Jenkins: Feature Check failded"
                     git push origin $GIT_BRANCH
             ''')
+            deleteDir()
         }
     }
 }
