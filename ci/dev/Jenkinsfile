@@ -63,10 +63,8 @@ String[] listModules(path)
 {
     if (path?.trim())
     {
-        def tmp = 'ls -l $path | grep "*.h" | sed s/.h//h'.execute().text;
-        println(tmp);
-        return tmp;
+        return 'ls -l $path | grep "*.h" | sed s/.h//h'.execute().text;
     }
-    return 1;
+    return ""
 }
 
