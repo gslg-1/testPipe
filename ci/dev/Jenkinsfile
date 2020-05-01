@@ -2,6 +2,7 @@ pipeline
 {
     agent any
     environment {
+        GITPWD=credentials('9655db7d-04fc-43ab-90b4-835e3b1cdcf6')
         MERGE_BR="mergeBranch"
         Modules=""
     }
@@ -13,6 +14,9 @@ pipeline
             {
                 echo "Check if all required Tests, Modules"
                 sh('''
+                    git config user.name "Jenkins"
+                    git config user.email "61031185+gslg-1@users.noreply.github.com"
+                    git config user.password $GITPWD
                     git branch
                     echo "$(env.GIT_LOCAL_BRANCH)"
                 ''')
