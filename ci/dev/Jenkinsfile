@@ -58,11 +58,11 @@ int deleteDir(path)
 * @param:
 *       -path: Add a String with the 
 */
-String[] listModules(path)
+String listModules(path)
 {
     //if (path?.trim())
     //{
-        return 'ls -l $path | grep "*.h" | sed s/.h//h'.execute().text;
+        return 'ls $path | grep "*.h" | sed s/.h//h'.execute().text;
     //}
     //return ""
 }
