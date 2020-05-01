@@ -121,7 +121,7 @@ pipeline
     {
         success {
             echo 'The pipe succeded'
-            deleteDir(*)
+            deleteDir(*);
         }
         unstable {
             echo 'the pipe failed'
