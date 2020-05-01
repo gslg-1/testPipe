@@ -80,9 +80,7 @@ String listModules(path)
 */
 void printSh(cmd)
 {
-   def sout = new StringBuilder()
-   def proc = cmd.execute()
-   proc.consumeProcessOutput(sout)
-   proc.waitForOrKill(1000)
-   println $sout
+   def sout = new StringBuilder();
+   def proc = cmd.execute();
+   println(proc);
 }
