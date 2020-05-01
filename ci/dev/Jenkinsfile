@@ -14,16 +14,12 @@ node
     }
     stage('Test')
     {
-        parallel
+        parallel StaticCodeAnalysis:
         {
-            stage('Static Code Analysis')
-            {
-                echo 'Static Code Analysis'
-            }
-            stage ('Unit Test')
-            {
-                echo 'Unit Test'
-            }
+            echo 'Static Code Analysis'
+        }, UnitTest
+        {
+            echo 'Unit Test'
         }
     }
     stage('Deploy')
