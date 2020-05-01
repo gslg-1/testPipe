@@ -1,19 +1,26 @@
 node
 {
-    String wdir = "w_pipe"
-    def mods;
-    def feats;
+    String wdir = "w_pipe";
+    String cmd = "";
     stage('Start')
     {
         Process rsp; 
         echo 'Start'
+        
         rsp = execute("ls");
         println(rsp.text());
-        rsp = execute("mkdir "$w_pipe);
+        
+        cmd = "mkdir "+w_pipe;
+        rsp = execute(cmd);
         println(rsp.text());
-        println("cd "+wdir);
-        printSh("cd "+wdir);
-        printSh("ls");
+        
+        cmd = "cd "+wdir
+        rsp = execute(cmd);
+        println(cmd);
+        
+        rsp = execute("ls");
+        println(rsp.text());
+        
     }
     stage('List')
     {
