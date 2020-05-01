@@ -15,7 +15,7 @@ pipeline
                 echo "Check if all required Tests, Modules"
                 sh('''
                     git branch
-                    git checkout $LOC_BR
+                    git checkout -b $LOC_BR
                     echo "$(env.GIT_LOCAL_BRANCH)"
                 ''')
                 script
