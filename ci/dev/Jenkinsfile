@@ -1,3 +1,8 @@
+int deleteDir(String path)
+{
+    'rm -fr $path'.execute();
+}
+
 pipeline
 {
     agent any
@@ -121,15 +126,11 @@ pipeline
     {
         success {
             echo 'The pipe succeded'
-            sh('''
-                rm -fr *
-            ''')
+            deleteDir("*");
         }
         unstable {
             echo 'the pipe failed'
-            sh('''
-                rm -fr *
-            ''')
+            deleteDir("*");
         }
         failure {
             echo 'the pipe failed'
@@ -139,9 +140,8 @@ pipeline
                    #git checkout -b GIT_LOCAL_BRANCH
                    #git merge $LOC_BR
                    #git push origin $GIT_BRANCH
-                   rm -fr *
             ''')
-            
+            deleteDir("*");  
         }
     }
 }
