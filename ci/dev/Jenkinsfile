@@ -2,7 +2,7 @@ pipeline
 {
     agent any
     environment {
-        MERGE_BR=mergeBranch
+        MERGE_BR="mergeBranch"
         Modules=""
     }
     stages
@@ -15,7 +15,7 @@ pipeline
                 script
                 {
                     // List all Modules
-                    Modules = 'ls -l code/*/modules/src | grep "*.h" | sed s/.h//h'.execute().text;
+                    Modules = 'ls -l code/*/modules/src | grep "*.h" | sed "s/.h//h"'.execute().text;
                     println(Modules);
                 }
                 //script
