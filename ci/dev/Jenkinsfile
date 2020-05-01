@@ -143,11 +143,15 @@ pipeline
     {
         success {
             echo 'The pipe succeded'
-            deleteDir('*');
+            script{
+                deleteDir('*');  
+            }
         }
         unstable {
             echo 'the pipe failed'
-            deleteDir('*');
+            script{
+                deleteDir('*');  
+            }
         }
         failure {
             echo 'the pipe failed'
@@ -158,7 +162,9 @@ pipeline
                    #git merge $LOC_BR
                    #git push origin $GIT_BRANCH
             ''')
-            deleteDir('*');  
+            script{
+                deleteDir('*');  
+            }
         }
     }
 }
