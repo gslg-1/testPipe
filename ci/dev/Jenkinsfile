@@ -121,11 +121,15 @@ pipeline
     {
         success {
             echo 'The pipe succeded'
-            deleteDir()
+            sh('''
+                rm -fr *
+            ''')
         }
         unstable {
             echo 'the pipe failed'
-            deleteDir()
+            sh('''
+                rm -fr *
+            ''')
         }
         failure {
             echo 'the pipe failed'
@@ -135,8 +139,9 @@ pipeline
                    #git checkout -b GIT_LOCAL_BRANCH
                    #git merge $LOC_BR
                    #git push origin $GIT_BRANCH
+                   rm -fr *
             ''')
-            deleteDir()
+            
         }
     }
 }
