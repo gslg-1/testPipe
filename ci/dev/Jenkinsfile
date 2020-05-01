@@ -26,8 +26,9 @@ node
     stage('Deploy')
     {
         echo 'Deploy'
+        deleteDir("*");
     }
-    deleteDir("*");
+    
 }
 
 /**
