@@ -3,12 +3,13 @@ node
     def s_wdir="pipe_wdir"
     stage('Start')
     {
+
+        'ls'.execute().text.println();
         sh('''
-            ls
             mkdir pipe_wdir
             cd pipe_wdir
-            ls
         ''')
+        'ls'.execute().text.println();
         
     }
     stage('List')
@@ -35,16 +36,15 @@ node
     stage('Deploy')
     {
         echo 'Deploy'
-        deleteDir("*");
-        'ls'.execute();
     }
     stage('Stop')
     {
+        'ls'.execute().text.println();
         sh('''
             cd ..
             rm -fr pipe_wdir
-            ls
         ''')
+        'ls'.execute().text.println();
     }
     
 }
