@@ -6,12 +6,9 @@
 
 def deleteDir(path)
 {
-    script
+    if (path?.trim())
     {
-        if (path?.trim())
-        {
-            'rm -fr $path'.execute();
-        }
+        'rm -fr $path'.execute();
     }
 }
 
