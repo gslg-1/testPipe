@@ -17,7 +17,8 @@ node
         parallel StaticCodeAnalysis:
         {
             echo 'Static Code Analysis'
-        }, UnitTest
+        }, 
+        UnitTest:
         {
             echo 'Unit Test'
         }
