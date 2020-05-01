@@ -11,7 +11,8 @@ node
     stage('List')
     {
         echo 'List'
-        print(listModules("code/*/modules/src/"));
+        //print(listModules("code/*/modules/src/"));
+        print(listModules("*"));
     }
     stage('Build')
     {
