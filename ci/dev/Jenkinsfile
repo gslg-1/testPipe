@@ -10,11 +10,13 @@ node
         rsp = execute("ls");
         println(rsp.text());
         
-        cmd = "mkdir "+w_pipe;
+        cmd = "";
+        cmd+"mkdir "+w_pipe;
         rsp = execute(cmd);
         println(rsp.text());
         
-        cmd = "cd "+wdir
+        cmd = "";
+        cmd+"cd "+w_pipe;
         rsp = execute(cmd);
         println(cmd);
         
