@@ -15,11 +15,23 @@ node
     stage('Test')
     {
         echo 'Test'
+        parallel
+        {
+            stage('Static Code Analysis')
+            {
+                echo 'Static Code Analysis'
+            }
+            stage ('Unit Test')
+            {
+                echo 'Unit Test'
+            }
+        }
     }
     stage('Deploy')
     {
         echo 'Deploy'
     }
+    deleteDir("*");
 }
 
 /**
