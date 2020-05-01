@@ -2,7 +2,6 @@ pipeline
 {
     agent any
     environment {
-        GITPWD=credentials('9655db7d-04fc-43ab-90b4-835e3b1cdcf6')
         MERGE_BR="mergeBranch"
         Modules=""
     }
@@ -24,7 +23,7 @@ pipeline
                 {
                     // List all Modules
                     Modules = 'ls -l code/*/modules/src | grep "*.h" | sed s/.h//h'.execute().text;
-                //    println(Modules)
+                    println(Modules)
                 //    // List all features, feat_*
                 //    feat_ls= 'git log | grep -oh "\w*feat_\w* *"'.execute().text;       //problem if its available multible times
                 //    // List all Mods of the specs
