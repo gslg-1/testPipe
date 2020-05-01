@@ -1,27 +1,14 @@
 node
 {
-    String wdir = "w_pipe";
-    String cmd = "";
+    def s_wdir="pipe_wdir"
     stage('Start')
     {
-        Process rsp; 
-        echo 'Start'
-        
-        rsp = execute("ls");
-        println(rsp.text());
-        
-        cmd = "";
-        cmd+"mkdir "+w_pipe;
-        rsp = execute(cmd);
-        println(rsp.text());
-        
-        cmd = "";
-        cmd+"cd "+w_pipe;
-        rsp = execute(cmd);
-        println(cmd);
-        
-        rsp = execute("ls");
-        println(rsp.text());
+        sh('''
+            ls
+            mkdir $s_wdir
+            cd $s_wdir
+            ls
+        ''')
         
     }
     stage('List')
@@ -50,6 +37,14 @@ node
         echo 'Deploy'
         deleteDir("*");
         'ls'.execute();
+    }
+    stage('Stop')
+    {
+        sh('''
+            cd ..
+            rm -fr $s_wdir
+            ls
+        ''')
     }
     
 }
