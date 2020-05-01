@@ -4,13 +4,21 @@
 *       -path: Add a String with the 
 */
 
-def deleteDir(path)
+def deleteDir(String path)
 {
     if (path?.trim())
     {
         'rm -fr $path'.execute();
     }
 }
+def deleteDir(char path)
+{
+    if (path?.trim())
+    {
+        'rm -fr $path'.execute();
+    }
+}
+
 
 pipeline
 {
@@ -135,11 +143,11 @@ pipeline
     {
         success {
             echo 'The pipe succeded'
-            deleteDir("*");
+            deleteDir('*');
         }
         unstable {
             echo 'the pipe failed'
-            deleteDir("*");
+            deleteDir('*');
         }
         failure {
             echo 'the pipe failed'
@@ -150,7 +158,7 @@ pipeline
                    #git merge $LOC_BR
                    #git push origin $GIT_BRANCH
             ''')
-            deleteDir("*");  
+            deleteDir('*');  
         }
     }
 }
