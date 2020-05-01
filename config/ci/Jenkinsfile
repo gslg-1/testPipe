@@ -1,0 +1,134 @@
+pipeline
+{
+    agent any
+    environment {
+        MERGE_BR=mergeBranch
+        Modules=""
+    }
+    stages
+    {
+        stage('Availability Check')
+        {
+            steps
+            {
+                echo "Check if all required Tests, Modules"
+                script
+                {
+                    // List all Modules
+                    env.Modules = 'ls -l code/*/modules/src | grep "*.h" | sed s/.h//h'.execute().text;
+                    // List all features, feat_*
+                    feat_ls= 'git log | grep -oh \w*feat_\w* *'.execute().text;       //problem if its available multible times
+                    // List all Mods of the specs
+                    String tempMods = "";
+                    for (int i = 0 ; i < feat_ls.length; i++ )
+                    {
+                        def path = "docs/specs/"+feat_ls[i]+"JSON"
+                        def file = new File(path);
+                        assert file.exists() : "Specs not found!"
+                        def command = "jq .modules[] "+path " | sed s/\"//g";
+                        tempMods += command.execute();
+                    }
+                    // List all Unit Tests
+                    def ar_TestsMods = 'ls -l tests/src/ | grep "*.h" | sed s/.h//h'.execute().text;
+                    // Check if Unit Tests are available
+                    test_ls = 'ls /code/*/modules'.execute()
+                    def ar_Mods = tempMods.text;
+                    for (int i = 0; i < env.Modules.length; i++)
+                    {
+                        //  Check if the Specs are provided
+                        if (ar_Mods.contains(env.Modules(i))==false)
+                        {
+                            "Unit Test not available"
+                            return false;
+                        }
+                        // Check if Unit-Tests are available
+                        if (ar_TestsMods.contains(env.Modules(i))==false)
+                        {
+                            echo "Unit Test not available"
+                            return false;
+                        }
+                    }
+                }
+            }
+        }
+        stage('Build')
+        {
+            steps
+            {
+                echo "Build Project"
+                sh('''
+                    cd code/*/
+                    make clean
+                    make
+                    cd ../..    
+                ''')
+            }
+        }
+        stage('Test & Analysis')
+        {
+            parallel
+            {
+                stage('Static Code Analysis')
+                {
+                    steps
+                    {
+                        echo "Static Code Analysis"
+                        // Execute the Static Code Analysis of every Module
+                        sh('''
+                            ./exec/scripts/cpa-auto.sh "$Modules"
+                        ''')
+                    }
+                }
+                stage('Unit Test (off target)')
+                {
+                    steps
+                    {
+                        echo "Unit Test"
+                        // Execute the Unit Test of every Module
+                        sh('''
+                            cd test/
+                            make
+                            cd ..
+                        ''')
+                    }
+                }
+            }
+        }
+        stage('Deploy')
+        {
+            steps
+            {
+                echo "Deploy" 
+                sh('''  
+                    git add output/
+                    git commit -m "Jenkins: Successful Feature Check"
+                    git checkout -b $MERGE_BR
+                    git merge $GIT_LOCAL_BRANCH
+                    git push origin $MERGE_BR:$MERGE_BR
+                    //curl <github merge request>
+                ''')
+            }
+        }
+    }
+    post
+    {
+        always {
+            echo 'Clean Up the workspace'
+            deleteDir()
+        }
+        success {
+            echo 'The pipe succeded'
+        }
+        unstable {
+            echo 'the pipe failed'
+        }
+        failure {
+            echo 'the pipe failed'
+            sh('''  
+                    git add output/
+                    git commit -m "Jenkins: Feature Check failded"
+                    git push origin $GIT_BRANCH
+            ''')
+        }
+    }
+}
