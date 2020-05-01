@@ -9,7 +9,7 @@ node
         echo 'Start'
         printSh("ls");
         printSh("mkdir "+wdir);
-        printSh("ls");
+        println("cd "+wdir);
         printSh("cd "+wdir);
         printSh("ls");
     }
