@@ -16,10 +16,10 @@ pipeline
                     git branch
                     echo "$(env.GIT_LOCAL_BRANCH)"
                 ''')
-                //script
-                //{
-                //    // List all Modules
-                //    Modules = 'ls -l code/*/modules/src | grep "*.h" | sed s/.h//h'.execute().text;
+                script
+                {
+                    // List all Modules
+                    Modules = 'ls -l code/*/modules/src | grep "*.h" | sed s/.h//h'.execute().text;
                 //    println(Modules)
                 //    // List all features, feat_*
                 //    feat_ls= 'git log | grep -oh "\w*feat_\w* *"'.execute().text;       //problem if its available multible times
@@ -53,7 +53,7 @@ pipeline
                 //            return false;
                 //        }
                 //    }
-                //}
+                }
             }
         }
         stage('Build')
