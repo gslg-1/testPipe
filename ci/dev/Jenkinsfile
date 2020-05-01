@@ -1,6 +1,15 @@
+/**
+* @description: This function is used to delete all files at a especial location
+* @param:
+*       -path: Add a String with the 
+*/
+
 int deleteDir(String path)
 {
-    'rm -fr $path'.execute();
+    if (path?.trim())
+    {
+        'rm -fr $path'.execute();
+    }
 }
 
 pipeline
