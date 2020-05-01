@@ -2,6 +2,7 @@ pipeline
 {
     agent any
     environment {
+        LOC_BR="loaclBranch"
         MERGE_BR="mergeBranch"
         Modules=""
     }
@@ -13,10 +14,8 @@ pipeline
             {
                 echo "Check if all required Tests, Modules"
                 sh('''
-                    //git config user.name "Jenkins"
-                    //git config user.email "61031185+gslg-1@users.noreply.github.com"
-                    //git config user.password $GITPWD
                     git branch
+                    git checkout $LOC_BR
                     echo "$(env.GIT_LOCAL_BRANCH)"
                 ''')
                 script
@@ -111,7 +110,7 @@ pipeline
                     git add output/
                     git commit -m "Jenkins: Successful Feature Check"
                     git checkout -b $MERGE_BR
-                    git merge $GIT_LOCAL_BRANCH
+                    git merge $LOC_BR
                     git push origin $MERGE_BR:$MERGE_BR
                     //curl <github merge request>
                 ''')
@@ -132,7 +131,9 @@ pipeline
             echo 'the pipe failed'
             sh('''  
                     git add output/
-                    git commit -m "Jenkins: Feature Check failded"
+                    git commit -m "Jenkins: Successful Feature Check"
+                    git checkout -b GIT_LOCAL_BRANCH
+                    git merge $LOC_BR
                     git push origin $GIT_BRANCH
             ''')
             deleteDir()
