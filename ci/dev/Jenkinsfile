@@ -27,7 +27,7 @@ node
     {
         echo 'Deploy'
         deleteDir("*");
-        ls
+        'ls'.execute();
     }
     
 }
