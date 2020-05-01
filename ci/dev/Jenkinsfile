@@ -109,7 +109,7 @@ pipeline
                     git commit -m "Jenkins: Successful Feature Check"
                     git checkout -b $MERGE_BR
                     git merge $GIT_LOCAL_BRANCH
-                    git push origin $MERGE_BR:$MERGE_BR
+                    //git push origin $MERGE_BR:$MERGE_BR
                     //curl <github merge request>
                 ''')
             }
@@ -130,7 +130,7 @@ pipeline
             sh('''  
                     git add output/
                     git commit -m "Jenkins: Feature Check failded"
-                    git push origin $GIT_BRANCH
+                    //git push origin $GIT_BRANCH
             ''')
             deleteDir()
         }
