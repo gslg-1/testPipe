@@ -4,11 +4,14 @@
 *       -path: Add a String with the 
 */
 
-int deleteDir(String path)
+def deleteDir(path)
 {
-    if (path?.trim())
+    script
     {
-        'rm -fr $path'.execute();
+        if (path?.trim())
+        {
+            'rm -fr $path'.execute();
+        }
     }
 }
 
