@@ -10,6 +10,7 @@ node
     stage('List')
     {
         echo 'List'
+        listModules("code/*/modules/src/");
     }
     stage('Build')
     {
