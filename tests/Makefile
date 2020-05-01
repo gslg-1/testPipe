@@ -53,13 +53,23 @@ SRC_FILES1=\
   src/ProductionCode.c \
   src/ProductionCode2.c \
   src/example1.c \
+  src/mod_t1.c \
+  src/mod_t2.c \
+  src/mod_t3.c \
   test/TestProductionCode.c \
   test/TestProductionCode2.c \
   test/Testexample1.c \
+  test/Testmod_t1.c \
+  test/Testmod_t2.c \
+  test/Testmod_t3.c \
   test/test_runners/TestProductionCode_Runner.c \
   test/test_runners/TestProductionCode2_Runner.c \
   test/test_runners/Testexample1_Runner.c \
+  test/test_runners/Testmod_t1_Runner.c \
+  test/test_runners/Testmod_t2_Runner.c \
+  test/test_runners/Testmod_t3_Runner.c \
   test/test_runners/all_tests.c
+  
 INC_DIRS=-Isrc -I$(UNITY_ROOT)/src -I$(UNITY_ROOT)/extras/fixture/src
 SYMBOLS=-DUNITY_FIXTURE_NO_EXTRAS
 

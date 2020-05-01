@@ -70,6 +70,9 @@ Middlewares/Third_Party/FreeRTOS/Source/timers.c \
 Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c \
 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c \
 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c \
+modules/src/mod_t1.c \
+modules/src/mod_t2.c \
+modules/src/mod_t3.c \
 Src/stm32f3xx_hal_timebase_tim.c\
 Middlewares/Third_Party/experimental/src/example1.c  \
 Middlewares/Third_Party/hanecs/src/dbg_if.c
@@ -140,7 +143,9 @@ C_INCLUDES =  \
 -IDrivers/CMSIS/Device/ST/STM32F3xx/Include \
 -IDrivers/CMSIS/Include \
 -IMiddlewares/Third_Party/experimental/inc \
--IMiddlewares/Third_Party/hanecs/inc 
+-IMiddlewares/Third_Party/hanecs/inc \
+-Imodules \
+-Imodules/inc
 
 
 # compile gcc flags
