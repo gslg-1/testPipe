@@ -82,5 +82,5 @@ void printSh(cmd)
 {
    def sout = new StringBuilder();
    def proc = cmd.execute();
-   println(proc);
+   println(proc.text);
 }
