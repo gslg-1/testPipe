@@ -1,6 +1,6 @@
 #ifndef __MOD_T3_H
 #define __MOD_T3_H
-
+#include <stdlib.h>
 
 
 void swapNB(uint8_t * arr);
