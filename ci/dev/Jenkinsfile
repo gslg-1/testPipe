@@ -8,7 +8,8 @@ node
         String 
         echo 'Start'
         printSh("ls");
-        printSh("mkdir "+wdir);
+        'mkdir w_pipe'.execute();
+        printSh("ls");
         printSh("cd "+wdir);
         printSh("ls");
     }
