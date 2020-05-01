@@ -1,8 +1,11 @@
 node
 {
+    def mods;
+    def feats;
     stage('Start')
     {
         echo 'Start'
+
     }
     stage('List')
     {
@@ -41,8 +44,27 @@ int deleteDir(path)
 {
     if (path?.trim())
     {
-        'rm -fr $path'.execute();
+        respond = 'rm -fr $path'.execute();
+        println(respond);
         return 0;
     }
     return 1;
 }
+
+/**
+* @description: This function is used to delete all files at a especial location
+* @param:
+*       -path: Add a String with the 
+*/
+String[] listModules(path)
+{
+    def tmp;
+    if (path?.trim())
+    {
+        tmp = 'ls -l $path | grep "*.h" | sed s/.h//h'.execute().text();
+        println(tmp);
+        return 0;
+    }
+    return 1;
+}
+
