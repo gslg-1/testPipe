@@ -78,12 +78,11 @@ String listModules(path)
 * @param:
 *       -path: Add a String with the 
 */
-def printSh(cmd)
+void printSh(cmd)
 {
-   def sout = new StringBuilder(), serr = new StringBuilder()
+   def sout = new StringBuilder()
    def proc = cmd.execute()
    proc.consumeProcessOutput(sout, serr)
    proc.waitForOrKill(1000)
-   println "out> $sout err> $serr"
-   return serr
+   println $sout
 }
