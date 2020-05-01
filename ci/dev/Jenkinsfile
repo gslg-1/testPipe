@@ -5,8 +5,8 @@ node
     {
         sh('''
             ls
-            mkdir $s_wdir
-            cd $s_wdir
+            mkdir pipe_wdir
+            cd pipe_wdir
             ls
         ''')
         
@@ -42,7 +42,7 @@ node
     {
         sh('''
             cd ..
-            rm -fr $s_wdir
+            rm -fr pipe_wdir
             ls
         ''')
     }
