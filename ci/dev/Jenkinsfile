@@ -12,7 +12,10 @@ pipeline
             steps
             {
                 echo "Check if all required Tests, Modules"
-                sh('''git branch''')
+                sh('''
+                    git branch
+                    echo "$GIT_LOCAL_BRANCH"
+                ''')
                 script
                 {
                     // List all Modules
