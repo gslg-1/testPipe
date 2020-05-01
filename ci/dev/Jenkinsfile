@@ -1,14 +1,16 @@
 node
 {
+    String wdir = "w_pipe"
     def mods;
     def feats;
     stage('Start')
     {
+        String 
         echo 'Start'
-        printAndExecute('ls');
-        printAndExecute('mkdir pipe');
-        printAndExecute('cd pipe');
-        printAndExecute('ls');
+        printSh("ls");
+        printSh("mkdir "+wdir);
+        printSh("cd "+wdir);
+        printSh("ls");
     }
     stage('List')
     {
@@ -75,7 +77,7 @@ String listModules(path)
 * @param:
 *       -path: Add a String with the 
 */
-int printAndExecute(String cmd)
+int printSh(String cmd)
 {
    return println(cmd.execute().text); 
 }
