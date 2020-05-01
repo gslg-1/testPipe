@@ -3,21 +3,14 @@
 * @param:
 *       -path: Add a String with the 
 */
+int deleteDir(String path)
+{
+    if (path?.trim())
+    {
+        'rm -fr $path'.execute();
+    }
+}
 
-def deleteDir(String path)
-{
-    if (path?.trim())
-    {
-        'rm -fr $path'.execute();
-    }
-}
-def deleteDir(char path)
-{
-    if (path?.trim())
-    {
-        'rm -fr $path'.execute();
-    }
-}
 
 
 pipeline
