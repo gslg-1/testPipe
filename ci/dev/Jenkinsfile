@@ -14,9 +14,9 @@ pipeline
             {
                 echo "Check if all required Tests, Modules"
                 sh('''
-                    git branch
-                    git checkout -b $LOC_BR
-                    echo "$(env.GIT_LOCAL_BRANCH)"
+                    #git branch
+                    #git checkout -b $LOC_BR
+                    #echo "$(env.GIT_LOCAL_BRANCH)"
                 ''')
                 script
                 {
@@ -107,12 +107,12 @@ pipeline
             {
                 echo "Deploy" 
                 sh('''  
-                    git add output/
-                    git commit -m "Jenkins: Successful Feature Check"
-                    git checkout -b $MERGE_BR
-                    git merge $LOC_BR
-                    git push origin $MERGE_BR:$MERGE_BR
-                    //curl <github merge request>
+                    #git add output/
+                    #git commit -m "Jenkins: Successful Feature Check"
+                    #git checkout -b $MERGE_BR
+                    #git merge $LOC_BR
+                    #git push origin $MERGE_BR:$MERGE_BR
+                    #curl <github merge request>
                 ''')
             }
         }
@@ -130,11 +130,11 @@ pipeline
         failure {
             echo 'the pipe failed'
             sh('''  
-                    git add output/
-                    git commit -m "Jenkins: Successful Feature Check"
-                    git checkout -b GIT_LOCAL_BRANCH
-                    git merge $LOC_BR
-                    git push origin $GIT_BRANCH
+                   #git add output/
+                   #git commit -m "Jenkins: Successful Feature Check"
+                   #git checkout -b GIT_LOCAL_BRANCH
+                   #git merge $LOC_BR
+                   #git push origin $GIT_BRANCH
             ''')
             deleteDir()
         }
