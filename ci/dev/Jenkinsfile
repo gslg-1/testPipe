@@ -5,10 +5,12 @@ node
     def feats;
     stage('Start')
     {
-        String 
+        Process rsp; 
         echo 'Start'
-        printSh("ls");
-        printSh("mkdir "+wdir);
+        rsp = execute("ls");
+        println(rsp.text());
+        rsp = execute("mkdir "$w_pipe);
+        println(rsp.text());
         println("cd "+wdir);
         printSh("cd "+wdir);
         printSh("ls");
