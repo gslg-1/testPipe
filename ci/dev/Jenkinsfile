@@ -85,4 +85,5 @@ def printSh(cmd)
    proc.consumeProcessOutput(sout, serr)
    proc.waitForOrKill(1000)
    println "out> $sout err> $serr"
+   return serr
 }
