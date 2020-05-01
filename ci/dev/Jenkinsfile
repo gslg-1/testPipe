@@ -75,7 +75,7 @@ String listModules(path)
 * @param:
 *       -path: Add a String with the 
 */
-int printAndExecute(cmd)
+int printAndExecute(String cmd)
 {
-   return println(cmd.execute()); 
+   return println(cmd.execute().text); 
 }
