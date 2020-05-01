@@ -1,55 +1,109 @@
 pipeline
 {
     agent any
+    environment {
+        MERGE_BR=mergeBranch
+        Modules=""
+    }
     stages
     {
+        stage('Availability Check')
+        {
+            steps
+            {
+                echo "Check if all required Tests, Modules"
+                script
+                {
+                    // List all Modules
+                    Modules = 'ls -l code/*/modules/src | grep "*.h" | sed s/.h//h'.execute().text;
+                    // List all features, feat_*
+                    FEAT= 'git log | grep -oh "\w*feat_\w*" *'.execute().text;
+                    // List all Mods of the specs
+                    String tempMods = "";
+                    for (int i = 0 ; i < FEAT.length; i++ )
+                    {
+                        def path = "docs/specs/"+FEAT[i]+"JSON"
+                        def file = new File(path);
+                        assert file.exists() : "Specs not found!"
+                        def command = "jq .modules[] "+path " | sed s/\"//g";
+                        tempMods += command.execute();
+                    }
+                    // List all Unit Tests
+                    def ar_TestsMods = 'ls -l tests/src/ | grep "*.h" | sed s/.h//h'.execute().text;
+                    // Check if Unit Tests are available
+                    TESTS = 'ls /code/*/modules'.execute()
+                    def ar_Mods = tempMods.text;
+                    for (int i = 0; i < Modules.length; i++)
+                    {
+                        //  Check if the Specs are provided
+                        if (ar_Mods.contains(Modules(i))==false)
+                        {
+                            return false;
+                        }
+                        // Check if Unit-Tests are available
+                        if (ar_TestsMods.contains(Modules(i))==false)
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+        }
         stage('Build')
         {
             steps
             {
                 echo "Build Project"
+                sh('''
+                    cd code/*/
+                    make clean
+                    make
+                    cd ../..    
+                ''')
             }
         }
         stage('Test & Analysis')
         {
             parallel
             {
-                stage('Static Analysis')
+                stage('Static Code Analysis')
                 {
                     steps
                     {
-                        echo "Static Analysis"
+                        echo "Static Code Analysis"
+                        // Execute the Static Code Analysis of every Module
+                        sh('''
+                            ./exec/scripts/cpa-auto.sh "$Modules"
+                        ''')
                     }
                 }
-                stage('Unit Test')
+                stage('Unit Test (off target)')
                 {
                     steps
                     {
                         echo "Unit Test"
+                        // Execute the Unit Test of every Module
+                        sh('''
+                            cd test/
+                            make
+                            cd ..
+                        ''')
                     }
                 }
-                stage('Integration Test')
             }
         }
-        stage('Add & Commit Changes')
+        stage('Deploy')
         {
             steps
             {
-                echo "Add & Commit Changes" 
-            }
-        }
-        stage('Local Merge with Feature Branch')
-        {
-            steps
-            {
-                echo "Local Merge with Feature Branch" 
-            }
-        }
-        stage('Push new Result to Remot Repository')
-        {
-            steps
-            {
-                echo "Push to the feature branch"
+                echo "Deploy" 
+                sh('''  
+                    git add output/
+                    git commit -m "Jenkins: Successful Feature Check"
+                    git checkout -b $MERGE_BR
+                    git merge $GIT_LOCAL_BRANCH
+                    git push origin $MERGE_BR:$MERGE_BR
+                ''')
             }
         }
     }
@@ -63,10 +117,15 @@ pipeline
             echo 'The pipe succeded'
         }
         unstable {
-            echo 'The pipe is unstable'
+            echo 'the pipe failed'
         }
         failure {
             echo 'the pipe failed'
+            sh('''  
+                    git add output/
+                    git commit -m "Jenkins: Feature Check failded"
+                    git push origin $GIT_BRANCH
+            ''')
         }
     }
 }
