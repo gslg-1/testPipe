@@ -10,7 +10,8 @@ node
     stage('List')
     {
         echo 'List'
-        listModules("code/*/modules/src/");
+        mods=listModules("code/*/modules/src/");
+        print(mods);
     }
     stage('Build')
     {
