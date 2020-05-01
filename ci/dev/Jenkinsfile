@@ -5,8 +5,10 @@ node
     stage('Start')
     {
         echo 'Start'
-        println('ls'.execute().text)
-
+        printAndExecute('ls');
+        printAndExecute('mkdir pipe');
+        printAndExecute('cd pipe');
+        printAndExecute('ls');
     }
     stage('List')
     {
@@ -68,3 +70,12 @@ String listModules(path)
     //return ""
 }
 
+/**
+* @description: This function is used to delete all files at a especial location
+* @param:
+*       -path: Add a String with the 
+*/
+int printAndExecute(cmd)
+{
+   return println(cmd.execute()); 
+}
