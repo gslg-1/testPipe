@@ -16,37 +16,45 @@ pipeline
                 {
                     // List all Modules
                     Modules = 'ls -l code/*/modules/src | grep "*.h" | sed s/.h//h'.execute().text;
-                    // List all features, feat_*
-                    FEAT= 'git log | grep -oh "\w*feat_\w*" *'.execute().text;
-                    // List all Mods of the specs
-                    String tempMods = "";
-                    for (int i = 0 ; i < FEAT.length; i++ )
-                    {
-                        def path = "docs/specs/"+FEAT[i]+"JSON"
-                        def file = new File(path);
-                        assert file.exists() : "Specs not found!"
-                        def command = "jq .modules[] "+path " | sed s/\"//g";
-                        tempMods += command.execute();
-                    }
-                    // List all Unit Tests
-                    def ar_TestsMods = 'ls -l tests/src/ | grep "*.h" | sed s/.h//h'.execute().text;
-                    // Check if Unit Tests are available
-                    TESTS = 'ls /code/*/modules'.execute()
-                    def ar_Mods = tempMods.text;
-                    for (int i = 0; i < Modules.length; i++)
-                    {
-                        //  Check if the Specs are provided
-                        if (ar_Mods.contains(Modules(i))==false)
-                        {
-                            return false;
-                        }
-                        // Check if Unit-Tests are available
-                        if (ar_TestsMods.contains(Modules(i))==false)
-                        {
-                            return false;
-                        }
-                    }
+                    println(Modules);
                 }
+                //script
+                //{
+                //    // List all Modules
+                //    env.Modules = 'ls -l code/*/modules/src | grep "*.h" | sed s/.h//h'.execute().text;
+                //    // List all features, feat_*
+                //    feat_ls= 'git log | grep -oh "\w*feat_\w* *"'.execute().text;       //problem if its available multible times
+                //    // List all Mods of the specs
+                //    String tempMods = "";
+                //    for (int i = 0 ; i < feat_ls.length; i++ )
+                //    {
+                //        def path = "docs/specs/"+feat_ls[i]+"JSON"
+                //        def file = new File(path);
+                //        assert file.exists() : "Specs not found!"
+                //        def command = "jq .modules[] "+path " | sed s/\"//g";
+                //        tempMods += command.execute();
+                //    }
+                //    // List all Unit Tests
+                //    def ar_TestsMods = 'ls -l tests/src/ | grep "*.h" | sed s/.h//h'.execute().text;
+                //    // Check if Unit Tests are available
+                //    test_ls = 'ls /code/*/modules'.execute()
+                //    def ar_Mods = tempMods.text;
+                //    for (int i = 0; i < env.Modules.length; i++)
+                //    {
+                //        //  Check if the Specs are provided
+                //        if (ar_Mods.contains(env.Modules(i))==false)
+                //        {
+                //            "Unit Test not available"
+                //            return false;
+                //        }
+                //        // Check if Unit-Tests are available
+                //        if (ar_TestsMods.contains(env.Modules(i))==false)
+                //        {
+                //            echo "Unit Test not available"
+                //            return false;
+                //        }
+                //    }
+                //}
             }
         }
         stage('Build')
@@ -103,6 +111,7 @@ pipeline
                     git checkout -b $MERGE_BR
                     git merge $GIT_LOCAL_BRANCH
                     git push origin $MERGE_BR:$MERGE_BR
+                    //curl <github merge request>
                 ''')
             }
         }
