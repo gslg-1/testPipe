@@ -16,16 +16,8 @@ pipeline
                 script
                 {
                     // List all Modules
-                    Modules = 'ls -l code/*/modules/src | grep "*.h" | sed "s/.h//h"'.execute().text;
-                    println(Modules);
-                    // List all features, feat_*
-                    feat_ls= 'git log | grep -oh "\w*feat_\w* *"'.execute().text;       //problem if its available multible times
-                    // List all Mods of the specs
-                }
-                //script
-                //{
-                //    // List all Modules
-                //    env.Modules = 'ls -l code/*/modules/src | grep "*.h" | sed s/.h//h'.execute().text;
+                    Modules = 'ls -l code/*/modules/src | grep "*.h" | sed s/.h//h'.execute().text;
+                    println(Modules)
                 //    // List all features, feat_*
                 //    feat_ls= 'git log | grep -oh "\w*feat_\w* *"'.execute().text;       //problem if its available multible times
                 //    // List all Mods of the specs
@@ -43,22 +35,22 @@ pipeline
                 //    // Check if Unit Tests are available
                 //    test_ls = 'ls /code/*/modules'.execute()
                 //    def ar_Mods = tempMods.text;
-                //    for (int i = 0; i < env.Modules.length; i++)
+                //    for (int i = 0; i < Modules.length; i++)
                 //    {
                 //        //  Check if the Specs are provided
-                //        if (ar_Mods.contains(env.Modules(i))==false)
+                //        if (ar_Mods.contains(Modules(i))==false)
                 //        {
                 //            "Unit Test not available"
                 //            return false;
                 //        }
                 //        // Check if Unit-Tests are available
-                //        if (ar_TestsMods.contains(env.Modules(i))==false)
+                //        if (ar_TestsMods.contains(Modules(i))==false)
                 //        {
                 //            echo "Unit Test not available"
                 //            return false;
                 //        }
                 //    }
-                //}
+                }
             }
         }
         stage('Build')
