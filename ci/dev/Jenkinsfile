@@ -5,6 +5,7 @@ node
     stage('Start')
     {
         echo 'Start'
+        println('ls'.execute().text)
 
     }
     stage('List')
