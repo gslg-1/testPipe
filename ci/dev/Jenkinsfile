@@ -30,7 +30,7 @@ pipeline
                 //''')
 
                 // Test Area:
-                env.LS = "${sh(script:'ls -lah', returnStdout: true)}"
+                LS = "${sh(script:'ls -lah', returnStdout: true)}"
 
                 // Compar Tests and Modules
                 script
