@@ -8,6 +8,7 @@ node
     stage('Start')
     {
         echo 'Start'
+        println('pwd'.execute.text); 
         s_rootDir = getClass().protectionDomain.codeSource.location.path;
         println(s_rootDir); 
     }
