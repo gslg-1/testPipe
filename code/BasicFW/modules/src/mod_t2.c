@@ -8,7 +8,7 @@ uint8_t findBiggest(uint8_t * arr, uint8_t length)
     {
         if( arr[i] > arr [i+1])
         {
-            swapNB();
+            swapNB(arr[i]);
         }
     }
     return arr[length-1];

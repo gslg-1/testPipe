@@ -16,7 +16,8 @@ pipeline
                 echo "Check if all required Tests, Modules"
                 // checkout on 
                 sh('''
-                    git checkout -b $LOCAL_BRANCH
+                    git branch 
+                    git checkout -B $LOCAL_BRANCH
                     git branch
                     ls
                 ''')
@@ -141,7 +142,8 @@ def cleanUp()
 {
     sh('''
         ls
-        git branch -d $LOCAL_BRANCH
+        git branch
+        git branch -D $LOCAL_BRANCH
         ls
         rm -fr *
     ''')
