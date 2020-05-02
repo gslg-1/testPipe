@@ -13,6 +13,7 @@ pipeline
             steps
             {
                 echo "Check if all required Tests, Modules"
+                deleteDir()
                 sh('''
                     ls
                     git branch
@@ -26,12 +27,14 @@ pipeline
             steps
             {
                 echo "Build Project"
+                // Execute Build
                 sh('''
                     cd code/*/
                     make clean
                     make
                     cd ../..    
                 ''')
+                // Exucute Doxygen
             }
         }
         stage('Test & Analysis')
