@@ -23,8 +23,9 @@ pipeline
                 // List all Modules
                 sh('''
                     MODULES=$(ls code/*/modules/inc/ | grep '.h' )
+                    echo $MODULES
                 ''')
-                echo $MODULES
+                
 
                 // List all Module Tests
                 script
