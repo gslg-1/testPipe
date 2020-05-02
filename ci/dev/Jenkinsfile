@@ -1,15 +1,16 @@
 node
 {
+    // Variables Declaration:
     File f_wdir;
     String s_wdir="pipe_wdir/"
     int success = 0;
     int suc_start = 0;
+    int f_wdirExist = 0;
 
     stage('Start')
     {
         // Variables Declaration:
         File f_currDir;
-        int f_wdirExist = 0;
         f_currDir = new File('.');
         f_wdir = new File(s_wdir);
         
