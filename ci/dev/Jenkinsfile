@@ -77,15 +77,6 @@ node
 
 
 
-/**
-* @description: This function is used to delete all files at a especial location
-* @param:
-*       -path: Add a String with the 
-*/
-int pipe(path)
-{
-    int ret = 0:
-}
 
 
 /**
