@@ -35,20 +35,18 @@ pipeline
                 // Compar Tests and Modules
                 script
                 {
-                    String mods[]=env.MODULES.split();
-                    String tests[]=env.TESTS.split();
+                    //String mods[]=env.MODULES.split();
+                    //String tests[]=env.TESTS.split();
                     int avaiable = 0;
-                    // Routine:
-                    println("Start Groovy Script");
-                    println(mods);
-                    println(tests);
                     
+                    println(env.MODULES);
+                    println(env.TESTS);
                     
                     // Compare List of Modules and Module Tests
-                    mods.each{
-                        print("Module: ");
-                        println(it);
-                    }
+                    //mods.each{
+                    //    print("Module: ");
+                    //    println(it);
+                    //}
                     //tests="${env.TESTS}".split();
                     //tests.each{
                     //    print("Tests: ");
