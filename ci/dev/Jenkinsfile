@@ -26,11 +26,11 @@ pipeline
                     MODULES=$(ls code/*/modules | grep '.h')
                 ''')
                 echo $MODULES
-                
+
                 // List all Module Tests
                 script
                 {
-
+                    println("Start Groovy Script");
                     // Compare List of Modules and Module Tests
                     
                 }
