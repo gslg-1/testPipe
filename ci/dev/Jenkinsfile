@@ -21,7 +21,7 @@ pipeline
                 // List all Modules
                 MODULES="""${sh(
                     returnStdout: true,
-                    script: 'ls "code/*/modules/inc/" | grep ".h" | sed "s/.h//g"'
+                    script: 'ls code/*/modules/inc/ | grep .h | sed s/.h//g'
                 )}""" 
                 echo "${MODULES}"
                 // List all Module Tests
