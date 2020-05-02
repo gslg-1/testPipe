@@ -4,7 +4,7 @@ pipeline
     environment {
         LOCAL_BRANCH="loaclBranch"
         MERGE_BRANCH="mergeBranch"
-        MODULES="${sh('''MODS=$(ls code/*/modules/inc/ | grep '.h' | sed s/.h//g)''')}"
+        MODULES="${sh('''ls code/*/modules/inc/ | grep '.h' | sed s/.h//g''')}"
     }
     stages
     {
@@ -39,6 +39,7 @@ pipeline
                     int avaiable = 0;
                     
                     println("Availability Check Scipt");
+                    println("${env.MODULES}")
                     //println("${env.MODS}");
                     //println("${env.TSTS}");
                     
