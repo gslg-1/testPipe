@@ -1,14 +1,15 @@
 node
 {
     // Variables Declaration:
-    String s_rootDir="";
-    String s_workDir="pipe_wdir/";
-    String s_localBranch="local-Branch";
-    int success = 0;
+    //String s_rootDir="";
+    //String s_workDir="pipe_wdir/";
+    //String s_localBranch="local-Branch";
+    //int success = 0;
     stage('Start')
     {
-        s_rootDir = getClass().protectionDomain.codeSource.location.path;
-        println(s_rootDir); 
+        echo 'Start'
+        //s_rootDir = getClass().protectionDomain.codeSource.location.path;
+        //println(s_rootDir); 
     }
     stage('List')
     {
@@ -36,7 +37,7 @@ node
     stage('Deploy')
     {
         echo 'Deploy'
-        sh('''git add''')
+        
     }
     stage('Stop')
     {
