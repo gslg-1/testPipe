@@ -23,7 +23,7 @@ pipeline
                     returnStdout: true,
                     script: 'ls "code/*/modules/inc/" | grep ".h" | sed "s/.h//g"'
                 )}""" 
-                echo ${MODULES}
+                echo "${MODULES}"
                 // List all Module Tests
                 //sh('''
                 //    TESTS=$(ls tests/test/ | grep '.c' | sed s/.c//g | sed s/Test//g)
