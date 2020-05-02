@@ -140,6 +140,7 @@ pipeline
 def cleanUp()
 {
     sh('''
+        ls
         git branch -d $LOCAL_BRANCH
         ls
         rm -fr *

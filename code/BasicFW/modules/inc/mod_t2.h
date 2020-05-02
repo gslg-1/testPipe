@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-uint8_t findBiggest(uint8_t arr*, uint8_t length);
+uint8_t findBiggest(uint8_t * arr, uint8_t length);
 
 
 
