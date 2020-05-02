@@ -7,13 +7,18 @@ node
 
     stage('Start')
     {
+        // Variables Declaration:
         File f_currDir;
         int f_wdirExist = 0;
         f_currDir = new File('.');
         f_wdir = new File(s_wdir);
+        
+        // Routine:
+        println('ls'.execute().text);
         f_currDir.eachDirMatch(s_wdir,
         {
-            println(it);
+            string msg;
+            println(msg+"Match: "+it);
             f_wdirExist = 1;
         });
         if(f_wdirExist == 0)
@@ -21,6 +26,7 @@ node
             f_wdir.mkdir();
             f_wdirExist = 1;
         }
+        println(['cd',$s_wdir].execute().text);
         println('ls'.execute().text);
 
     }
