@@ -40,12 +40,12 @@ pipeline
                     // Compare List of Modules and Module Tests
                     mods="${MODULES}".split();
                     mods.each{
-                        print(Module: );
+                        print("Module: ");
                         println(it);
                     }
                     tests="${TESTS}".split();
                     tests.each{
-                        print(Tests: );
+                        print("Tests: ");
                         println(it);
                     }
                     //mods.each
@@ -75,7 +75,6 @@ pipeline
                     //    {
                     //        avaiable = 0;
                     //    }
-//
                     //}
                     
                 }
