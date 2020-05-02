@@ -4,8 +4,6 @@ pipeline
     environment {
         LOCAL_BRANCH="loaclBranch"
         MERGE_BRANCH="mergeBranch"
-        MODULES=""
-        TESTS=""
     }
     stages
     {
@@ -21,16 +19,11 @@ pipeline
                 ''')
 
                 // List all Modules
-                sh('''
-                    MODS=$(ls code/*/modules/inc/ | grep '.h' | sed s/.h//g)
-                    echo ${MODS}
-                ''')
+                env.MODULES ="${sh('ls code/*/modules/inc/ | grep .h | sed s/.h//g', returnStdout: true)}"
+                echo ${env.MODULES}
 
                 // List all Module Tests
-                sh('''
-                    TSTS=$(ls tests/test/ | grep '.c' | sed s/.c//g | sed s/Test//g)
-                    echo ${TSTS}
-                ''')
+                
 
                 // Compar Tests and Modules
                 script
@@ -40,8 +33,8 @@ pipeline
                     int avaiable = 0;
                     
                     println("Availability Check Scipt");
-                    println("${env.MODS}");
-                    println("${env.TSTS}");
+                    println("${env.MODULES}");
+                    //println("${env.TSTS}");
                     
                     // Compare List of Modules and Module Tests
                     //mods.each{
