@@ -38,37 +38,45 @@ pipeline
                     int avaiable = 0;
                     println("Start Groovy Script");
                     // Compare List of Modules and Module Tests
-                    mods="$MODULES".split();
-                    tests="$TESTS".split();
-                    mods.each
-                    { String mod ->
-                        print("Check Module: ");
-                        println(mod);
-                        tests.each
-                        { String test ->
-                            print("Module:")
-                            print(mod);
-                            print(" <-> Test:")
-                            print(test)
-                            if(mod==test)
-                            {
-                                println(" (match) ")
-                                avaiable = 1;
-                            }else{
-                                println(" (no match) ")
-                            }
-                        }
-                        if (avaiable == 0)
-                        {
-                            // no match found
-                            return 1;
-                        }
-                        else
-                        {
-                            avaiable = 0;
-                        }
-
+                    mods="${MODULES}".split();
+                    mods.each{
+                        print(Module: );
+                        println(it);
                     }
+                    tests="${TESTS}".split();
+                    tests.each{
+                        print(Tests: );
+                        println(it);
+                    }
+                    //mods.each
+                    //{ String mod ->
+                    //    print("Check Module: ");
+                    //    println(mod);
+                    //    tests.each
+                    //    { String test ->
+                    //        print("Module:")
+                    //        print(mod);
+                    //        print(" <-> Test:")
+                    //        print(test)
+                    //        if(mod==test)
+                    //        {
+                    //            println(" (match) ")
+                    //            avaiable = 1;
+                    //        }else{
+                    //            println(" (no match) ")
+                    //        }
+                    //    }
+                    //    if (avaiable == 0)
+                    //    {
+                    //        // no match found
+                    //        return 1;
+                    //    }
+                    //    else
+                    //    {
+                    //        avaiable = 0;
+                    //    }
+//
+                    //}
                     
                 }
             }
