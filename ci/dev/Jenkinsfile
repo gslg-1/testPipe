@@ -1,34 +1,15 @@
 node
 {
     // Variables Declaration:
-    String s_wdir="pipe_wdir/"
+    String s_rootDir=""
+    String s_workDir="pipe_wdir/"
     String s_localBranch="local-Branch"
     int success = 0;
     
     stage('Start')
     {
-        File f_wdir;
-        File f_currDir;
-        f_currDir = new File('.');
-        f_wdir = new File(s_wdir);
-        // Routine:
-        // Create Work Directory
-        f_currDir.eachDirMatch(s_wdir,
-        {
-            string msg;
-            println(msg+"Match: "+it);
-        });
-        if(!f_wdir.exists)
-        {
-            f_wdir.mkdir();
-        }
-        // Git Checkout:
-        //checkoutGitRepository(s_wdir,$GIT_URL,credential)
-        //sh('''
-        //    cd $s_wdir
-        //    git clone $GIT_URL
-        //    git checkout -b $s_localBranch
-        //''')
+        s_rootDir = getClass().protectionDomain.codeSource.location.path;
+        println(s_rootDir); 
     }
     stage('List')
     {
