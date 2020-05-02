@@ -15,16 +15,21 @@ pipeline
                 echo "Check if all required Tests, Modules"
                 // checkout on 
                 deleteDir()
+                sh('''
+                    git checkout -b LOCAL_BRANCH
+                    git branch
+                    ls
+                ''')
+
+                // List all Modules
+                sh('''
+                    MODULES=$(ls code/*/modules | grep '.h')
+                ''')
+                echo $MODULES
                 
+                // List all Module Tests
                 script
                 {
-                    // Verify the right location
-                    println(sh('ls').text);
-
-
-                    // List all Modules
-                    
-                    // List all Module Tests
 
                     // Compare List of Modules and Module Tests
                     
