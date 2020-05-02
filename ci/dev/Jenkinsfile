@@ -39,8 +39,9 @@ pipeline
                     //String tests[]=env.TESTS.split();
                     int avaiable = 0;
                     
-                    println(env.MODULES);
-                    println(env.TESTS);
+                    println("Availability Check Scipt");
+                    println(${env.MODULES});
+                    println(${env.TESTS});
                     
                     // Compare List of Modules and Module Tests
                     //mods.each{
