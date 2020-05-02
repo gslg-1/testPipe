@@ -8,7 +8,10 @@ node
     stage('Start')
     {
         echo 'Start'
-        println('pwd'.execute.text); 
+        sh('''
+            pwd
+            git branch
+        ''')
         s_rootDir = getClass().protectionDomain.codeSource.location.path;
         println(s_rootDir); 
     }
