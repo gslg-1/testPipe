@@ -4,7 +4,6 @@ pipeline
     environment {
         LOCAL_BRANCH="loaclBranch"
         MERGE_BRANCH="mergeBranch"
-        MODULES="${sh('''ls code/*/modules/inc/ | grep '.h' | sed s/.h//g''')}"
     }
     stages
     {
@@ -14,22 +13,22 @@ pipeline
             {
                 echo "Check if all required Tests, Modules"
                 // checkout on 
+                sh('''
+                    git branch 
+                    ls
+                ''')
+
+                // List all Modules
+                MODULES="""${sh(
+                    returnStdout: true,
+                    script: 'ls "code/*/modules/inc/" | grep ".h" | sed "s/.h//g"'
+                )}""" 
+                echo ${MODULES}
+                // List all Module Tests
                 //sh('''
-                //    git branch 
-                //    ls
+                //    TESTS=$(ls tests/test/ | grep '.c' | sed s/.c//g | sed s/Test//g)
+                //    echo $TESTS
                 //''')
-                //
-                //// List all Modules
-                //sh('''
-                //    MODS=$(ls code/*/modules/inc/ | grep '.h' | sed s/.h//g)
-                //''')
-                //
-                //// List all Module Tests
-                //sh('''
-                //    TSTS=$(ls tests/test/ | grep '.c' | sed s/.c//g | sed s/Test//g)
-                //    echo ${TSTS}
-                //''')
-  
 
                 // Compar Tests and Modules
                 script
@@ -39,9 +38,8 @@ pipeline
                     int avaiable = 0;
                     
                     println("Availability Check Scipt");
-                    println("${env.MODULES}")
-                    //println("${env.MODS}");
-                    //println("${env.TSTS}");
+                    println("${MODULES}");
+                    //println("${env.TESTS}");
                     
                     // Compare List of Modules and Module Tests
                     //mods.each{
