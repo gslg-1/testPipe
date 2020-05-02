@@ -1,0 +1,118 @@
+node
+{
+    // Variables Declaration:
+    String s_rootDir="";
+    String s_workDir="pipe_wdir/";
+    String s_localBranch="local-Branch";
+    int success = 0;
+    stage('Start')
+    {
+        echo 'Start'
+        sh('''
+            pwd
+            git branch
+        ''')
+        s_rootDir = getClass().protectionDomain.codeSource.location.path;
+        println(s_rootDir); 
+    }
+    stage('List')
+    {
+        echo 'List'
+    }
+    stage('Build')
+    {
+        echo 'Build'
+        // Execute Build of Code
+        // Execute Doxygen
+    }
+    stage('Test')
+    {
+        parallel StaticCodeAnalysis:
+        {
+            echo 'Static Code Analysis'
+            // Execute Analysis of all Modules
+        }, 
+        UnitTest:
+        {
+            echo 'Unit Test'
+            // Execute Unit Test of all Modules
+        }
+    }
+    stage('Deploy')
+    {
+        echo 'Deploy'
+        
+    }
+    stage('Stop')
+    {
+        success = 1; 
+    }
+       
+    if( success == 1)
+    {
+        // After Success:
+        echo "Successfull Pipeline run."
+    }
+    else
+    {
+        // After No Success:
+        echo "Unsuccessfull Pipeline run."
+    }
+    //println('ls'.execute().text);
+    // Always:
+    //if ( f_wdirExist == 1)
+    //{
+    //    println(['cd','..'].execute().text);
+    //    if(f_wdir != null)
+    //    {
+    //        f_wdir = new File(s_wdir);
+    //    }
+    //    f_wdir.deleteDir();
+    //}
+}
+
+
+
+
+
+/**
+* @description: This function is used to delete all files at a especial location
+* @param:
+*       -path: Add a String with the 
+*/
+int deleteDir(path)
+{
+    if (path?.trim())
+    {
+        respond = 'rm -fr $path'.execute();
+        println(respond);
+        return 0;
+    }
+    return 1;
+}
+
+/**
+* @description: This function is used to delete all files at a especial location
+* @param:
+*       -path: Add a String with the 
+*/
+String listModules(path)
+{
+    //if (path?.trim())
+    //{
+        return 'ls $path | grep "*.h" | sed s/.h//h'.execute().text;
+    //}
+    //return ""
+}
+
+/**
+* @description: This function is used to delete all files at a especial location
+* @param:
+*       -path: Add a String with the 
+*/
+void printSh(cmd)
+{
+   def sout = new StringBuilder();
+   def proc = cmd.execute();
+   println(proc.text);
+}
