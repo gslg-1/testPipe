@@ -19,7 +19,7 @@ pipeline
                 ''')
 
                 // List all Modules
-                env.MODULES="""${sh(
+                MODULES="""${sh(
                     returnStdout: true,
                     script: 'ls "code/*/modules/inc/" | grep ".h" | sed "s/.h//g"'
                 )}""" 
