@@ -1,61 +1,63 @@
 node
 {
     // Variables Declaration:
-    File f_wdir;
     String s_wdir="pipe_wdir/"
+    String s_localBranch="local-Branch"
     int success = 0;
-    int suc_start = 0;
-    int f_wdirExist = 0;
-
+    
     stage('Start')
     {
-        // Variables Declaration:
+        File f_wdir;
         File f_currDir;
         f_currDir = new File('.');
         f_wdir = new File(s_wdir);
-        
         // Routine:
-        println('ls'.execute().text);
+        // Create Work Directory
         f_currDir.eachDirMatch(s_wdir,
         {
             string msg;
             println(msg+"Match: "+it);
-            f_wdirExist = 1;
         });
-        if(f_wdirExist == 0)
+        if(!f_wdir.exists)
         {
             f_wdir.mkdir();
-            f_wdirExist = 1;
         }
-        println(['cd',$s_wdir].execute().text);
-        println('ls'.execute().text);
-
+        // Git Checkout:
+        //checkoutGitRepository(s_wdir,$GIT_URL,credential)
+        sh('''
+            cd $s_wdir
+            git clone $GIT_URL
+            git checkout -b $s_localBranch
+        ''')
     }
     suc_start = 1;
     stage('List')
     {
         echo 'List'
-        //print(listModules("code/*/modules/src/"));
-        print(listModules("*"));
     }
     stage('Build')
     {
         echo 'Build'
+        // Execute Build of Code
+        // Execute Doxygen
     }
     stage('Test')
     {
         parallel StaticCodeAnalysis:
         {
             echo 'Static Code Analysis'
+            // Execute Analysis of all Modules
         }, 
         UnitTest:
         {
             echo 'Unit Test'
+            // Execute Unit Test of all Modules
         }
     }
     stage('Deploy')
     {
         echo 'Deploy'
+        sh('''git add''')
     }
     stage('Stop')
     {
@@ -63,25 +65,28 @@ node
         
         println('ls'.execute().text);
     }
-    success = 1;
+    success = 1;    
     if( success == 1)
     {
+        // After Success:
         echo "Successfull Pipeline run."
     }
     else
     {
+        // After No Success:
         echo "Unsuccessfull Pipeline run."
     }
-    if ( f_wdirExist == 1)
-    {
-        println(['cd','..'].execute().text);
-        if(f_wdir != null)
-        {
-            f_wdir = new File(s_wdir);
-        }
-        f_wdir.deleteDir();
-        f_wdirExist = 0;
-    }
+    println('ls'.execute().text);
+    // Always:
+    //if ( f_wdirExist == 1)
+    //{
+    //    println(['cd','..'].execute().text);
+    //    if(f_wdir != null)
+    //    {
+    //        f_wdir = new File(s_wdir);
+    //    }
+    //    f_wdir.deleteDir();
+    //}
 }
 
 

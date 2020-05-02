@@ -1,0 +1,156 @@
+pipeline
+{
+    agent any
+    environment {
+        LOC_BR="loaclBranch"
+        MERGE_BR="mergeBranch"
+        Modules=""
+    }
+    stages
+    {
+        stage('Availability Check')
+        {
+            steps
+            {
+                echo "Check if all required Tests, Modules"
+                sh('''
+                    git branch
+                    git checkout -b $LOC_BR
+                    echo "$(env.GIT_LOCAL_BRANCH)"
+                ''')
+                script
+                {
+                    // List all Modules
+                //    Modules = 'ls -l code/*/modules/src | grep "*.h" | sed s/.h//h'.execute().text;
+                //    println(Modules)
+                //    // List all features, feat_*
+                //    feat_ls= 'git log | grep -oh "\w*feat_\w* *"'.execute().text;       //problem if its available multible times
+                //    // List all Mods of the specs
+                //    String tempMods = "";
+                //    for (int i = 0 ; i < feat_ls.length; i++ )
+                //    {
+                //        def path = "docs/specs/"+feat_ls[i]+"JSON"
+                //        def file = new File(path);
+                //        assert file.exists() : "Specs not found!"
+                //        def command = "jq .modules[] "+path " | sed s/\"//g";
+                //        tempMods += command.execute();
+                //    }
+                //    // List all Unit Tests
+                //    def ar_TestsMods = 'ls -l tests/src/ | grep "*.h" | sed s/.h//h'.execute().text;
+                //    // Check if Unit Tests are available
+                //    test_ls = 'ls /code/*/modules'.execute()
+                //    def ar_Mods = tempMods.text;
+                //    for (int i = 0; i < Modules.length; i++)
+                //    {
+                //        //  Check if the Specs are provided
+                //        if (ar_Mods.contains(Modules(i))==false)
+                //        {
+                //            "Unit Test not available"
+                //            return false;
+                //        }
+                //        // Check if Unit-Tests are available
+                //        if (ar_TestsMods.contains(Modules(i))==false)
+                //        {
+                //            echo "Unit Test not available"
+                //            return false;
+                //        }
+                //    }
+                }
+            }
+        }
+        stage('Build')
+        {
+            steps
+            {
+                echo "Build Project"
+                sh('''
+                    cd code/*/
+                    make clean
+                    make
+                    cd ../..    
+                ''')
+            }
+        }
+        stage('Test & Analysis')
+        {
+            parallel
+            {
+                stage('Static Code Analysis')
+                {
+                    steps
+                    {
+                        echo "Static Code Analysis"
+                        // Execute the Static Code Analysis of every Module
+                        sh('''
+                            ./exec/scripts/cpa-auto.sh "$Modules"
+                        ''')
+                    }
+                }
+                stage('Unit Test (off target)')
+                {
+                    steps
+                    {
+                        echo "Unit Test"
+                        // Execute the Unit Test of every Module
+                        sh('''
+                            cd test/
+                            make
+                            cd ..
+                        ''')
+                    }
+                }
+            }
+        }
+        stage('Deploy')
+        {
+            steps
+            {
+                echo "Deploy" 
+                sh('''  
+                    git add output/
+                    git commit -m "Jenkins: Successful Feature Check"
+                    git checkout -b $MERGE_BR
+                    git merge $LOC_BR
+                    git push origin $MERGE_BR:$MERGE_BR
+                    #curl <github merge request>
+                ''')
+            }
+        }
+    }
+    post
+    {
+        success {
+            echo 'The pipe succeded'
+            deleteDir();
+        }
+        unstable {
+            echo 'the pipe failed'
+            deleteDir();
+        }
+        failure {
+            echo 'the pipe failed'
+            sh('''  
+                   git add output/
+                   git commit -m "Jenkins: Successful Feature Check"
+                   git checkout -b GIT_LOCAL_BRANCH
+                   git merge $LOC_BR
+                   git push origin $GIT_BRANCH
+            ''')
+            deleteDir();
+            
+        }
+    }
+}
+
+
+/**
+* @description: This function is used to delete all files at a especial location
+* @param:
+*       -path: Add a String with the 
+*/
+def deleteDir()
+{
+    sh('''
+        rm -fr *
+    ''')
+}
