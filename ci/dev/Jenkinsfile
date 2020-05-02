@@ -2,9 +2,9 @@ pipeline
 {
     agent any
     environment {
-        LOC_BR="loaclBranch"
-        MERGE_BR="mergeBranch"
-        Modules=""
+        LOCAL_BRANCH="loaclBranch"
+        MERGE_BRANCH="mergeBranch"
+        MODULES=""
     }
     stages
     {
@@ -13,13 +13,17 @@ pipeline
             steps
             {
                 echo "Check if all required Tests, Modules"
+                // checkout on 
                 deleteDir()
-                sh('''
-                    ls
-                    git branch
-                    git checkout -b $LOC_BR
-                    echo "$(env.GIT_LOCAL_BRANCH)"
-                ''')
+                script
+                {
+                    sh('''
+                        ls
+                        git branch
+                        git checkout -b $LOC_BR
+                        echo "$(env.GIT_LOCAL_BRANCH)"
+                    ''')
+                }
             }
         }
         stage('Build')
@@ -27,6 +31,7 @@ pipeline
             steps
             {
                 echo "Build Project"
+                
                 // Execute Build
                 sh('''
                     cd code/*/
@@ -34,6 +39,9 @@ pipeline
                     make
                     cd ../..    
                 ''')
+
+                // Flash Device
+
                 // Exucute Doxygen
             }
         }
