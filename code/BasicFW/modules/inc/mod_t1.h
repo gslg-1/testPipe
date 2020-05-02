@@ -4,7 +4,7 @@
 #include <stdint.h>
 
 
-uint8_t t_sqr(uint8_t x);
+uint16_t t_sqr(uint8_t x);
 
 
 
