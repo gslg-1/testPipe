@@ -30,7 +30,7 @@ pipeline
                 //''')
 
                 // Test Area:
-                EXP = ${sh('ls', returnStdout: true)}
+                env.LS = "${sh(script:'ls -lah', returnStdout: true)}"
 
                 // Compar Tests and Modules
                 script
@@ -42,7 +42,7 @@ pipeline
                     println("Availability Check Scipt");
                     //println("${env.MODS}");
                     //println("${env.TSTS}");
-                    println("${EXP}")
+                    println("${env.LS}")
                     
                     // Compare List of Modules and Module Tests
                     //mods.each{
