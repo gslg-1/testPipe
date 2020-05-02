@@ -22,14 +22,14 @@ pipeline
 
                 // List all Modules
                 sh('''
-                    env.MODS=$(ls code/*/modules/inc/ | grep '.h' | sed s/.h//g)
-                    echo ${env.MODS}
+                    MODS=$(ls code/*/modules/inc/ | grep '.h' | sed s/.h//g)
+                    echo ${MODS}
                 ''')
 
                 // List all Module Tests
                 sh('''
-                    env.TSTS=$(ls tests/test/ | grep '.c' | sed s/.c//g | sed s/Test//g)
-                    echo ${env.TSTS}
+                    TSTS=$(ls tests/test/ | grep '.c' | sed s/.c//g | sed s/Test//g)
+                    echo ${TSTS}
                 ''')
 
                 // Compar Tests and Modules
