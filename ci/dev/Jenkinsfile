@@ -8,8 +8,8 @@ node
     stage('Start')
     {
         echo 'Start'
-        //s_rootDir = getClass().protectionDomain.codeSource.location.path;
-        //println(s_rootDir); 
+        s_rootDir = getClass().protectionDomain.codeSource.location.path;
+        println(s_rootDir); 
     }
     stage('List')
     {
