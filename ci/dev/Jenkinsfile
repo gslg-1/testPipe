@@ -75,7 +75,7 @@ node
         // After No Success:
         echo "Unsuccessfull Pipeline run."
     }
-    println('ls'.execute().text);
+    //println('ls'.execute().text);
     // Always:
     //if ( f_wdirExist == 1)
     //{
