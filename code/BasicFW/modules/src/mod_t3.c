@@ -8,7 +8,7 @@ void swapNB(uint8_t * arr)
     *(arr+1) = tmp;
 }
 
-uint8_t * sortUp(uint8_t * arr, uint8_t length)
+void sortUp(uint8_t * arr, uint8_t length)
 {
     for (int i = 0; i < length; i++)
     {

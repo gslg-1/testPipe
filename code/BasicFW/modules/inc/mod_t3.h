@@ -4,7 +4,7 @@
 #include <stdint.h>
 
 void swapNB(uint8_t * arr);
-uint8_t * sortUp(uint8_t * arr, uint8_t length);
+void sortUp(uint8_t * arr, uint8_t length);
 
 
 #endif 

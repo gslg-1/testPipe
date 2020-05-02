@@ -38,9 +38,16 @@ pipeline
                     println("Start Groovy Script");
                     // Compare List of Modules and Module Tests
                     mods="$MODULES".split();
-                    println(mods);
+                    mods.each
+                    {
+                        println(it);
+                    }
                     tests="$TESTS".split();
-                    println(tests);
+                    tests.each
+                    {
+                        println(it);
+                    }
+                    
                 }
             }
         }
