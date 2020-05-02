@@ -14,7 +14,6 @@ pipeline
             {
                 echo "Check if all required Tests, Modules"
                 // checkout on 
-                deleteDir()
                 sh('''
                     git checkout -b LOCAL_BRANCH
                     git branch
