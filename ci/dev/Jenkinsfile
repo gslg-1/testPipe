@@ -38,16 +38,16 @@ pipeline
                     int avaiable = 0;
                     println("Start Groovy Script");
                     // Compare List of Modules and Module Tests
-                    mods="${env.MODULES}".split();
+                    mods=MODULES.split();
                     mods.each{
                         print("Module: ");
                         println(it);
                     }
-                    tests="${env.TESTS}".split();
-                    tests.each{
-                        print("Tests: ");
-                        println(it);
-                    }
+                    //tests="${env.TESTS}".split();
+                    //tests.each{
+                    //    print("Tests: ");
+                    //    println(it);
+                    //}
                     //mods.each
                     //{ String mod ->
                     //    print("Check Module: ");
