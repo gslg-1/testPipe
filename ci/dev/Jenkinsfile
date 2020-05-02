@@ -26,13 +26,12 @@ pipeline
                     MODULES=$(ls code/*/modules/inc/ | grep '.h' | sed s/.h//g)
                     echo $MODULES
                 ''')
-                
 
                 // List all Module Tests
-                sh('''
-                    TESTS=$(ls tests/test/ | grep '.c' | sed s/.c//g | sed s/Test//g)
-                    echo $TESTS
-                ''')
+                //sh('''
+                //    TESTS=$(ls tests/test/ | grep '.c' | sed s/.c//g | sed s/Test//g)
+                //    echo $TESTS
+                //''')
 
                 // Compar Tests and Modules
                 script
