@@ -40,8 +40,8 @@ pipeline
                     int avaiable = 0;
                     
                     println("Availability Check Scipt");
-                    println(${env.MODULES});
-                    println(${env.TESTS});
+                    println("${env.MODULES}");
+                    println("${env.TESTS}");
                     
                     // Compare List of Modules and Module Tests
                     //mods.each{
