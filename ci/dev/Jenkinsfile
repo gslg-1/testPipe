@@ -30,7 +30,6 @@ node
             git checkout -b $s_localBranch
         ''')
     }
-    suc_start = 1;
     stage('List')
     {
         echo 'List'
