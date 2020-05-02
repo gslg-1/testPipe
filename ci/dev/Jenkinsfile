@@ -15,14 +15,14 @@ pipeline
                 echo "Check if all required Tests, Modules"
                 // checkout on 
                 sh('''
-                    git checkout -b LOCAL_BRANCH
+                    git checkout -b $LOCAL_BRANCH
                     git branch
                     ls
                 ''')
 
                 // List all Modules
                 sh('''
-                    MODULES=$(ls code/*/modules/inc/ | grep '.h')
+                    MODULES=$(ls code/*/modules/inc/ | grep '.h' )
                 ''')
                 echo $MODULES
 
