@@ -22,14 +22,14 @@ pipeline
 
                 // List all Modules
                 sh('''
-                    MODULES=$(ls code/*/modules/inc/ | grep '.h' | sed s/.h//g)
-                    echo $MODULES
+                    env.MODS=$(ls code/*/modules/inc/ | grep '.h' | sed s/.h//g)
+                    echo ${env.MODS}
                 ''')
 
                 // List all Module Tests
                 sh('''
-                    TESTS=$(ls tests/test/ | grep '.c' | sed s/.c//g | sed s/Test//g)
-                    echo $TESTS
+                    env.TSTS=$(ls tests/test/ | grep '.c' | sed s/.c//g | sed s/Test//g)
+                    echo ${env.TSTS}
                 ''')
 
                 // Compar Tests and Modules
@@ -40,8 +40,8 @@ pipeline
                     int avaiable = 0;
                     
                     println("Availability Check Scipt");
-                    println("${env.MODULES}");
-                    println("${env.TESTS}");
+                    println("${env.MODS}");
+                    println("${env.TSTS}");
                     
                     // Compare List of Modules and Module Tests
                     //mods.each{
