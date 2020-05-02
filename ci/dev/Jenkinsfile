@@ -13,17 +13,24 @@ pipeline
             {
                 echo "Check if all required Tests, Modules"
                 // checkout on 
-                sh('''
-                    git branch 
-                    ls
-                ''')
+                //sh('''
+                //    git branch 
+                //    ls
+                //''')
+//
+                //// List all Modules
+                //sh('''
+                //    MODS=$(ls code/*/modules/inc/ | grep '.h' | sed s/.h//g)
+                //''')
+//
+                //// List all Module Tests
+                //sh('''
+                //    TSTS=$(ls tests/test/ | grep '.c' | sed s/.c//g | sed s/Test//g)
+                //    echo ${TSTS}
+                //''')
 
-                // List all Modules
-                env.MODULES ="${sh('ls code/*/modules/inc/ | grep .h | sed s/.h//g', returnStdout: true)}"
-                echo ${env.MODULES}
-
-                // List all Module Tests
-                
+                // Test Area:
+                env.EXP = ${sh('ls', returnStdout: true)}
 
                 // Compar Tests and Modules
                 script
@@ -33,8 +40,9 @@ pipeline
                     int avaiable = 0;
                     
                     println("Availability Check Scipt");
-                    println("${env.MODULES}");
+                    //println("${env.MODS}");
                     //println("${env.TSTS}");
+                    println("${env.EXP}")
                     
                     // Compare List of Modules and Module Tests
                     //mods.each{
