@@ -17,8 +17,6 @@ pipeline
                 // checkout on 
                 sh('''
                     git branch 
-                    git checkout -B $LOCAL_BRANCH
-                    git branch
                     ls
                 ''')
 
@@ -30,7 +28,7 @@ pipeline
 
                 // List all Module Tests
                 sh('''
-                    TESTS=$(ls tests/test/ | grep '.c' | sed s/.c//g)
+                    TESTS=$(ls tests/test/ | grep '.c' | sed s/.c//g | sed s/Test//g)
                     echo $TESTS
                 ''')
 
@@ -141,9 +139,6 @@ pipeline
 def cleanUp()
 {
     sh('''
-        ls
-        git branch
-        git branch -D $LOCAL_BRANCH
         ls
         rm -fr *
     ''')
