@@ -67,7 +67,6 @@ node
     }
     if ( f_wdirExist == 1)
     {
-        File f_wdir;
         println(['cd','..'].execute().text);
         f_wdir = new File(s_wdir);
         f_wdir.deleteDir();
