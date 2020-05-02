@@ -20,8 +20,7 @@ pipeline
                     sh('''
                         ls
                         git branch
-                        git checkout -b $LOC_BR
-                        echo "$(env.GIT_LOCAL_BRANCH)"
+                        git checkout -b $LOCAL_BRANCH
                     ''')
                 }
             }
@@ -95,11 +94,11 @@ pipeline
     {
         success {
             echo 'The pipe succeded'
-            deleteDir();
+            cleanUp();
         }
         unstable {
             echo 'the pipe failed'
-            deleteDir();
+            cleanUp();
         }
         failure {
             echo 'the pipe failed'
@@ -110,7 +109,7 @@ pipeline
                    #git merge $LOC_BR
                    #git push origin $GIT_BRANCH
             ''')
-            deleteDir();
+            cleanUp();
             
         }
     }
@@ -122,9 +121,10 @@ pipeline
 * @param:
 *       -path: Add a String with the 
 */
-def deleteDir()
+def cleanUp()
 {
     sh('''
+        git branch -d $LOCAL_BRANCH
         rm -fr *
     ''')
 }
