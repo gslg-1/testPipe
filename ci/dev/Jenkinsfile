@@ -1,17 +1,30 @@
 node
 {
-    def s_wdir="pipe_wdir"
+    File f_wdir;
+    String s_wdir="pipe_wdir/"
+    int success = 0;
+    int suc_start = 0;
+
     stage('Start')
     {
+        File f_currDir;
+        int f_wdirExist = 0;
+        f_currDir = new File('.');
+        f_wdir = new File(s_wdir);
+        f_currDir.eachDirMatch(s_wdir,
+        {
+            println(it);
+            f_wdirExist = 1;
+        });
+        if(f_wdirExist == 0)
+        {
+            f_wdir.mkdir();
+            f_wdirExist = 1;
+        }
+        println('ls'.execute().text);
 
-        'ls'.execute().text.println();
-        sh('''
-            mkdir pipe_wdir
-            cd pipe_wdir
-        ''')
-        'ls'.execute().text.println();
-        
     }
+    suc_start = 1;
     stage('List')
     {
         echo 'List'
@@ -39,15 +52,41 @@ node
     }
     stage('Stop')
     {
-        'ls'.execute().text.println();
-        sh('''
-            cd ..
-            rm -fr pipe_wdir
-        ''')
-        'ls'.execute().text.println();
+        println('ls'.execute().text);
+        
+        println('ls'.execute().text);
     }
-    
+    success = 1;
+    if( success == 1)
+    {
+        echo "Successfull Pipeline run."
+    }
+    else
+    {
+        echo "Unsuccessfull Pipeline run."
+    }
+    if ( f_wdirExist == 1)
+    {
+        File f_wdir;
+        println(['cd','..'].execute().text);
+        f_wdir = new File(s_wdir);
+        f_wdir.deleteDir();
+        f_wdirExist = 0;
+    }
 }
+
+
+
+/**
+* @description: This function is used to delete all files at a especial location
+* @param:
+*       -path: Add a String with the 
+*/
+int pipe(path)
+{
+    int ret = 0:
+}
+
 
 /**
 * @description: This function is used to delete all files at a especial location
