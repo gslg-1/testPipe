@@ -24,11 +24,11 @@ node
         }
         // Git Checkout:
         //checkoutGitRepository(s_wdir,$GIT_URL,credential)
-        sh('''
-            cd $s_wdir
-            git clone $GIT_URL
-            git checkout -b $s_localBranch
-        ''')
+        //sh('''
+        //    cd $s_wdir
+        //    git clone $GIT_URL
+        //    git checkout -b $s_localBranch
+        //''')
     }
     stage('List')
     {
