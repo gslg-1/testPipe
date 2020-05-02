@@ -68,7 +68,10 @@ node
     if ( f_wdirExist == 1)
     {
         println(['cd','..'].execute().text);
-        f_wdir = new File(s_wdir);
+        if(f_wdir != null)
+        {
+            f_wdir = new File(s_wdir);
+        }
         f_wdir.deleteDir();
         f_wdirExist = 0;
     }
