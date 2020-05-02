@@ -1,11 +1,10 @@
 node
 {
     // Variables Declaration:
-    String s_rootDir=""
-    String s_workDir="pipe_wdir/"
-    String s_localBranch="local-Branch"
+    String s_rootDir="";
+    String s_workDir="pipe_wdir/";
+    String s_localBranch="local-Branch";
     int success = 0;
-    
     stage('Start')
     {
         s_rootDir = getClass().protectionDomain.codeSource.location.path;
@@ -41,11 +40,9 @@ node
     }
     stage('Stop')
     {
-        println('ls'.execute().text);
-        
-        println('ls'.execute().text);
+        success = 1; 
     }
-    success = 1;    
+       
     if( success == 1)
     {
         // After Success:
