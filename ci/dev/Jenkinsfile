@@ -19,7 +19,7 @@ pipeline
                 script
                 {
                     // Verify the right location
-                    sh('ls')
+                    println(sh('ls').text);
 
 
                     // List all Modules
