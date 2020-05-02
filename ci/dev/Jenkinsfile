@@ -15,13 +15,19 @@ pipeline
                 echo "Check if all required Tests, Modules"
                 // checkout on 
                 deleteDir()
+                
                 script
                 {
-                    sh('''
-                        ls
-                        git branch
-                        git checkout -b $LOCAL_BRANCH
-                    ''')
+                    // Verify the right location
+                    println('ls'.execute().text);
+
+
+                    // List all Modules
+                    
+                    // List all Module Tests
+
+                    // Compare List of Modules and Module Tests
+                    
                 }
             }
         }
@@ -125,6 +131,7 @@ def cleanUp()
 {
     sh('''
         git branch -d $LOCAL_BRANCH
+        ls
         rm -fr *
     ''')
 }
