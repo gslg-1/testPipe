@@ -26,30 +26,7 @@ pipeline
         }
         stage('Test & Analysis')
         {
-            parallel
-            {
-                stage('Static Analysis')
-                {
-                    steps
-                    {
-                        echo "Static Analysis"
-                    }
-                }
-                stage('Unit Test (off target)')
-                {
-                    steps
-                    {
-                        echo "Unit Test"
-                    }
-                }
-                stage('Unit Test (on target)')
-                {
-                    steps
-                    {
-                        echo "Unit Test"
-                    }
-                }
-            }
+            echo "Test & Analysis"
         }
         stage('Deploy')
         {
