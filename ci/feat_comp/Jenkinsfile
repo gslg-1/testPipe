@@ -26,7 +26,10 @@ pipeline
         }
         stage('Test & Analysis')
         {
-            echo "Test & Analysis"
+            steps
+            {
+                echo "Test & Analysis"
+            }
         }
         stage('Deploy')
         {
